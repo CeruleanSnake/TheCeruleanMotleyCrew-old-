@@ -1,0 +1,122 @@
+body {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+        url("default_bg/background.gif");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    background-color: #064564;
+    background-size: cover, 20vh;
+    -moz-image-rendering: crisp-edges;
+}
+
+.heart {
+    background-image: url("default_bg/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("default_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("default_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#flashytitle {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#flashytitlebottom {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+    transform: scaleX(-1);
+}
+
+#slide {
+    Border: 8px solid #064564;
+}
+
+#pageno {
+    color: #fff;
+    background-color: #064564;
+}
+
+/* PARALLAX BACKGROUND */
+/* =========================================== */
+#overlay>div,
+#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+#overlay {
+    background-image: url("default_bg/sky_cloud.png");
+    animation: 180s skycloud-move linear infinite reverse;
+    z-index: -2;
+    background-position: center left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+.overlay-1 {
+    background-image: url("default_bg/bg_cloud.png");
+    animation: 50s bgcloud-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+.overlay-2 {
+    background-image: url("default_bg/front_cloud.png");
+    animation: 20s frontcloud-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+@keyframes skycloud-move {
+    to {
+        background-position: 80vh center;
+    }
+}
+
+@keyframes bgcloud-move {
+    to {
+        background-position: 80vh bottom;
+    }
+}
+
+@keyframes frontcloud-move {
+    to {
+        background-position: 80vh bottom;
+    }
+}

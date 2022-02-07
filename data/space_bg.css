@@ -1,0 +1,150 @@
+body {
+    background-image:
+        url("default_bg/background.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    background-size: 30vh;
+    image-rendering: pixelated;
+    -moz-image-rendering: crisp-edges;
+}
+
+.heart {
+    background-image: url("alternia_bg/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("alternia_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#slide {
+    Border: 8px solid #a10000;
+}
+
+#pageno {
+    color: #fff;
+    background-color: #a10000;
+}
+
+/* PARALLAX BACKGROUND */
+/* ===================================== */
+
+#overlay>div,
+#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+#overlay {
+    background-image: url("space_bg/m’yutuna.png");
+    animation: 3s m’yutuna-move linear infinite;
+    z-index: -2;
+    background-position-x: 87vw;
+    background-position-y: 25vh;
+    background-repeat: no-repeat;
+    background-size: 10vw;
+}
+
+.overlay-1 {
+    background-image: url("space_bg/meteorite.gif");
+    animation: 40s meteorite-move linear infinite;
+    background-position-x: -17vw;
+    background-position-y: -17vw;
+    background-repeat: no-repeat;
+    background-size: 20vw;
+}
+
+.overlay-2 {
+    background-image: url("space_bg/big_meteor.png");
+    animation: 200s bigmeteor-move linear infinite reverse;
+    background-size: 100vh;
+    background-position: bottom left;
+    background-repeat: repeat-x,
+        repeat-x;
+}
+
+.overlay-3 {
+    background-image: url("space_bg/med_meteor.png");
+    animation: 80s medmeteor-move linear infinite;
+    background-size: 100vh;
+    background-position: bottom left;
+    background-repeat: repeat-x,
+        repeat-x;
+}
+
+.overlay-4 {
+    background-image: url("space_bg/small_meteor.png");
+    animation: 30s smallmeteor-move linear infinite reverse;
+    background-size: 100vh;
+    background-position: bottom left;
+    background-repeat: repeat-x,
+        repeat-x;
+}
+
+@keyframes m’yutuna-move {
+    0% {
+        top: 0vh;
+    }
+
+    25% {
+        top: 0.2vh;
+    }
+
+    50% {
+        top: 0vh;
+    }
+
+    75% {
+        top: 0.2vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
+
+@keyframes meteorite-move {
+    to {
+        background-position: 110vw bottom;
+    }
+}
+
+@keyframes bigmeteor-move {
+    to {
+        background-position: 100vh bottom;
+    }
+}
+
+@keyframes medmeteor-move {
+    to {
+        background-position: 100vh bottom;
+    }
+}
+
+@keyframes smallmeteor-move {
+    to {
+        background-position: 100vh bottom;
+    }
+}

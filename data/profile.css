@@ -1,0 +1,225 @@
+.major {
+    color: #005682 !important;
+    text-shadow: 0 2px #f4ab24 !important;
+}
+
+:root {
+    --events: 2;
+    --event-height: calc(40px + (24px * var(--events)));
+}
+
+#events {
+    width: 804px;
+    height: var(--event-height);
+    padding: 10px;
+    background-color: #eee;
+    position: absolute;
+    transform: translate(-260px, 12px);
+}
+
+#userstories {
+    border-top: calc(var(--event-height) + 22px + 2px) solid #064564;
+}
+
+body {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+        url("default_bg/background.gif");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    background-color: #064564;
+    background-size: cover, 20vh;
+    -moz-image-rendering: crisp-edges;
+}
+
+table.container {
+    border: 5px solid #064564;
+}
+
+table.container>tbody>tr>td,
+table.container>tbody>tr>th {
+    border: 5px solid #064564;
+}
+
+a {
+    color: #0080c2 !important;
+}
+
+nav {
+    margin-top: 10px;
+    color: #f4ab24 !important;
+    background-color: transparent;
+    text-shadow: 0px 0.5px 0 #064564;
+}
+
+
+div#main {
+    background-color: transparent;
+}
+
+.heart {
+    background-image: url("default_bg/logo_small.png") !important;
+    image-rendering: auto;
+}
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("default_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("default_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#flashytitle {
+    background-color: transparent;
+    background-image: url("default_bg/header.png");
+    margin-top: 10px;
+}
+
+#details {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* PARALLAX BACKGROUND */
+/* =========================================== */
+#overlay>div,
+#overlay,
+#overlay-1,
+#overlay-2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: -2;
+}
+
+#overlay {
+    background-image: url("default_bg/sky_cloud.png");
+    animation: 180s skycloud-move linear infinite reverse;
+    background-position: center left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+#overlay-1 {
+    background-image: url("default_bg/bg_cloud.png");
+    animation: 50s bgcloud-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+#overlay-2 {
+    background-image: url("default_bg/front_cloud.png");
+    animation: 20s frontcloud-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 80vh;
+}
+
+@keyframes skycloud-move {
+    to {
+        background-position: 80vh center;
+    }
+}
+
+@keyframes bgcloud-move {
+    to {
+        background-position: 80vh bottom;
+    }
+}
+
+@keyframes frontcloud-move {
+    to {
+        background-position: 80vh bottom;
+    }
+}
+
+/* NAVIGATION */
+/*===================================================*/
+nav>a {
+    visibility: hidden;
+    word-spacing: -999px;
+    letter-spacing: -999px;
+}
+
+nav>a::after {
+    visibility: visible;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+/* MSPFA HOME */
+nav>a[href="/"]::after {
+    content: "MSPFA HOME";
+    color: #f4ab24
+}
+
+/* MSPA */
+nav>a[href="http://www.mspaintadventures.com/"]::after {
+    content: "MSPA";
+    color: #f4ab24
+}
+
+/* EXPLORE */
+nav>a[href="/stories/"]::after {
+    content: "EXPLORE";
+}
+
+/* RANDOM */
+nav>a[href="/random/"]::after {
+    content: "RANDOM";
+}
+
+/* STATISTICS */
+nav>a[href="/stats/"]::after {
+    content: "STATISTICS";
+}
+
+/* LOG */
+nav>a[href^="/log/"]::after {
+    content: "LOG";
+}
+
+/* SEARCH */
+nav>a[href^="/search/"]::after {
+    content: "SEARCH";
+}
+
+/* MY MSPFA */
+nav>a[href="/my/"]::after {
+    content: "MY MSPFA";
+}
+
+/* DISCORD */
+nav>a[href="https://discord.gg/EC5acgG"]::after {
+    content: "DISCORD";
+}
+
+/* CONTACT */
+nav>a[href^="mailto:"]::after {
+    content: "CONTACT";
+    color: #af00af
+}
+
+/* DONATE */
+nav>a[href="/donate/"]::after {
+    content: "DONATE";
+    color: #af00af
+}

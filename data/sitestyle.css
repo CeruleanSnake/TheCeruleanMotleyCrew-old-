@@ -1,0 +1,136 @@
+.major {
+    color: #005682 !important;
+    text-shadow: 0 2px #f4ab24 !important;
+}
+
+body {
+    background-color: #064564;
+}
+
+a {
+    color: #0080c2 !important;
+}
+
+nav {
+    color: #f4ab24 !important;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main {
+    background-color: transparent;
+}
+
+#details {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*NAVIGATION*/
+/*=================================================*/
+nav>a {
+    visibility: hidden;
+    word-spacing: -999px;
+    letter-spacing: -999px;
+}
+
+nav>a::after {
+    visibility: visible;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+/* MSPFA HOME */
+nav>a[href="/"]::after {
+    content: "PORT";
+    color: #f4ab24
+}
+
+/* MSPA */
+nav>a[href="http://www.mspaintadventures.com/"]::after {
+    content: "LAND YONDER";
+    color: #f4ab24
+}
+
+/* EXPLORE */
+nav>a[href="/stories/"]::after {
+    content: "EXPLORE";
+}
+
+/* RANDOM */
+nav>a[href="/random/"]::after {
+    content: "PLUNDER";
+}
+
+/* STATISTICS */
+nav>a[href="/stats/"]::after {
+    content: "COFFERS";
+}
+
+/* LOG */
+nav>a[href^="/log/"]::after {
+    content: "CAPTAIN'S LOG";
+}
+
+/* SEARCH */
+nav>a[href^="/search/"]::after {
+    content: "SCRY";
+}
+
+/* MY MSPFA */
+nav>a[href="/my/"]::after {
+    content: "CAPTAIN'S QUATERS";
+}
+
+/* DISCORD */
+nav>a[href="https://discord.gg/EC5acgG"]::after {
+    content: "TAVERN";
+}
+
+/* CONTACT */
+nav>a[href^="mailto:"]::after {
+    content: "CARRIER PIGEON";
+    color: #af00af
+}
+
+/* DONATE */
+nav>a[href="/donate/"]::after {
+    content: "YAAARR";
+    color: #af00af
+}
+
+#foot span a {
+    visibility: hidden;
+    word-spacing: -999px;
+    letter-spacing: -999px;
+}
+
+#foot span a::after {
+    visibility: visible;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+#startover::after {
+    content: "ABANDON SHIP";
+    color: #bb8013
+}
+
+#goback::after {
+    content: "SAIL BACK";
+    color: #bb8013
+}
+
+#savegame::after {
+    content: "STEAL TREASURE";
+}
+
+#loadgame::after {
+    content: "OPEN TREASURE";
+}
+
+#deletegame::after {
+    content: "DISCARD TREASURE";
+    color: #af00af;
+}

@@ -1,0 +1,119 @@
+body {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 0, 83, 0.95) 25%, rgb(110, 0, 82) 80%),
+        url("default_bg/background.gif");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-color: #6A006A;
+    background-size: cover, 20vh;
+    image-rendering: pixelated;
+    -moz-image-rendering: crisp-edges;
+}
+
+.heart {
+    background-image: url("alternia_bg/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("alternia_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#slide {
+    Border: 8px solid #6A006A;
+}
+
+#pageno {
+    color: #fff;
+    background-color: #6A006A;
+}
+
+/* PARALLAX BACKGROUND */
+/* ===================================== */
+
+#overlay>div,
+#overlay {
+    background-size: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    background-repeat:
+        repeat-x,
+        repeat-x;
+}
+
+#overlay {
+    background-image: url("alternia_bg/moons.png");
+    animation: 3s moon-move linear infinite;
+    z-index: -2;
+    background-position-x: 5vw;
+    background-position-y: 25vh;
+    background-repeat: no-repeat;
+    background-size: 15vw;
+}
+
+.overlay-1 {
+    background-image: url("alternia_bg/sky_cloud.png");
+    animation: 120s skycloud-move linear infinite reverse;
+    background-position: center left;
+}
+
+.overlay-2 {
+    background-image: url("alternia_bg/front_cloud.png");
+    animation: 25s frontcloud-move linear infinite reverse;
+    background-position: bottom left;
+}
+
+@keyframes moon-move {
+    0% {
+        top: 0vh;
+    }
+
+    25% {
+        top: 0.2vh;
+    }
+
+    50% {
+        top: 0vh;
+    }
+
+    75% {
+        top: 0.2vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
+
+@keyframes skycloud-move {
+    to {
+        background-position: 100vh center;
+    }
+}
+
+@keyframes frontcloud-move {
+    to {
+        background-position: 100vh bottom;
+    }
+}

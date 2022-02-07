@@ -1,0 +1,144 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #064564;
+}
+
+
+a:link {
+    color: #0080c2;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: #0080c2;
+}
+
+a:active {
+    color: red;
+}
+
+#nav {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#nav img {
+    margin-bottom: -2;
+    padding: 0 10;
+}
+
+#container {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#slide {
+    width: 650;
+    margin: 20px auto 20px auto;
+    background-color: #eeeeee;
+}
+
+#command {
+    text-align: center;
+    font-size: xx-large;
+    padding: 14px 0;
+}
+
+#content {
+    width: 600px;
+    margin: 0 25px;
+    padding-top: 25;
+    text-align: center;
+    margin-bottom: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#foot {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+#nextpage {
+    margin: 40 25 12 25px;
+    font-weight: normal;
+    font-size: x-large;
+}
+
+#navigate {
+    font-family: inherit;
+    margin: 0 25 20 25px;
+    font-size: 10;
+    text-transform: uppercase;
+}
+
+#pageno {
+    margin: -23px auto 30 auto;
+    padding: 6 0 4 0;
+    width: 666;
+    height: 25px;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+}
+
+.heart {
+    background-position-x: 10px;
+}
+
+.iframe-container {
+    background: #eeeeee url("loading.gif") no-repeat 50% center !important;
+}
+
+/* ==================================================== 
+SPOILER button*/
+
+.spoilerbutton {
+    display: inline-block;
+    margin: -11px 0px;
+}
+
+.spoiler {
+    overflow: auto;
+}
+
+.spoiler>div {
+    line-height: 18.9px;
+    text-align: left;
+}
+
+.spoilerbutton[value="Show"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide"]+.spoiler>div {
+    padding: 5px;
+    padding-top: 25px;
+}
+
+.spoilerbutton[value="Show Chat"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide Chat"]+.spoiler>div {
+    padding: 5px;
+    padding-top: 25px;
+}
+
+.spoiler-border {
+    padding: 12px;
+    border: 1px dashed gray;
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+    align-content: center;
+}
+
+/* SPOILER button
+==================================================== */
