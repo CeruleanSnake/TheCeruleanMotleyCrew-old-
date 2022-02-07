@@ -5,7 +5,6 @@ body {
     background-color: #064564;
 }
 
-
 a:link {
     color: #0080c2;
 }
@@ -98,6 +97,51 @@ a:active {
 }
 
 /* ==================================================== 
+Comments Section*/
+
+#comments {
+    margin-bottom: -20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    width: 630;
+    padding: 10 10 0 0px;
+}
+
+#comments img {
+    max-width: 60px;
+    padding-right: 10px;
+}
+
+#comments>.spoiler-border>.spoiler {
+    overflow: auto;
+    background-color: #EEE;
+    margin: 25 0 0 0px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: courier;
+    color: #8c8c8c;
+}
+
+table {
+    padding: 0 15 15 15px;
+}
+
+/* Comments Section
+==================================================== */
+
+
+
+/* ==================================================== 
 SPOILER button*/
 
 .spoilerbutton {
@@ -107,6 +151,7 @@ SPOILER button*/
 
 .spoiler {
     overflow: auto;
+    background-color: #EEE;
 }
 
 .spoiler>div {
@@ -128,6 +173,15 @@ SPOILER button*/
 }
 
 .spoilerbutton[value="Hide Chat"]+.spoiler>div {
+    padding: 5px;
+    padding-top: 25px;
+}
+
+.spoilerbutton[value="Show Comments"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide Comments"]+.spoiler>div {
     padding: 5px;
     padding-top: 25px;
 }

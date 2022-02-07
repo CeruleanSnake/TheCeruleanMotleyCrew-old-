@@ -65,6 +65,22 @@ body {
     background-color: #064564;
 }
 
+#comments {
+    background-color: #064564;
+    Border: 8px solid #064564;
+    color: #559ec2;
+}
+
+#comments>.spoiler-border {
+    border: transparent;
+}
+
+#comments>.spoiler-border>.spoilerbutton {
+    background-color: #064564;
+    border: 2px solid #053852;
+    color: #559ec2;
+}
+
 /* PARALLAX BACKGROUND */
 /* =========================================== */
 #overlay>div,

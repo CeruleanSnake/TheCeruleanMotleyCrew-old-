@@ -44,6 +44,22 @@ body {
     background-color: #6A006A;
 }
 
+#comments {
+    background-color: #6A006A;
+    Border: 8px solid #6A006A;
+    color: #aa6baa;
+}
+
+#comments>.spoiler-border {
+    border: transparent;
+}
+
+#comments>.spoiler-border>.spoilerbutton {
+    background-color: #6A006A;
+    border: 2px solid #5a015a;
+    color: #aa6baa;
+}
+
 /* PARALLAX BACKGROUND */
 /* ===================================== */
 
