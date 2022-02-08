@@ -84,9 +84,7 @@ body {
 /* PARALLAX BACKGROUND */
 /* =========================================== */
 #overlay>div,
-#overlay,
-#overlay-1,
-#overlay-2 {
+#overlay {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -94,28 +92,30 @@ body {
     height: 100%;
     user-select: none;
     pointer-events: none;
-    z-index: -2;
-    background-repeat: repeat-x;
 }
 
 #overlay {
     background-image: url("default_bg/sky_cloud.png");
     animation: 180s skycloud-move linear infinite reverse;
+    z-index: -2;
     background-position: center left;
+    background-repeat: repeat-x;
     background-size: 80vh;
 }
 
-#overlay-1 {
+.overlay-1 {
     background-image: url("default_bg/bg_cloud.png");
     animation: 50s bgcloud-move linear infinite;
     background-position: bottom left;
+    background-repeat: repeat-x;
     background-size: 80vh;
 }
 
-#overlay-2 {
+.overlay-2 {
     background-image: url("default_bg/front_cloud.png");
     animation: 20s frontcloud-move linear infinite;
     background-position: bottom left;
+    background-repeat: repeat-x;
     background-size: 80vh;
 }
 
