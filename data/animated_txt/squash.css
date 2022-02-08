@@ -1,0 +1,50 @@
+.squash {
+    --amt: 1;
+}
+
+.squash .textfx {
+    animation: squash 1s ease-in-out infinite alternate;
+}
+
+.squash .textfx:nth-child(8n+7) {
+    animation-delay: -1.75s;
+}
+
+.squash .textfx:nth-child(8n+6) {
+    animation-delay: -1.5s;
+}
+
+.squash .textfx:nth-child(8n+5) {
+    animation-delay: -1.25s;
+}
+
+.squash .textfx:nth-child(8n+4) {
+    animation-delay: -1s;
+}
+
+.squash .textfx:nth-child(8n+3) {
+    animation-delay: -0.75s;
+}
+
+.squash .textfx:nth-child(8n+2) {
+    animation-delay: -0.5s;
+}
+
+.squash .textfx:nth-child(8n+1) {
+    animation-delay: -0.25s;
+}
+
+.squash .textfx:nth-child(8n) {
+    animation-delay: 0s;
+}
+
+
+@keyframes squash {
+    from {
+        transform: scaleX(1) scaleY(calc(var(--amt) * 1.5));
+    }
+
+    to {
+        transform: scaleX(calc(var(--amt) * 1.2)) scaleY(1);
+    }
+}

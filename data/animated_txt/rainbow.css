@@ -1,0 +1,95 @@
+.rainbow {
+    --amt: 4;
+}
+
+.rainbow .textfx {
+    animation: rainbow calc(var(--amt) * 2s) linear infinite;
+}
+
+.rainbow .textfx:nth-child(10n+9) {
+    animation-delay: calc(var(--amt) * -2s);
+}
+
+.rainbow .textfx:nth-child(10n+8) {
+    animation-delay: calc(var(--amt) * -1.8s);
+}
+
+.rainbow .textfx:nth-child(10n+7) {
+    animation-delay: calc(var(--amt) * -1.6s);
+}
+
+.rainbow .textfx:nth-child(10n+6) {
+    animation-delay: calc(var(--amt) * -1.4s);
+}
+
+.rainbow .textfx:nth-child(10n+5) {
+    animation-delay: calc(var(--amt) * -1.2s);
+}
+
+.rainbow .textfx:nth-child(10n+4) {
+    animation-delay: calc(var(--amt) * -1s);
+}
+
+.rainbow .textfx:nth-child(10n+3) {
+    animation-delay: calc(var(--amt) * -0.8s);
+}
+
+.rainbow .textfx:nth-child(10n+2) {
+    animation-delay: calc(var(--amt) * -0.6s);
+}
+
+.rainbow .textfx:nth-child(10n+1) {
+    animation-delay: calc(var(--amt) * -0.4s);
+}
+
+.rainbow .textfx:nth-child(10n) {
+    animation-delay: calc(var(--amt) * -0.2s);
+}
+
+@keyframes rainbow {
+
+    to,
+    from {
+        color: violet;
+    }
+
+    5% {
+        color: red;
+    }
+
+    15% {
+        color: orange;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    35% {
+        color: lime;
+    }
+
+    45% {
+        color: green;
+    }
+
+    55% {
+        color: darkgreen;
+    }
+
+    65% {
+        color: blue;
+    }
+
+    75% {
+        color: blueviolet
+    }
+
+    85% {
+        color: indigo;
+    }
+
+    95% {
+        color: violet;
+    }
+}

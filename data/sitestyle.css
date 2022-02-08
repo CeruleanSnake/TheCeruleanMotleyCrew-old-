@@ -4,7 +4,16 @@
 }
 
 body {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+        url("default_bg/background.gif");
+    background-repeat: no-repeat,
+        repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
     background-color: #064564;
+    background-size: cover,
+        20vh;
+    -moz-image-rendering: crisp-edges;
 }
 
 a {
@@ -18,8 +27,58 @@ nav {
     margin-bottom: 10px;
 }
 
+.heart {
+    background-image: url("default_bg/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("default_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("default_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#flashytitle {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#flashytitlebottom {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+    transform: scaleX(-1);
+}
+
 #main {
     background-color: transparent;
+}
+
+#slide {
+    image-rendering: auto;
 }
 
 #details {

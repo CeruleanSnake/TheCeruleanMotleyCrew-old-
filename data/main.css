@@ -44,6 +44,7 @@ a:active {
     width: 650;
     margin: 20px auto 20px auto;
     background-color: #eeeeee;
+    image-rendering: auto;
 }
 
 #command {
