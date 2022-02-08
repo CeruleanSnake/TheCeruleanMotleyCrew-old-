@@ -63,7 +63,11 @@ body {
 /* ===================================== */
 
 #overlay>div,
-#overlay {
+#overlay,
+#overlay-1,
+#overlay-2,
+#overlay-3,
+#overlay-4 {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -71,6 +75,8 @@ body {
     height: 100%;
     user-select: none;
     pointer-events: none;
+    z-index: -2;
+    background-repeat: no-repeat;
 }
 
 #overlay {
@@ -79,20 +85,18 @@ body {
     z-index: -2;
     background-position-x: 87vw;
     background-position-y: 25vh;
-    background-repeat: no-repeat;
     background-size: 10vw;
 }
 
-.overlay-1 {
+#overlay-1 {
     background-image: url("space_bg/meteorite.gif");
     animation: 40s meteorite-move linear infinite;
     background-position-x: -17vw;
     background-position-y: -17vw;
-    background-repeat: no-repeat;
     background-size: 20vw;
 }
 
-.overlay-2 {
+#overlay-2 {
     background-image: url("space_bg/big_meteor.png");
     animation: 200s bigmeteor-move linear infinite reverse;
     background-size: 100vh;
@@ -101,7 +105,7 @@ body {
         repeat-x;
 }
 
-.overlay-3 {
+#overlay-3 {
     background-image: url("space_bg/med_meteor.png");
     animation: 80s medmeteor-move linear infinite;
     background-size: 100vh;
@@ -110,7 +114,7 @@ body {
         repeat-x;
 }
 
-.overlay-4 {
+#overlay-4 {
     background-image: url("space_bg/small_meteor.png");
     animation: 30s smallmeteor-move linear infinite reverse;
     background-size: 100vh;

@@ -64,7 +64,9 @@ body {
 /* ===================================== */
 
 #overlay>div,
-#overlay {
+#overlay,
+#overlay-1,
+#overlay-2 {
     background-size: 100vh;
     position: fixed;
     top: 0px;
@@ -73,9 +75,8 @@ body {
     height: 100%;
     user-select: none;
     pointer-events: none;
-    background-repeat:
-        repeat-x,
-        repeat-x;
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #overlay {
@@ -88,13 +89,13 @@ body {
     background-size: 15vw;
 }
 
-.overlay-1 {
+#overlay-1 {
     background-image: url("alternia_bg/sky_cloud.png");
     animation: 120s skycloud-move linear infinite reverse;
     background-position: center left;
 }
 
-.overlay-2 {
+#overlay-2 {
     background-image: url("alternia_bg/front_cloud.png");
     animation: 25s frontcloud-move linear infinite reverse;
     background-position: bottom left;
