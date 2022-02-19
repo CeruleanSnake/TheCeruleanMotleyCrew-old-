@@ -27,6 +27,10 @@ nav {
     margin-bottom: 10px;
 }
 
+iframe {
+    image-rendering: pixelated;
+}
+
 .heart {
     background-image: url("default_bg/logo_small.png") !important;
     image-rendering: auto;
