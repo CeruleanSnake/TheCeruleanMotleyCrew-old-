@@ -16,25 +16,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.um {
-    transform: translateX(-145px);
-    width: 650px;
-}
-
-.umcontainer {
-    background-image: url("alternia_bg/mspfafacereverse.png");
-    background-repeat: no-repeat;
-    background-position-x: 795px;
-}
-
-.mspfalogo {
-    background-image: url("alternia_bg/mspfaface.png") !important;
-    size: 70%;
-    border-right: 4px solid transparent;
-    background-color: transparent;
-    background-position-x: 0px;
-}
-
 #slide {
     Border: 8px solid #6A006A;
 }
@@ -60,9 +41,38 @@ body {
     color: #aa6baa;
 }
 
+/*SITE ONLY*/
+/* =========================================== */
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("alternia_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#infobox>div.spoiler.open {
+    Border: 4px solid #6A006A;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #6A006A;
+}
+
 /* PARALLAX BACKGROUND */
 /* ===================================== */
-
 #overlay>div,
 #overlay {
     background-size: 100vh;

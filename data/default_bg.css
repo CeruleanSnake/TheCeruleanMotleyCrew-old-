@@ -16,46 +16,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.um {
-    transform: translateX(-145px);
-    width: 650px;
-}
-
-.umcontainer {
-    background-image: url("default_bg/mspfafacereverse.png");
-    background-repeat: no-repeat;
-    background-position-x: 795px;
-}
-
-.mspfalogo {
-    background-image: url("default_bg/mspfaface.png") !important;
-    size: 70%;
-    border-right: 4px solid transparent;
-    background-color: transparent;
-    background-position-x: 0px;
-}
-
-#flashytitle {
-    height: 68px;
-    background-image: url("default_bg/header.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-color: transparent;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-#flashytitlebottom {
-    height: 68px;
-    background-image: url("default_bg/header.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-color: transparent;
-    padding-top: 10px;
-    margin-top: 10px;
-    transform: scaleX(-1);
-}
-
 #slide {
     Border: 8px solid #064564;
 }
@@ -79,6 +39,57 @@ body {
     background-color: #064564;
     border: 2px solid #053852;
     color: #559ec2;
+}
+
+/*SITE ONLY*/
+/* =========================================== */
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("default_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("default_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#infobox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
+#flashytitle {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#flashytitlebottom {
+    height: 68px;
+    background-image: url("default_bg/header.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+    transform: scaleX(-1);
 }
 
 /* PARALLAX BACKGROUND */

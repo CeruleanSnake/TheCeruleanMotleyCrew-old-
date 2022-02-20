@@ -90,6 +90,14 @@ iframe {
     text-align: center;
 }
 
+#infobox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
 /*NAVIGATION*/
 /*=================================================*/
 nav>a {

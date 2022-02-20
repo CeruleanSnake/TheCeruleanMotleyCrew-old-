@@ -15,25 +15,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.um {
-    transform: translateX(-145px);
-    width: 650px;
-}
-
-.umcontainer {
-    background-image: url("alternia_bg/mspfafacereverse.png");
-    background-repeat: no-repeat;
-    background-position-x: 795px;
-}
-
-.mspfalogo {
-    background-image: url("alternia_bg/mspfaface.png") !important;
-    size: 70%;
-    border-right: 4px solid transparent;
-    background-color: transparent;
-    background-position-x: 0px;
-}
-
 #slide {
     Border: 8px solid #a10000;
 }
@@ -57,6 +38,36 @@ body {
     background-color: #a10000;
     border: 2px solid #830000;
     color: #c27a7a;
+}
+
+/*SITE ONLY*/
+/* =========================================== */
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("alternia_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#infobox>div.spoiler.open {
+    Border: 4px solid #a10000;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #a10000;
 }
 
 /* PARALLAX BACKGROUND */
