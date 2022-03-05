@@ -85,7 +85,7 @@ body {
 }
 
 #overlay {
-    background-image: url("space_bg/m’yutuna.png");
+    background-image: url("space_bg/alternia.png");
     animation: 3s m’yutuna-move linear infinite;
     z-index: -2;
     background-position-x: 87vw;
