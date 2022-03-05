@@ -212,14 +212,14 @@ nav>a[href="https://discord.gg/EC5acgG"]::after {
     content: "DISCORD";
 }
 
-/* CONTACT */
-nav>a[href^="mailto:"]::after {
-    content: "CONTACT";
-    color: #af00af
-}
-
 /* DONATE */
 nav>a[href="/donate/"]::after {
     content: "DONATE";
+    color: #af00af
+}
+
+/* CONTACT */
+nav>a[href="/more/"]::after {
+    content: "MORE";
     color: #af00af
 }
