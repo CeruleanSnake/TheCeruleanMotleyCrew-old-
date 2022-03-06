@@ -1,0 +1,354 @@
+body {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(32, 0, 90) 30%, rgb(124, 9, 53) 60%, rgb(238, 143, 0) 100%),
+        url("default_bg/background.gif");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-color: #064564;
+    background-size: cover, 20vh;
+    image-rendering: pixelated;
+    -moz-image-rendering: crisp-edges;
+}
+
+.heart {
+    background-image: url("pirate-alternia_bg/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+#slide {
+    Border: 8px solid #064564;
+}
+
+#pageno {
+    color: #fff;
+    background-color: #064564;
+}
+
+#comments {
+    background-color: #064564;
+    Border: 8px solid #064564;
+    color: #559ec2;
+}
+
+#comments>.spoiler-border {
+    border: transparent;
+}
+
+#comments>.spoiler-border>.spoilerbutton {
+    background-color: #064564;
+    border: 2px solid #053852;
+    color: #559ec2;
+}
+
+/*SITE ONLY*/
+/* =========================================== */
+
+.um {
+    transform: translateX(-145px);
+    width: 650px;
+}
+
+.umcontainer {
+    background-image: url("pirate-alternia_bg/mspfafacereverse.png");
+    background-repeat: no-repeat;
+    background-position-x: 795px;
+}
+
+.mspfalogo {
+    background-image: url("pirate-alternia_bg/mspfaface.png") !important;
+    size: 70%;
+    border-right: 4px solid transparent;
+    background-color: transparent;
+    background-position-x: 0px;
+}
+
+#infobox>div.spoiler.open {
+    Border: 4px solid #6A006A;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #6A006A;
+}
+
+/* PARALLAX BACKGROUND */
+/* ===================================== */
+#overlay>div,
+#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+#overlay {
+    background-image: url("alternia_bg/moons.png");
+    animation: 3s moon-move linear infinite;
+    z-index: -2;
+    background-position-x: 5vw;
+    background-position-y: 25vh;
+    background-repeat: no-repeat;
+    background-size: 15vw;
+}
+
+.overlay-1 {
+    background-image: url("alternia_bg/sky_cloud.png");
+    animation: 200s skycloud-move linear infinite reverse;
+    background-position: center left;
+    background-repeat: repeat-x;
+    background-size: 100vh;
+}
+
+.overlay-2 {
+    background-image: url("pirate-alternia_bg/bg.png");
+    animation: 150s bg-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 100vh;
+}
+
+.overlay-3 {
+    background-image: url("pirate-alternia_bg/sky-cloud-2.png");
+    animation: 60s sky-cloud-2-move linear infinite;
+    background-position: center left;
+    background-repeat: repeat-x;
+    background-size: 100vh;
+}
+
+.overlay-4 {
+    background-image: url("pirate-alternia_bg/wave-back.png");
+    animation: 40s wave-back-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 100vh;
+}
+
+.overlay-5 {
+    background-image: url("pirate-alternia_bg/ship.png");
+    animation: 35s ship-move linear infinite;
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position-x: 110vw;
+    background-position-y: 64vh;
+}
+
+.overlay-6 {
+    background-image: url("pirate-alternia_bg/wave-front.png");
+    animation: 20s wave-front-move linear infinite;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 100vh;
+}
+
+@keyframes moon-move {
+    0% {
+        top: 0vh;
+    }
+
+    25% {
+        top: 0.2vh;
+    }
+
+    50% {
+        top: 0vh;
+    }
+
+    75% {
+        top: 0.2vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
+
+@keyframes skycloud-move {
+    to {
+        background-position: 100vh center;
+    }
+}
+
+@keyframes sky-cloud-2-move {
+    to {
+        background-position: 100vh center;
+    }
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bg-move {
+    to {
+        background-position: 100vh bottom;
+    }
+}
+
+@keyframes wave-back-move {
+    to {
+        background-position: 100vh bottom;
+    }
+
+    0% {
+        top: 1vh;
+    }
+
+    10% {
+        top: 0vh;
+    }
+
+    20% {
+        top: 1vh;
+    }
+
+    30% {
+        top: 0vh;
+    }
+
+    40% {
+        top: 1vh;
+    }
+
+    50% {
+        top: 0vh;
+    }
+
+    60% {
+        top: 1vh;
+    }
+
+    70% {
+        top: 0vh;
+    }
+
+    80% {
+        top: 1vh;
+    }
+
+    90% {
+        top: 0vh;
+    }
+
+    100% {
+        top: 1vh;
+    }
+}
+
+@keyframes ship-move {
+    to {
+        background-position-x: -60vh;
+    }
+
+    0% {
+        top: 1vh;
+    }
+
+    10% {
+        top: 0vh;
+    }
+
+    20% {
+        top: 1vh;
+    }
+
+    30% {
+        top: 0vh;
+    }
+
+    40% {
+        top: 1vh;
+    }
+
+    50% {
+        top: 0vh;
+    }
+
+    60% {
+        top: 1vh;
+    }
+
+    70% {
+        top: 0vh;
+    }
+
+    80% {
+        top: 1vh;
+    }
+
+    90% {
+        top: 0vh;
+    }
+
+    100% {
+        top: 1vh;
+    }
+}
+
+@keyframes wave-front-move {
+    to {
+        background-position: 100vh bottom;
+    }
+
+    0% {
+        top: 0vh;
+    }
+
+    10% {
+        top: 1vh;
+    }
+
+    20% {
+        top: 0vh;
+    }
+
+    30% {
+        top: 1vh;
+    }
+
+    40% {
+        top: 0vh;
+    }
+
+    50% {
+        top: 1vh;
+    }
+
+    60% {
+        top: 0vh;
+    }
+
+    70% {
+        top: 1vh;
+    }
+
+    80% {
+        top: 0vh;
+    }
+
+    90% {
+        top: 1vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
