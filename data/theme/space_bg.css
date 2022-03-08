@@ -1,10 +1,16 @@
+/*MOBILE CSS*/
+/* =========================================== */
 body {
     background-image:
-        url("default_bg/background.gif");
-    background-repeat: repeat;
+        url("space_bg/small_meteor.png"), url("space_bg/med_meteor.png"),
+        url("space_bg/big_meteor.png"), url("space_bg/alternia.png"),
+        url("default_bg/background.bmp");
+    background-position-x: 0, 0, 0, 87vw;
+    background-position-y: bottom, bottom, bottom, 25vh;
+    background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
     background-attachment: fixed;
     background-color: #000;
-    background-size: 30vh;
+    background-size: 100vh, 100vh, 100vh, 10vw, 30vh;
     image-rendering: pixelated;
     -moz-image-rendering: crisp-edges;
 }
@@ -70,108 +76,118 @@ body {
     Border: 4px solid #a10000;
 }
 
-/* PARALLAX BACKGROUND */
-/* ===================================== */
 
-#overlay>div,
-#overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    user-select: none;
-    pointer-events: none;
-}
-
-#overlay {
-    background-image: url("space_bg/alternia.png");
-    animation: 3s m’yutuna-move linear infinite;
-    z-index: -2;
-    background-position-x: 87vw;
-    background-position-y: 25vh;
-    background-repeat: no-repeat;
-    background-size: 10vw;
-}
-
-.overlay-1 {
-    background-image: url("space_bg/meteorite.gif");
-    animation: 40s meteorite-move linear infinite;
-    background-position-x: -17vw;
-    background-position-y: -17vw;
-    background-repeat: no-repeat;
-    background-size: 20vw;
-}
-
-.overlay-2 {
-    background-image: url("space_bg/big_meteor.png");
-    animation: 200s bigmeteor-move linear infinite reverse;
-    background-size: 100vh;
-    background-position: bottom left;
-    background-repeat: repeat-x,
-        repeat-x;
-}
-
-.overlay-3 {
-    background-image: url("space_bg/med_meteor.png");
-    animation: 80s medmeteor-move linear infinite;
-    background-size: 100vh;
-    background-position: bottom left;
-    background-repeat: repeat-x,
-        repeat-x;
-}
-
-.overlay-4 {
-    background-image: url("space_bg/small_meteor.png");
-    animation: 30s smallmeteor-move linear infinite reverse;
-    background-size: 100vh;
-    background-position: bottom left;
-    background-repeat: repeat-x,
-        repeat-x;
-}
-
-@keyframes m’yutuna-move {
-    0% {
-        top: 0vh;
+/*PC CSS*/
+/* =========================================== */
+@media screen and (min-width: 700px) {
+    body {
+        background-image:
+            url("default_bg/background.gif");
+        background-repeat: repeat;
+        background-size: 30vh;
     }
 
-    25% {
-        top: 0.2vh;
+    /* PARALLAX BACKGROUND */
+    #overlay>div,
+    #overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        pointer-events: none;
     }
 
-    50% {
-        top: 0vh;
+    #overlay {
+        background-image: url("space_bg/alternia.png");
+        animation: 3s alternia-move linear infinite;
+        z-index: -2;
+        background-position-x: 87vw;
+        background-position-y: 25vh;
+        background-repeat: no-repeat;
+        background-size: 10vw;
     }
 
-    75% {
-        top: 0.2vh;
+    .overlay-1 {
+        background-image: url("space_bg/meteorite.gif");
+        animation: 40s meteorite-move linear infinite;
+        background-position-x: -17vw;
+        background-position-y: -17vw;
+        background-repeat: no-repeat;
+        background-size: 20vw;
     }
 
-    100% {
-        top: 0vh;
+    .overlay-2 {
+        background-image: url("space_bg/big_meteor.png");
+        animation: 200s bigmeteor-move linear infinite reverse;
+        background-size: 100vh;
+        background-position: bottom left;
+        background-repeat: repeat-x,
+            repeat-x;
     }
-}
 
-@keyframes meteorite-move {
-    to {
-        background-position: 110vw bottom;
+    .overlay-3 {
+        background-image: url("space_bg/med_meteor.png");
+        animation: 80s medmeteor-move linear infinite;
+        background-size: 100vh;
+        background-position: bottom left;
+        background-repeat: repeat-x,
+            repeat-x;
     }
-}
 
-@keyframes bigmeteor-move {
-    to {
-        background-position: 100vh bottom;
+    .overlay-4 {
+        background-image: url("space_bg/small_meteor.png");
+        animation: 30s smallmeteor-move linear infinite reverse;
+        background-size: 100vh;
+        background-position: bottom left;
+        background-repeat: repeat-x,
+            repeat-x;
     }
-}
 
-@keyframes medmeteor-move {
-    to {
-        background-position: 100vh bottom;
+    @keyframes alternia-move {
+        0% {
+            top: 0vh;
+        }
+
+        25% {
+            top: 0.2vh;
+        }
+
+        50% {
+            top: 0vh;
+        }
+
+        75% {
+            top: 0.2vh;
+        }
+
+        100% {
+            top: 0vh;
+        }
     }
-}
 
-@keyframes smallmeteor-move {
-    to {
-        background-position: 100vh bottom;
+    @keyframes meteorite-move {
+        to {
+            background-position: 110vw bottom;
+        }
+    }
+
+    @keyframes bigmeteor-move {
+        to {
+            background-position: 100vh bottom;
+        }
+    }
+
+    @keyframes medmeteor-move {
+        to {
+            background-position: 100vh bottom;
+        }
+    }
+
+    @keyframes smallmeteor-move {
+        to {
+            background-position: 100vh bottom;
+        }
     }
 }
