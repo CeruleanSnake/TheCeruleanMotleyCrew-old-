@@ -12,7 +12,7 @@ body {
         linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(32, 0, 90) 30%, rgb(124, 9, 53) 60%, rgb(238, 143, 0) 100%),
         url("default_bg/background.bmp");
     background-position-x: 0, 80vw, 0, 0, 0, 0, 1vw;
-    background-position-y: bottom, 64vh, bottom, center, bottom, center, 25vh;
+    background-position-y: bottom, 63vh, bottom, center, bottom, center, 25vh;
     background-repeat: repeat-x, no-repeat, repeat-x, repeat-x, repeat-x, repeat-x, no-repeat, no-repeat, repeat;
     background-attachment: fixed;
     background-color: #064564;

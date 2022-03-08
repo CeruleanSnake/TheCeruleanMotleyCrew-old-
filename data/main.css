@@ -1,5 +1,38 @@
+/*FONT IMPORT*/
+@font-face {
+    font-family: "Coder's Crux";
+    src: url('font/coders_crux.ttf');
+}
+
+@font-face {
+    font-family: "Fipps Regular";
+    src: url('font/fipps-regular.otf');
+}
+
+@font-face {
+    font-family: "Gothic Pixel Regular";
+    src: url('font/gothic-pixel-regular.ttf');
+}
+
+@font-face {
+    font-family: "Hiveswap Alternian";
+    src: url('font/hiveswap_alternian.ttf');
+}
+
+@font-face {
+    font-family: "Homestuck Reuglar";
+    src: url('font/homestuck-regular.ttf');
+}
+
+@font-face {
+    font-family: "Victorian Parlor Vintage";
+    src: url('font/victorian-parlor-vintage.otf');
+}
+
+/* ==================================================== */
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", "Courier", "monospace";
     font-size: 12px;
     margin: 0px;
     background-color: #064564;
@@ -65,7 +98,7 @@ a:active {
     padding-top: 25;
     text-align: center;
     margin-bottom: 14px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', "Courier", "monospace";
 }
 
 #map>img {
@@ -129,6 +162,7 @@ Comments Section*/
     vertical-align: top;
     width: 630;
     padding: 10 10 0 0px;
+    font-family: "courier", "monospace";
 }
 
 #comments img {
