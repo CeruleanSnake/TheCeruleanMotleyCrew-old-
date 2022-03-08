@@ -199,6 +199,24 @@ SPOILER button*/
     padding-top: 25px;
 }
 
+.spoilerbutton[value="Show Log"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide Log"]+.spoiler>div {
+    padding: 5px;
+    padding-top: 25px;
+}
+
+.spoilerbutton[value="Show Journal"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide Journal"]+.spoiler>div {
+    padding: 5px;
+    padding-top: 25px;
+}
+
 .spoilerbutton[value="Show Comments"]+.spoiler>div {
     max-height: 0;
 }
