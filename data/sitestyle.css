@@ -100,76 +100,79 @@ iframe {
 
 /*NAVIGATION*/
 /*=================================================*/
-nav>a {
+nav>a,
+nav>div>a:first-child {
     visibility: hidden;
     word-spacing: -999px;
     letter-spacing: -999px;
 }
 
-nav>a::after {
+nav>a::after,
+nav>div>a:first-child::after {
     visibility: visible;
     word-spacing: normal;
     letter-spacing: normal;
 }
 
 /* MSPFA HOME */
-nav>a[href="/"]::after {
+nav a[href="/"]::after {
     content: "PORT";
     color: #f4ab24
 }
 
 /* MSPA */
-nav>a[href="http://www.mspaintadventures.com/"]::after {
+nav a[href="http://www.mspaintadventures.com/"]::after {
     content: "LAND YONDER";
     color: #f4ab24
 }
 
 /* EXPLORE */
-nav>a[href="/stories/"]::after {
+nav a[href="/stories/"]::after {
     content: "EXPLORE";
 }
 
 /* RANDOM */
-nav>a[href="/random/"]::after {
+nav a[href="/random/"]::after {
     content: "PLUNDER";
 }
 
 /* STATISTICS */
-nav>a[href="/stats/"]::after {
+nav a[href="/stats/"]::after {
     content: "COFFERS";
 }
 
 /* LOG */
-nav>a[href^="/log/"]::after {
+nav a[href^="/log/"]::after {
     content: "CAPTAIN'S LOG";
 }
 
 /* SEARCH */
-nav>a[href^="/search/"]::after {
+nav a[href^="/search/"]::after {
     content: "SCRY";
 }
 
 /* MY MSPFA */
-nav>a[href="/my/"]::after {
-    content: "CAPTAIN'S QUATERS";
+nav a[href="/my/"]::after {
+    content: "CAPTAIN'S QUARTERS";
 }
 
 /* DISCORD */
-nav>a[href="https://discord.gg/EC5acgG"]::after {
+nav a[href="https://discord.gg/EC5acgG"]::after {
     content: "TAVERN";
 }
 
 /* DONATE */
-nav>a[href="/donate/"]::after {
+nav a[href="/donate/"]::after {
     content: "YAAARR";
     color: #af00af
 }
 
 /* MORE */
-nav>a[href="/more/"]::after {
+nav a[href="/more/"]::after {
     content: "CARRIER PIGEON";
     color: #af00af
 }
+
 
 #foot span a {
     visibility: hidden;
