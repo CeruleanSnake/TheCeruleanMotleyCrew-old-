@@ -2,11 +2,11 @@
 /* =========================================== */
 body {
     background-image:
-        url("alternia_bg/front_cloud.png"),
-        url("alternia_bg/sky_cloud.png"),
-        url("alternia_bg/moons.png"),
+        url("alternia/front_cloud.png"),
+        url("alternia/sky_cloud.png"),
+        url("alternia/moons.png"),
         linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 0, 83, 0.95) 25%, rgb(110, 0, 82) 80%),
-        url("default_bg/background.bmp");
+        url("default/background.bmp");
     background-position-x: 0, 0, 1vw;
     background-position-y: bottom, center, 25vh;
     background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, repeat;
@@ -18,7 +18,7 @@ body {
 }
 
 .heart {
-    background-image: url("alternia_bg/logo_small.png") !important;
+    background-image: url("alternia/logo_small.png") !important;
     image-rendering: auto;
     background-repeat: no-repeat;
 }
@@ -57,13 +57,13 @@ body {
 }
 
 .umcontainer {
-    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-image: url("alternia/mspfafacereverse.png");
     background-repeat: no-repeat;
     background-position-x: 795px;
 }
 
 .mspfalogo {
-    background-image: url("alternia_bg/mspfaface.png") !important;
+    background-image: url("alternia/mspfaface.png") !important;
     size: 70%;
     border-right: 4px solid transparent;
     background-color: transparent;
@@ -84,7 +84,7 @@ body {
     body {
         background-image:
             linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 0, 83, 0.95) 25%, rgb(110, 0, 82) 80%),
-            url("default_bg/background.gif");
+            url("default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
     }
@@ -106,7 +106,7 @@ body {
     }
 
     #overlay {
-        background-image: url("alternia_bg/moons.png");
+        background-image: url("alternia/moons.png");
         animation: 3s moon-move linear infinite;
         z-index: -2;
         background-position-x: 5vw;
@@ -116,13 +116,13 @@ body {
     }
 
     .overlay-1 {
-        background-image: url("alternia_bg/sky_cloud.png");
+        background-image: url("alternia/sky_cloud.png");
         animation: 120s skycloud-move linear infinite reverse;
         background-position: center left;
     }
 
     .overlay-2 {
-        background-image: url("alternia_bg/front_cloud.png");
+        background-image: url("alternia/front_cloud.png");
         animation: 25s frontcloud-move linear infinite reverse;
         background-position: bottom left;
     }

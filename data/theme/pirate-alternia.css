@@ -2,14 +2,14 @@
 /* =========================================== */
 body {
     background-image:
-        url("pirate-alternia_bg/wave-front.png"),
-        url("pirate-alternia_bg/wave-back.png"),
-        url("pirate-alternia_bg/sky-cloud-2.png"),
-        url("pirate-alternia_bg/bg.png"),
-        url("alternia_bg/sky_cloud.png"),
-        url("alternia_bg/moons.png"),
+        url("pirate-alternia/wave-front.png"),
+        url("pirate-alternia/wave-back.png"),
+        url("pirate-alternia/sky-cloud-2.png"),
+        url("pirate-alternia/bg.png"),
+        url("alternia/sky_cloud.png"),
+        url("alternia/moons.png"),
         linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(32, 0, 90) 30%, rgb(124, 9, 53) 60%, rgb(238, 143, 0) 100%),
-        url("default_bg/background.bmp");
+        url("default/background.bmp");
     background-position-x: 0, 0, 0, 0, 0, 1vw;
     background-position-y: bottom, bottom, center, bottom, center, 25vh;
     background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, no-repeat, no-repeat, repeat;
@@ -21,7 +21,7 @@ body {
 }
 
 .heart {
-    background-image: url("pirate-alternia_bg/logo_small.png") !important;
+    background-image: url("pirate-alternia/logo_small.png") !important;
     image-rendering: auto;
     background-repeat: no-repeat;
 }
@@ -60,13 +60,13 @@ body {
 }
 
 .umcontainer {
-    background-image: url("pirate-alternia_bg/mspfafacereverse.png");
+    background-image: url("pirate-alternia/mspfafacereverse.png");
     background-repeat: no-repeat;
     background-position-x: 795px;
 }
 
 .mspfalogo {
-    background-image: url("pirate-alternia_bg/mspfaface.png") !important;
+    background-image: url("pirate-alternia/mspfaface.png") !important;
     size: 70%;
     border-right: 4px solid transparent;
     background-color: transparent;
@@ -87,7 +87,7 @@ body {
     body {
         background-image:
             linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(32, 0, 90) 30%, rgb(124, 9, 53) 60%, rgb(238, 143, 0) 100%),
-            url("default_bg/background.gif");
+            url("default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
     }
@@ -105,7 +105,7 @@ body {
     }
 
     #overlay {
-        background-image: url("alternia_bg/moons.png");
+        background-image: url("alternia/moons.png");
         animation: 3s moon-move linear infinite;
         z-index: -2;
         background-position-x: 5vw;
@@ -115,7 +115,7 @@ body {
     }
 
     .overlay-1 {
-        background-image: url("alternia_bg/sky_cloud.png");
+        background-image: url("alternia/sky_cloud.png");
         animation: 200s skycloud-move linear infinite reverse;
         background-position: center left;
         background-repeat: repeat-x;
@@ -123,7 +123,7 @@ body {
     }
 
     .overlay-2 {
-        background-image: url("pirate-alternia_bg/bg.png");
+        background-image: url("pirate-alternia/bg.png");
         animation: 150s bg-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
@@ -131,7 +131,7 @@ body {
     }
 
     .overlay-3 {
-        background-image: url("pirate-alternia_bg/sky-cloud-2.png");
+        background-image: url("pirate-alternia/sky-cloud-2.png");
         animation: 60s sky-cloud-2-move linear infinite;
         background-position: center left;
         background-repeat: repeat-x;
@@ -139,7 +139,7 @@ body {
     }
 
     .overlay-4 {
-        background-image: url("pirate-alternia_bg/wave-back.png");
+        background-image: url("pirate-alternia/wave-back.png");
         animation: 40s wave-back-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
@@ -147,7 +147,7 @@ body {
     }
 
     .overlay-5 {
-        background-image: url("pirate-alternia_bg/ship.png");
+        background-image: url("pirate-alternia/ship.png");
         animation: 35s ship-move linear infinite;
         background-repeat: no-repeat;
         background-size: 40vh;
@@ -156,7 +156,7 @@ body {
     }
 
     .overlay-6 {
-        background-image: url("pirate-alternia_bg/wave-front.png");
+        background-image: url("pirate-alternia/wave-front.png");
         animation: 20s wave-front-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;

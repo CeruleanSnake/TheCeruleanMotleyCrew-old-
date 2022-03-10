@@ -2,9 +2,9 @@
 /* =========================================== */
 body {
     background-image:
-        url("space_bg/small_meteor.png"), url("space_bg/med_meteor.png"),
-        url("space_bg/big_meteor.png"), url("space_bg/alternia.png"),
-        url("default_bg/background.bmp");
+        url("space/small_meteor.png"), url("space/med_meteor.png"),
+        url("space/big_meteor.png"), url("space/alternia.png"),
+        url("default/background.bmp");
     background-position-x: 0, 0, 0, 87vw;
     background-position-y: bottom, bottom, bottom, 25vh;
     background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
@@ -16,7 +16,7 @@ body {
 }
 
 .heart {
-    background-image: url("alternia_bg/logo_small.png") !important;
+    background-image: url("alternia/logo_small.png") !important;
     image-rendering: auto;
     background-repeat: no-repeat;
 }
@@ -55,13 +55,13 @@ body {
 }
 
 .umcontainer {
-    background-image: url("alternia_bg/mspfafacereverse.png");
+    background-image: url("alternia/mspfafacereverse.png");
     background-repeat: no-repeat;
     background-position-x: 795px;
 }
 
 .mspfalogo {
-    background-image: url("alternia_bg/mspfaface.png") !important;
+    background-image: url("alternia/mspfaface.png") !important;
     size: 70%;
     border-right: 4px solid transparent;
     background-color: transparent;
@@ -82,7 +82,7 @@ body {
 @media screen and (min-width: 1200px) {
     body {
         background-image:
-            url("default_bg/background.gif");
+            url("default/background.gif");
         background-repeat: repeat;
         background-size: 30vh;
     }
@@ -100,7 +100,7 @@ body {
     }
 
     #overlay {
-        background-image: url("space_bg/alternia.png");
+        background-image: url("space/alternia.png");
         animation: 3s alternia-move linear infinite;
         z-index: -2;
         background-position-x: 87vw;
@@ -110,7 +110,7 @@ body {
     }
 
     .overlay-1 {
-        background-image: url("space_bg/meteorite.gif");
+        background-image: url("space/meteorite.gif");
         animation: 40s meteorite-move linear infinite;
         background-position-x: -17vw;
         background-position-y: -17vw;
@@ -119,7 +119,7 @@ body {
     }
 
     .overlay-2 {
-        background-image: url("space_bg/big_meteor.png");
+        background-image: url("space/big_meteor.png");
         animation: 200s bigmeteor-move linear infinite reverse;
         background-size: 100vh;
         background-position: bottom left;
@@ -128,7 +128,7 @@ body {
     }
 
     .overlay-3 {
-        background-image: url("space_bg/med_meteor.png");
+        background-image: url("space/med_meteor.png");
         animation: 80s medmeteor-move linear infinite;
         background-size: 100vh;
         background-position: bottom left;
@@ -137,7 +137,7 @@ body {
     }
 
     .overlay-4 {
-        background-image: url("space_bg/small_meteor.png");
+        background-image: url("space/small_meteor.png");
         animation: 30s smallmeteor-move linear infinite reverse;
         background-size: 100vh;
         background-position: bottom left;

@@ -2,11 +2,11 @@
 /* =========================================== */
 body {
     background-image:
-        url("default_bg/sky_cloud.png"),
-        url("default_bg/front_cloud.png"),
-        url("default_bg/bg_cloud.png"),
+        url("default/sky_cloud.png"),
+        url("default/front_cloud.png"),
+        url("default/bg_cloud.png"),
         linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
-        url("default_bg/background.bmp");
+        url("default/background.bmp");
     background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
     background-position: center, bottom, bottom, top, top;
     background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
 }
 
 .heart {
-    background-image: url("default_bg/logo_small.png") !important;
+    background-image: url("default/logo_small.png") !important;
     image-rendering: auto;
     background-repeat: no-repeat;
 }
@@ -56,13 +56,13 @@ body {
 }
 
 .umcontainer {
-    background-image: url("default_bg/mspfafacereverse.png");
+    background-image: url("default/mspfafacereverse.png");
     background-repeat: no-repeat;
     background-position-x: 795px;
 }
 
 .mspfalogo {
-    background-image: url("default_bg/mspfaface.png") !important;
+    background-image: url("default/mspfaface.png") !important;
     size: 70%;
     border-right: 4px solid transparent;
     background-color: transparent;
@@ -79,7 +79,7 @@ body {
 
 #flashytitle {
     height: 68px;
-    background-image: url("default_bg/header.png");
+    background-image: url("default/header.png");
     background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
@@ -90,7 +90,7 @@ body {
 
 #flashytitlebottom {
     height: 68px;
-    background-image: url("default_bg/header.png");
+    background-image: url("default/header.png");
     background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
@@ -106,7 +106,7 @@ body {
     body {
         background-image:
             linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
-            url("default_bg/background.gif");
+            url("default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
     }
@@ -132,7 +132,7 @@ body {
     }
 
     #overlay {
-        background-image: url("default_bg/sky_cloud.png");
+        background-image: url("default/sky_cloud.png");
         animation: 180s skycloud-move linear infinite reverse;
         z-index: -2;
         background-position: center left;
@@ -141,7 +141,7 @@ body {
     }
 
     .overlay-1 {
-        background-image: url("default_bg/bg_cloud.png");
+        background-image: url("default/bg_cloud.png");
         animation: 50s bgcloud-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
@@ -149,7 +149,7 @@ body {
     }
 
     .overlay-2 {
-        background-image: url("default_bg/front_cloud.png");
+        background-image: url("default/front_cloud.png");
         animation: 20s frontcloud-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;

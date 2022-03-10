@@ -23,11 +23,11 @@
 
 body {
     background-image:
-        url("theme/default_bg/sky_cloud.png"),
-        url("theme/default_bg/front_cloud.png"),
-        url("theme/default_bg/bg_cloud.png"),
+        url("theme/default/sky_cloud.png"),
+        url("theme/default/front_cloud.png"),
+        url("theme/default/bg_cloud.png"),
         linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
-        url("theme/default_bg/background.bmp");
+        url("theme/default/background.bmp");
     background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
     background-position: center, bottom, bottom, top, top;
     background-attachment: fixed;
@@ -63,7 +63,7 @@ div#main {
 }
 
 .heart {
-    background-image: url("theme/default_bg/logo_small.png") !important;
+    background-image: url("theme/default/logo_small.png") !important;
     image-rendering: auto;
 }
 
@@ -73,13 +73,13 @@ div#main {
 }
 
 .umcontainer {
-    background-image: url("theme/default_bg/mspfafacereverse.png");
+    background-image: url("theme/default/mspfafacereverse.png");
     background-repeat: no-repeat;
     background-position-x: 795px;
 }
 
 .mspfalogo {
-    background-image: url("theme/default_bg/mspfaface.png") !important;
+    background-image: url("theme/default/mspfaface.png") !important;
     size: 70%;
     border-right: 4px solid transparent;
     background-color: transparent;
@@ -88,7 +88,7 @@ div#main {
 
 #flashytitle {
     background-color: transparent;
-    background-image: url("theme/default_bg/header.png");
+    background-image: url("theme/default/header.png");
     margin-top: 10px;
 }
 
@@ -103,7 +103,7 @@ div#main {
     body {
         background-image:
             linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
-            url("theme/default_bg/background.gif");
+            url("theme/default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
     }
@@ -125,7 +125,7 @@ div#main {
     }
 
     #overlay {
-        background-image: url("theme/default_bg/sky_cloud.png");
+        background-image: url("theme/default/sky_cloud.png");
         animation: 180s skycloud-move linear infinite reverse;
         background-position: center left;
         background-repeat: repeat-x;
@@ -133,7 +133,7 @@ div#main {
     }
 
     #overlay-1 {
-        background-image: url("theme/default_bg/bg_cloud.png");
+        background-image: url("theme/default/bg_cloud.png");
         animation: 50s bgcloud-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
@@ -141,7 +141,7 @@ div#main {
     }
 
     #overlay-2 {
-        background-image: url("theme/default_bg/front_cloud.png");
+        background-image: url("theme/default/front_cloud.png");
         animation: 20s frontcloud-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
@@ -169,75 +169,3 @@ div#main {
 
 /* NAVIGATION */
 /*===================================================*/
-nav>a,
-nav>div>a:first-child {
-    visibility: hidden;
-    word-spacing: -999px;
-    letter-spacing: -999px;
-}
-
-nav>a::after,
-nav>div>a:first-child::after {
-    visibility: visible;
-    word-spacing: normal;
-    letter-spacing: normal;
-}
-
-/* MSPFA HOME */
-nav>a[href="/"]::after {
-    content: "MSPFA HOME";
-    color: #f4ab24
-}
-
-/* MSPA */
-nav>a[href="http://www.mspaintadventures.com/"]::after {
-    content: "MSPA";
-    color: #f4ab24
-}
-
-/* EXPLORE */
-nav>a[href="/stories/"]::after {
-    content: "EXPLORE";
-}
-
-/* RANDOM */
-nav>a[href="/random/"]::after {
-    content: "RANDOM";
-}
-
-/* STATISTICS */
-nav>a[href="/stats/"]::after {
-    content: "STATISTICS";
-}
-
-/* LOG */
-nav>a[href^="/log/"]::after {
-    content: "LOG";
-}
-
-/* SEARCH */
-nav>a[href^="/search/"]::after {
-    content: "SEARCH";
-}
-
-/* MY MSPFA */
-nav>a[href="/my/"]::after {
-    content: "MY MSPFA";
-}
-
-/* DISCORD */
-nav>a[href="https://discord.gg/EC5acgG"]::after {
-    content: "DISCORD";
-}
-
-/* DONATE */
-nav>a[href="/donate/"]::after {
-    content: "DONATE";
-    color: #af00af
-}
-
-/* CONTACT */
-nav>a[href="/more/"]::after {
-    content: "MORE";
-    color: #af00af
-}
