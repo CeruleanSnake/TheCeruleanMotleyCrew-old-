@@ -79,7 +79,7 @@ body {
 
 /*PC CSS*/
 /* =========================================== */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1200px) {
     body {
         background-image:
             url("default_bg/background.gif");
