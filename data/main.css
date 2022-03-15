@@ -101,6 +101,10 @@ a:active {
     font-family: 'Courier New', "Courier", "monospace";
 }
 
+#content>img {
+    margin-left: -27px;
+}
+
 #map>img {
     display: block;
     margin-left: auto;
