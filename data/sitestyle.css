@@ -155,6 +155,16 @@ iframe {
     Border: 4px solid #064564;
 }
 
+img#storyicon {
+    image-rendering: auto;
+    -moz-image-rendering: auto;
+}
+
+img.cellicon {
+    image-rendering: auto;
+    -moz-image-rendering: auto;
+}
+
 /*NAVIGATION*/
 /*=================================================*/
 nav>a,
