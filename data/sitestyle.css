@@ -29,6 +29,26 @@
     src: url('font/victorian-parlor-vintage.otf');
 }
 
+/*SCROLL BAR*/
+/* =========================================== */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #035c88;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 1ex;
+    -webkit-border-radius: 1ex;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #035c88;
+}
+
 /* ==================================================== */
 
 body {
@@ -45,6 +65,7 @@ body {
     background-size: 80vh, 80vh, 80vh, cover, 20vh;
     image-rendering: pixelated;
     -moz-image-rendering: crisp-edges;
+    scrollbar-color: #064564 #053852;
 }
 
 a {
