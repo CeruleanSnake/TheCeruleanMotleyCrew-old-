@@ -21,18 +21,21 @@
     border-top: calc(var(--event-height) + 22px + 2px) solid #064564;
 }
 
+/*MOBILE CSS*/
+/* =========================================== */
 body {
     background-image:
-        url("theme/default/sky_cloud.png"),
-        url("theme/default/front_cloud.png"),
-        url("theme/default/bg_cloud.png"),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+        url("theme/beach/island.png"),
+        url("theme/beach/water.png"),
+        url("theme/beach/front-cloud.png"),
+        url("theme/beach/back-cloud.png"),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 0, 112, 0.95) 25%, rgb(0, 146, 231) 80%),
         url("theme/default/background.bmp");
-    background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
-    background-position: center, bottom, bottom, top, top;
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-x, no-repeat, repeat;
+    background-position: bottom right, bottom, center, center, top, top;
     background-attachment: fixed;
     background-color: #064564;
-    background-size: 80vh, 80vh, 80vh, cover, 20vh;
+    background-size: 80vh, 80vh, 80vh, 80vh, cover, 20vh;
     image-rendering: pixelated;
     -moz-image-rendering: crisp-edges;
 }
@@ -102,18 +105,21 @@ div#main {
 @media screen and (min-width: 1200px) {
     body {
         background-image:
-            linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 0, 112, 0.95) 25%, rgb(0, 146, 231) 80%),
             url("theme/default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
     }
 
     /* PARALLAX BACKGROUND */
-    /* =========================================== */
     #overlay>div,
     #overlay,
     #overlay-1,
-    #overlay-2 {
+    #overlay-2,
+    #overlay-3,
+    #overlay-4,
+    #overlay-5,
+    #overlay-6 {
         position: fixed;
         top: 0px;
         left: 0px;
@@ -125,47 +131,101 @@ div#main {
     }
 
     #overlay {
-        background-image: url("theme/default/sky_cloud.png");
-        animation: 180s skycloud-move linear infinite reverse;
-        background-position: center left;
+        background-image: url("theme/beach/water.png");
+        animation: 60s water-move linear infinite;
+        background-position: bottom left;
         background-repeat: repeat-x;
         background-size: 80vh;
     }
 
     #overlay-1 {
-        background-image: url("theme/default/bg_cloud.png");
-        animation: 50s bgcloud-move linear infinite;
-        background-position: bottom left;
+        background-image: url("theme/beach/back-cloud.png");
+        animation: 180s backcloud-move linear infinite;
+        background-position: center left;
         background-repeat: repeat-x;
         background-size: 80vh;
     }
 
     #overlay-2 {
-        background-image: url("theme/default/front_cloud.png");
-        animation: 20s frontcloud-move linear infinite;
-        background-position: bottom left;
+        background-image: url("theme/beach/front-cloud.png");
+        animation: 50s frontcloud-move linear infinite reverse;
+        background-position: center left;
+        background-position-y: 20vh;
         background-repeat: repeat-x;
         background-size: 80vh;
     }
 
-    @keyframes skycloud-move {
+    #overlay-3 {
+        background-image: url("theme/beach/island.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 80vh;
+    }
+
+    @media screen and (min-height: 500px) {
+        #overlay-4 {
+            background-image: url("theme/beach/wave.png");
+            animation: 30s wave-move ease-in-out infinite;
+            background-position-y: 70.5vh;
+            background-position-x: 50vw;
+            background-repeat: no-repeat;
+            background-size: 80vh;
+        }
+
+        #overlay-5 {
+            background-image: url("theme/beach/wave.png");
+            animation: 20s wave-move ease-in-out infinite;
+            background-position-y: 70.5vh;
+            background-position-x: 50vw;
+            background-repeat: no-repeat;
+            background-size: 80vh;
+        }
+
+        #overlay-6 {
+            background-image: url("theme/beach/wave.png");
+            animation: 10s wave-move ease-in-out infinite;
+            background-position-y: 70.5vh;
+            background-position-x: 50vw;
+            background-repeat: no-repeat;
+            background-size: 80vh;
+        }
+    }
+
+    @keyframes water-move {
+        to {
+            background-position: 80vh bottom;
+        }
+    }
+
+    @keyframes backcloud-move {
         to {
             background-position: 80vh center;
         }
     }
 
-    @keyframes bgcloud-move {
+    @keyframes frontcloud-move {
         to {
-            background-position: 80vh bottom;
+            background-position: 80vh center;
+            background-position-y: 20vh;
         }
     }
 
-    @keyframes frontcloud-move {
-        to {
-            background-position: 80vh bottom;
+    @keyframes wave-move {
+        0% {
+            transform: scalex(5%);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scalex(100%);
+            background-position-x: 90%;
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(24%) scaley(15%);
+            background-position-x: 60%;
+            opacity: 0;
         }
     }
 }
-
-/* NAVIGATION */
-/*===================================================*/
