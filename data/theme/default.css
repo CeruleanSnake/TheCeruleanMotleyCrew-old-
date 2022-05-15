@@ -29,7 +29,7 @@ body {
         url("default/background.bmp");
     background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
     background-position: center, bottom, bottom, top, top;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: #064564;
     background-size: 80vh, 80vh, 80vh, cover, 20vh;
     image-rendering: pixelated;
@@ -100,24 +100,24 @@ body {
 
 #flashytitle {
     height: 68px;
+    max-width: 100%;
     background-image: url("default/header.png");
     background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
     padding-top: 10px;
     margin-top: 10px;
-    background-size: 100vmax;
 }
 
 #flashytitlebottom {
     height: 68px;
+    max-width: 100%;
     background-image: url("default/header.png");
     background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
     padding-top: 10px;
     margin-top: 10px;
-    background-size: 100vmax;
     transform: scaleX(-1);
 }
 
@@ -130,6 +130,7 @@ body {
             url("default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
+        background-attachment: fixed;
     }
 
     #flashytitle {
