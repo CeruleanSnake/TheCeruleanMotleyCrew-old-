@@ -29,6 +29,11 @@
     src: url('font/victorian-parlor-vintage.otf');
 }
 
+@font-face {
+    font-family: "Trumpit";
+    src: url('font/trumpit.otf');
+}
+
 /* ==================================================== */
 
 body {
