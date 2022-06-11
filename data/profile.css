@@ -21,32 +21,6 @@
     border-top: calc(var(--event-height) + 22px + 2px) solid #064564;
 }
 
-/*FONT IMPORT*/
-@font-face {
-    font-family: "Coder's Crux";
-    src: url('font/coders_crux.ttf');
-}
-
-@font-face {
-    font-family: "Fipps Regular";
-    src: url('font/fipps-regular.otf');
-}
-
-@font-face {
-    font-family: "Gothic Pixel Regular";
-    src: url('font/gothic-pixel-regular.ttf');
-}
-
-@font-face {
-    font-family: "Hiveswap Alternian";
-    src: url('font/hiveswap_alternian.ttf');
-}
-
-@font-face {
-    font-family: "Homestuck Reuglar";
-    src: url('font/homestuck-regular.ttf');
-}
-
 /*SCROLL BAR*/
 /* =========================================== */
 ::-webkit-scrollbar {
