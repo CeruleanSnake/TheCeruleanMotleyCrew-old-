@@ -12,6 +12,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -26,6 +27,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -41,6 +43,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -55,6 +58,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -69,6 +73,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -83,6 +88,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -97,6 +103,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -111,6 +118,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -125,6 +133,7 @@
     font-weight: normal;
     font-style: italic;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -140,6 +149,7 @@
     font-weight: normal;
     font-style: italic;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
 /*SCROLL BAR*/
