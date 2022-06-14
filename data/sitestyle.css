@@ -9,10 +9,7 @@
         url('font/coders-crux/Coders-Crux.woff') format('woff'),
         url('font/coders-crux/Coders-Crux.ttf') format('truetype'),
         url('font/coders-crux/Coders-Crux.svg#Coder\'s-Crux') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -24,10 +21,7 @@
         url('font/fipps/Fipps-Regular.woff') format('woff'),
         url('font/fipps/Fipps-Regular.ttf') format('truetype'),
         url('font/fipps/Fipps-Regular.svg#Fipps-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 
@@ -40,10 +34,7 @@
         url('font/gothic-pixel/Gothic-Pixel.woff') format('woff'),
         url('font/gothic-pixel/Gothic-Pixel.ttf') format('truetype'),
         url('font/gothic-pixel/Gothic-Pixel.svg#Gothic-Pixel') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -55,10 +46,7 @@
         url('font/retrogression/Retrogression-Regular.woff') format('woff'),
         url('font/retrogression/Retrogression-Regular.ttf') format('truetype'),
         url('font/retrogression/Retrogression-Regular.svg#Retrogression-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -70,10 +58,7 @@
         url('font/hiveswap-alternian/HiveswapAlternian-Regular.woff') format('woff'),
         url('font/hiveswap-alternian/HiveswapAlternian-Regular.ttf') format('truetype'),
         url('font/hiveswap-alternian/HiveswapAlternian-Regular.svg#HiveswapAlternian-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -85,10 +70,7 @@
         url('font/homestuck/Homestuck-Regular.woff') format('woff'),
         url('font/homestuck/Homestuck-Regular.ttf') format('truetype'),
         url('font/homestuck/Homestuck-Regular.svg#Homestuck-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -100,10 +82,7 @@
         url('font/victorian-parlor-vintage/VictorianParlorVintage.woff') format('woff'),
         url('font/victorian-parlor-vintage/VictorianParlorVintage.ttf') format('truetype'),
         url('font/victorian-parlor-vintage/VictorianParlorVintage.svg#VictorianParlorVintage') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -115,10 +94,7 @@
         url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.woff') format('woff'),
         url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.ttf') format('truetype'),
         url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.svg#VictorianParlorVintageAlternate') format('svg');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -130,10 +106,7 @@
         url('font/apple-chancery/Apple-Chancery.woff') format('woff'),
         url('font/apple-chancery/Apple-Chancery.ttf') format('truetype'),
         url('font/apple-chancery/Apple-Chancery.svg#Apple-Chancery') format('svg');
-    font-weight: normal;
-    font-style: italic;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 
@@ -146,10 +119,7 @@
         url('font/blood-script/BloodScriptItalicPersonalUs-N.woff') format('woff'),
         url('font/blood-script/BloodScriptItalicPersonalUs-N.ttf') format('truetype'),
         url('font/blood-script/BloodScriptItalicPersonalUs-N.svg#BloodScriptItalicPersonalUs-N') format('svg');
-    font-weight: normal;
-    font-style: italic;
     font-display: swap;
-    text-rendering: optimizeLegibility;
 }
 
 /*SCROLL BAR*/
@@ -203,7 +173,31 @@ nav {
 }
 
 iframe {
-    image-rendering: pixelated;
+    image-rendering: auto;
+}
+
+.rate button.up,
+.rate input[type="button"].up {
+    background-image: url("../img/grayupvote.png");
+    image-rendering: auto;
+}
+
+.rate button.down,
+.rate input[type="button"].down {
+    background-image: url("../img/graydownvote.png");
+    image-rendering: auto;
+}
+
+.rate button.up.lit,
+.rate input[type="button"].up.lit {
+    background-image: url("../img/upvote.png");
+    image-rendering: auto;
+}
+
+.rate button.down.lit,
+.rate input[type="button"].down.lit {
+    background-image: url("../img/downvote.png");
+    image-rendering: auto;
 }
 
 .major {
@@ -255,6 +249,15 @@ iframe {
     padding-top: 10px;
     margin-top: 10px;
     transform: scaleX(-1);
+}
+
+#loading {
+    background-image: url("../img/siteload.gif");
+}
+
+#bbtoolbar input {
+    background-image: url("../img/bbicons.png");
+    image-rendering: auto;
 }
 
 #main {
