@@ -122,6 +122,28 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('font/pressStart2P/PressStart2P-Regular.eot');
+    src: url('font/pressStart2P/PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/pressStart2P/PressStart2P-Regular.woff2') format('woff2'),
+        url('font/pressStart2P/PressStart2P-Regular.woff') format('woff'),
+        url('font/pressStart2P/PressStart2P-Regular.ttf') format('truetype'),
+        url('font/pressStart2P/PressStart2P-Regular.svg#PressStart2P-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('font/courier-new/CourierNew.eot');
+    src: url('font/courier-new/CourierNew.eot?#iefix') format('embedded-opentype'),
+        url('font/courier-new/CourierNew.woff2') format('woff2'),
+        url('font/courier-new/CourierNew.woff') format('woff'),
+        url('font/courier-new/CourierNew.ttf') format('truetype'),
+        url('font/courier-new/CourierNew.svg#CourierNewPSMT') format('svg');
+    font-display: swap;
+}
+
 /*SCROLL BAR*/
 /* =========================================== */
 ::-webkit-scrollbar {
