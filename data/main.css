@@ -191,6 +191,7 @@ a:active {
     margin: 20px auto 20px auto;
     background-color: #eeeeee;
     image-rendering: auto;
+    border-radius: 5px;
 }
 
 #slide>img {
@@ -258,6 +259,7 @@ a:active {
     font-weight: bold;
     font-size: 15;
     text-align: center;
+    border-radius: 5px;
 }
 
 .heart {
