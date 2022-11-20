@@ -1,0 +1,7 @@
+#gamelinks {
+  width: 100%;
+}
+
+.p1 #gamelinks {
+  width: auto;
+}
