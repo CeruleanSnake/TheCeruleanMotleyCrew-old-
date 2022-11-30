@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" href="data/main.css" />
     <link rel="stylesheet" href="data/theme/default.css" />
+
+    <script type="text/javascript" src="data/tabs.js">
+    </script>
 </head>
 
 <body>
@@ -33,155 +36,132 @@
 
     <div id="container">
 
-        <div id="slide">
+        <div id="slide" Style="width: 750px;">
 
             <div id="command">
                 Art
             </div>
 
-            <div id="content" style="image-rendering: auto;">
+            <div id="content" style="image-rendering: auto; width: 700px;">
                 <img src="img/art/im-a-scientist.PNG" style="max-width: 30%; margin: -25 0 25 0;"
                     title="Brewin' in da lab">
                 <br>
                 Wanna see some extra art and behind the scenes? Here you will find an assortment of
                 prototypes and early designs plus some extra current bonus art!<br>
-                <br>Click on an image to see it full sized.
-                <div style="font-size: 20px">
-                    <br>============================<br>
-                    <span style="color: #005682;">
-                        EARLY DESIGNS
-                        <br>
-                    </span>
-                    ============================<br><br>
+                <br>Click on an image to see it full sized.<br><br>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'early')" id="defaultOpen">EARLY DESIGNS</button>
+                    <button class="tablinks" onclick="opentab(event, 'earlycrew')">BETA TCMC</button>
+                    <button class="tablinks" onclick="opentab(event, 'draw')">HOW I DRAW</button>
+                    <button class="tablinks" onclick="opentab(event, 'bonus')">BONUS ART</button>
                 </div>
-                Check out some early designs of the Cerulean Snake!<br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            First ever Image I drew of Chever "The Cerulean Snake" Stalii.
-                            This was
-                            drawn back in 2011,
-                            Making them 10+ years old, jesus fuck!<br>
-                            <a href="img/art/oldaf.JPG" target="_blank"><img src="img/art/oldaf.JPG"
-                                    style="max-width: 40%;" title="God, this looks so bad"></a>
-                            <br><br><br>
-                            Snake has gone through a few redesigns, and was once even a
-                            seadweller.
-                            I ultimately settled on
-                            a final design as a cerulean.<br><br>
-                            <a href="img/art/adult-chev.PNG" target="_blank"><img src="img/art/adult-chev.PNG"
-                                    style="max-width: 30%;" title="First ever adult version"></a>
-                            <a href="img/art/im-a-scientist.PNG" target="_blank"><img src="img/art/im-a-scientist.PNG"
-                                    style="max-width: 40%;" title="Second adult design, became a mad scientist"></a>
-                            <a href="img/art/nerd.PNG" target="_blank"><img src="img/art/nerd.PNG"
-                                    style="max-width: 30%;" title="An absolute nerd"></a>
-                            <a href="img/art/mechanic.PNG" target="_blank"><img src="img/art/mechanic.PNG"
-                                    style="max-width: 30%;" title="Dork"></a><br>
-                            <br><br>
-                            <a href="#top" style="font-size: 10px;">Back to top of page</a>
-                        </div>
+
+                <!--==================================================-->
+
+                <div id="early" class="tabcontent">
+                    <div style="font-size: 20px">
+                        ==================================<br>
+                        <span style="color: #005682;">
+                            EARLY DESIGNS
+                            <br>
+                        </span>
+                        ==================================<br>
                     </div>
+                    Check out some early designs of the Cerulean Snake!<br><br>
+                    First ever Image I drew of Chever "The Cerulean Snake" Stalii.
+                    This was
+                    drawn back in 2011,
+                    Making them 10+ years old, jesus fuck!<br>
+                    <a href="img/art/oldaf.JPG" target="_blank"><img src="img/art/oldaf.JPG" style="max-width: 40%;"
+                            title="God, this looks so bad"></a>
+                    <br><br><br>
+                    Snake has gone through a few redesigns, and was once even a
+                    seadweller.
+                    I ultimately settled on
+                    a final design as a cerulean.<br><br>
+                    <a href="img/art/adult-chev.PNG" target="_blank"><img src="img/art/adult-chev.PNG"
+                            style="max-width: 30%;" title="First ever adult version"></a>
+                    <a href="img/art/im-a-scientist.PNG" target="_blank"><img src="img/art/im-a-scientist.PNG"
+                            style="max-width: 40%;" title="Second adult design, became a mad scientist"></a>
+                    <a href="img/art/nerd.PNG" target="_blank"><img src="img/art/nerd.PNG" style="max-width: 30%;"
+                            title="An absolute nerd"></a>
+                    <a href="img/art/mechanic.PNG" target="_blank"><img src="img/art/mechanic.PNG"
+                            style="max-width: 30%;" title="Dork"></a><br><br>
                 </div>
-                <br><br>
-                <div style="font-size: 20px">
-                    <br>============================<br>
-                    <span style="color: #005682;">
-                        EARLY CERULEAN MOTLEY CREW DESIGNS
-                        <br>
-                    </span>
-                    ============================<br><br>
-                </div>
-                Here is some of my earlier character designs for the crew!<br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            Final design for Snake<br>
-                            <a href="img/art/snake.PNG" target="_blank"><img src="img/art/snake.PNG"
-                                    style="max-width: 30%;" title="From zero to hero"></a><br><br><br>
-                            A mock up of the crew. You can see some differences in the final
-                            product.<br>
-                            <a href="img/art/the-gang.PNG" target="_blank"><img src="img/art/the-gang.PNG"
-                                    style="max-width: 50%;" title="The gang's all here!"></a><br><br><br>
-                            Some more mockups.<br>
-                            <a href="img/art/wanted-snake.PNG" target="_blank"><img src="img/art/wanted-snake.PNG"
-                                    style="max-width: 30%;" title="Wanted Dead or Alive"></a>
-                            <a href="img/art/wanted-rusty.PNG" target="_blank"><img src="img/art/wanted-rusty.PNG"
-                                    style="max-width: 30%;" title="I should draw these again"></a><br>
-                            <br><br>
-                            <a href="#top" style="font-size: 10px;">Back to top of page</a>
-                        </div>
+
+                <div id="earlycrew" class="tabcontent">
+                    <div style="font-size: 20px">
+                        ==================================<br>
+                        <span style="color: #005682;">
+                            EARLY CERULEAN MOTLEY CREW DESIGNS
+                            <br>
+                        </span>
+                        ==================================<br>
                     </div>
+                    Here is some of my earlier character designs for the crew!<br><br>
+                    Final design for Snake<br>
+                    <a href="img/art/snake.PNG" target="_blank"><img src="img/art/snake.PNG" style="max-width: 30%;"
+                            title="From zero to hero"></a><br><br><br>
+                    A mock up of the crew. You can see some differences in the final
+                    product.<br>
+                    <a href="img/art/the-gang.PNG" target="_blank"><img src="img/art/the-gang.PNG"
+                            style="max-width: 50%;" title="The gang's all here!"></a><br><br><br>
+                    Some more mockups.<br>
+                    <a href="img/art/wanted-snake.PNG" target="_blank"><img src="img/art/wanted-snake.PNG"
+                            style="max-width: 30%;" title="Wanted Dead or Alive"></a>
+                    <a href="img/art/wanted-rusty.PNG" target="_blank"><img src="img/art/wanted-rusty.PNG"
+                            style="max-width: 30%;" title="I should draw these again"></a><br><br>
                 </div>
-                <br><br>
-                <br><br>
-                <div style="font-size: 20px">
-                    <br>============================<br>
-                    <span style="color: #005682;">
-                        HOW I DRAW
-                        <br>
-                    </span>
-                    ============================<br><br>
-                </div>
-                Wanna see how I draw the panels? Here's a couple fun videos.<br>All of my panels
-                are designed in procreate on an iPad pro 12" and animated in Photoshop CS6 Extended.
-                Click on the videos
-                to play them.<br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            <a href="story/0008.html" target="_blank">Page
-                                8</a><br><br>
-                            <a href="img/art/page-8.mp4" target="_blank"><video src="img/art/page-8.mp4"
-                                    style="max-width: 50%;"></a><br><br><br>
-                            <a href="#top" style="font-size: 10px;">Back to top of page</a>
-                        </div>
+
+                <div id="draw" class="tabcontent">
+                    <div style="font-size: 20px">
+                        ==================================<br>
+                        <span style="color: #005682;">
+                            HOW I DRAW
+                            <br>
+                        </span>
+                        ==================================<br>
                     </div>
+                    Wanna see how I draw the panels? Here's a couple fun videos.<br>All of my panels
+                    are designed in procreate on an iPad pro 12" and animated in Photoshop CS6 Extended.
+                    Click on the videos
+                    to play them.<br><br>
+                    <a href="story/0008.html" target="_blank">Page
+                        8</a><br><br>
+                    <a href="img/art/page-8.mp4" target="_blank"><video src="img/art/page-8.mp4"
+                            style="max-width: 50%;"></a><br><br>
                 </div>
-                <br><br>
-                <div style="font-size: 20px">
-                    <br>============================<br>
-                    <span style="color: #005682;">
-                        BONUS ART
-                        <br>
-                    </span>
-                    ============================<br><br>
-                </div>
-                Here is some random art I have produced/acquired from others during the making of this adventure. You'll
-                find
-                all sorts of stuff to tickle your funny bone. <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            <a href="img/art/groupshot.png" target="_blank"><img src="img/art/groupshot.png"
-                                    style="max-width: 30%;"
-                                    title="2022 MSPFA Groupshot submission collab also featuring Minami from I'm Good I'm Gone (drawn by PeepeeSwine) and Michua & Cuezol from Tragedy on Alternia (drawn by Fruzmig)"></a>
-                            <a href="img/art/epic-accordion-solo.png" target="_blank"><img
-                                    src="img/art/epic-accordion-solo.png" style="max-width: 30%;"
-                                    title="I'll finish this one day..."></a>
-                            <a href="img/art/IHateThisPose.png" target="_blank"><img src="img/art/IHateThisPose.png"
-                                    style="max-width: 30%;" title="I don't even know why I drew this, it's so dumb"></a>
-                            <a href="img/art/minami-time.png" target="_blank"><img src="img/art/minami-time.png"
-                                    style="max-width: 30%;" title="Bonus rare and elusive Minami!"></a>
-                            <a href="img/art/doobie.jpeg" target="_blank"><img src="img/art/doobie.jpeg"
-                                    style="max-width: 30%;" title="SUPER BONUS Doobie Minami!!!"></a>
-                            <a href="img/art/tats-n-scars.png" target="_blank"><img src="img/art/tats-n-scars.png"
-                                    style="max-width: 30%;" title="A sort of tattoo and scar ref for Snake"></a>
-                            <br><br>
-                            <a href="https://mspfa.com/?s=35904&p=1231" target="_blank"><img
-                                    src="img/art/Fake Jujuju.png" style="max-width: 30%;"
-                                    title="RARE ONE OF A KIND FAKE JUJUJU NFT"></a>
-                            <br><br>
-                            <a href="#top" style="font-size: 10px;">Back to top of page</a>
-                        </div>
+
+                <div id="bonus" class="tabcontent">
+                    <div style="font-size: 20px">
+                        ==================================<br>
+                        <span style="color: #005682;">
+                            BONUS ART
+                            <br>
+                        </span>
+                        ==================================<br>
                     </div>
+                    Here is some random art I have produced/acquired from others during the making of this adventure.
+                    You'll
+                    find
+                    all sorts of stuff to tickle your funny bone. <br><br>
+                    <a href="img/art/groupshot.png" target="_blank"><img src="img/art/groupshot.png"
+                            style="max-width: 30%;"
+                            title="2022 MSPFA Groupshot submission collab also featuring Minami from I'm Good I'm Gone (drawn by PeepeeSwine) and Michua & Cuezol from Tragedy on Alternia (drawn by Fruzmig)"></a>
+                    <a href="img/art/epic-accordion-solo.png" target="_blank"><img src="img/art/epic-accordion-solo.png"
+                            style="max-width: 30%;" title="I'll finish this one day..."></a>
+                    <a href="img/art/IHateThisPose.png" target="_blank"><img src="img/art/IHateThisPose.png"
+                            style="max-width: 30%;" title="I don't even know why I drew this, it's so dumb"></a>
+                    <a href="img/art/minami-time.png" target="_blank"><img src="img/art/minami-time.png"
+                            style="max-width: 30%;" title="Bonus rare and elusive Minami!"></a>
+                    <a href="img/art/doobie.jpeg" target="_blank"><img src="img/art/doobie.jpeg" style="max-width: 30%;"
+                            title="SUPER BONUS Doobie Minami!!!"></a>
+                    <a href="img/art/tats-n-scars.png" target="_blank"><img src="img/art/tats-n-scars.png"
+                            style="max-width: 30%;" title="A sort of tattoo and scar ref for Snake"></a>
+                    <br><br>
+                    <a href="https://mspfa.com/?s=35904&p=1231" target="_blank"><img src="img/art/Fake Jujuju.png"
+                            style="max-width: 30%;" title="RARE ONE OF A KIND FAKE JUJUJU NFT"></a><br><br>
                 </div>
 
                 <br><br>
@@ -200,7 +180,13 @@
                     themes are owned by Andrew Hussie & Viz Media.
                 </div>
             </div>
+
         </div>
+
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+
         <div id="flashytitlebottom"></div>
     </div>
 </body>

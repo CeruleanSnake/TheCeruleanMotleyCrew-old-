@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" href="data/main.css" />
     <link rel="stylesheet" href="data/theme/default.css" />
+
+    <script type="text/javascript" src="data/tabs.js">
+    </script>
 </head>
 
 <body>
@@ -46,55 +49,47 @@
                     and save wherever you want.<br><br>
                 </span>
                 This page will be updated as the comic goes along.
-
-                <div style="font-size: 20px">
-                    <br><br>==========================<br>
-                    <span style="color: #005682;">
-                        <img src="data/theme/default/logo_small.png">
-                        Chapter 1
-                        <img src="data/theme/default/logo_small.png">
-                        <br>
-                    </span>
-                    ==========================<br><br>
+                <br><br>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'chp1')" id="defaultOpen">CHAPTER 1</button>
+                    <button class="tablinks" onclick="opentab(event, 'chp2')">CHAPTER 2</button>
                 </div>
 
-                1. Pirate's Awakening (<a href="story/0100.html">Page 100</a>)<br><br>
-                <audio controls>
-                    <source src="img/sound/music/pirates-awakening.mp3" type="audio/mp3">
-                    <p>Your browser does not support the audio type. Here is a <a
-                            href="img/sound/music/pirates-awakening.mp3">link to download
-                            the
-                            audio</a> instead.</p>
-                </audio>
-                <div style="font-size: 20px">
-                    <br><br>==========================<br>
-                    <span style="color: #005682;">
-                        <img src="data/theme/default/logo_small.png">
-                        Chapter 2
-                        <img src="data/theme/default/logo_small.png">
-                        <br>
-                    </span>
-                    ==========================<br><br>
+                <div id="chp1" class="tabcontent">
+                    <br>
+                    1. Pirate's Awakening (<a href="story/0100.html">Page 100</a>)<br><br>
+                    <audio controls>
+                        <source src="img/sound/music/pirates-awakening.mp3" type="audio/mp3">
+                        <p>Your browser does not support the audio type. Here is a <a
+                                href="img/sound/music/pirates-awakening.mp3">link to download
+                                the
+                                audio</a> instead.</p>
+                    </audio>
+                    <br><br>
                 </div>
-                2. Aboard the Thunder Basilisk (No Page Yet)<br><br>
-                <audio controls>
-                    <source src="img/sound/music/aboard-the-thunder-basilisk.mp3" type="audio/mp3">
-                    <p>Your browser does not support the audio type. Here is a <a
-                            href="img/sound/music/aboard-the-thunder-basilisk.mp3">link to download
-                            the
-                            audio</a> instead.</p>
-                </audio>
-                <br><br>
-                3. Friday Night Plunderin' (<a href="story/0200.html">Page 200</a>)<br><br>
-                <audio controls>
-                    <source src="img/sound/music/friday-night-plunderin.mp3" type="audio/mp3">
-                    <p>Your browser does not support the audio type. Here is a <a
-                            href="img/sound/music/friday-night-plunderin.mp3">link to download
-                            the
-                            audio</a> instead.</p>
-                </audio>
 
-                <br><br>
+                <div id="chp2" class="tabcontent">
+                    <br>
+                    2. Aboard the Thunder Basilisk (No Page Yet)<br><br>
+                    <audio controls>
+                        <source src="img/sound/music/aboard-the-thunder-basilisk.mp3" type="audio/mp3">
+                        <p>Your browser does not support the audio type. Here is a <a
+                                href="img/sound/music/aboard-the-thunder-basilisk.mp3">link to download
+                                the
+                                audio</a> instead.</p>
+                    </audio>
+                    <br><br>
+                    3. Friday Night Plunderin' (<a href="story/0200.html">Page 200</a>)<br><br>
+                    <audio controls>
+                        <source src="img/sound/music/friday-night-plunderin.mp3" type="audio/mp3">
+                        <p>Your browser does not support the audio type. Here is a <a
+                                href="img/sound/music/friday-night-plunderin.mp3">link to download
+                                the
+                                audio</a> instead.</p>
+                    </audio>
+                    <br><br>
+                </div>
+
                 <br><br>
                 <div style="font-size: 8px; text-align: center;">
                     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
@@ -110,6 +105,9 @@
                 </div>
             </div>
         </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
         <div id="flashytitlebottom"></div>
     </div>
 </body>
