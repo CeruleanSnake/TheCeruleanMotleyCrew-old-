@@ -390,45 +390,21 @@ SPOILER button*/
 }
 
 .tab button {
-    background-color: #095a83;
     float: middle;
-    border: solid #05334a;
     cursor: pointer;
-    padding: 9px 8px 4px 8px;
-    transition: 0.2s;
-    color: #6ebfe8;
-    font-size: 3ch;
+    font-size: 20px;
     font-weight: bold;
-    margin: 1px -3.5px 3px -3.5px;
-    text-shadow: 1px 1px #ae6b00;
-    font-family: 'Gothic Pixel';
-
 }
 
 .tab button:hover {
-    background-color: #053852;
+    background-color: #c4c4c4;
 }
 
 .tab button.active {
-    background-color: rgb(255, 204, 0);
-    color: #ae6b00;
-    border: solid #ae6b00;
-    text-shadow: 1px 1px #05496c;
+    background-color: rgb(110, 110, 110);
 }
 
 .tabcontent {
     display: none;
-    border: 2px solid #3c6377;
     margin-top: 10px;
-    animation: fadeEffect 0.5s;
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }

@@ -31,7 +31,7 @@
     font-weight: bold;
     margin: 1px -3.5px 3px -3.5px;
     text-shadow: 1px 1px #ae6b00;
-    font-family: 'Gothic Pixel';
+    font-family: 'homestuck';
 }
 
 .tab button:hover {
@@ -47,8 +47,8 @@
 
 .tabcontent {
     border: 2px solid #3c6377;
-    margin-top: 10px;
     animation: fadeEffect 0.5s;
+    margin-top: 10px;
 }
 
 @keyframes fadeEffect {
@@ -59,6 +59,32 @@
     to {
         opacity: 1;
     }
+}
+
+/* TAB COLUMN
+        =============================================== */
+.row {
+    display: flex;
+    font-family: "courier",
+        "monospace";
+}
+
+.column {
+    flex: 60%;
+    margin-top: -10;
+    padding: 10px 20px;
+    line-height: 14px;
+}
+
+.imgcolumn {
+    flex: 40%;
+    margin-right: 20px;
+    max-height: 175px;
+}
+
+.imgcolumn>img {
+    padding-top: 20px;
+    max-height: 450px;
 }
 
 /*MOBILE CSS*/
