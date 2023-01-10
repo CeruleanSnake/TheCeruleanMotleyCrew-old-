@@ -6,7 +6,7 @@ document.write("<a href='Extras.html' style='color: #0080c2;'>Extras</a>");
 document.write("<span style='color: #0080c2;'> | </span>");
 document.write("<a href='Credits.html' style='color: #0080c2;'>Credits</a>");
 document.write("<span style='color: #0080c2;'> | </span>");
-document.write("<a href='https://twitter.com/SqueegeeBrush' style='color: #0080c2;' target='_blank;'>Twitter</a>");
+document.write("<a href='https://twitter.com/ceruleasnake' style='color: #0080c2;' target='_blank;'>Twitter</a>");
 document.write("<img src='data/empty.png' class='heart'>");
 document.write("<a href='Log.html' style='color: #af00af;'>Log</a>");
 document.write("<span style='color: #af00af;'> | </span>");
