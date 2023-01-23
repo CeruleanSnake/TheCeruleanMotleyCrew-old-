@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>0001</title>
-  <meta name="generator" content="Google Web Designer 14.0.4.1108">
+  <meta name="generator" content="Google Web Designer 15.0.4.1108">
   <meta data-template-name="gwd-650x650">
   <meta name="template" content="Expandable 3.0.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
-  <link href="gwdimage_style.css" rel="stylesheet" data-version="16" data-exports-type="gwd-image">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
   <link href="gwdgesture_style.css" rel="stylesheet" data-version="7" data-exports-type="gwd-gesture">
   <link href="gwdimageeffect_style.css" rel="stylesheet" data-version="5" data-exports-type="gwd-image-effect">
   <style type="text/css" id="gwd-lightbox-style">
@@ -48,6 +48,9 @@
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: flat;
       position: absolute;
+    }
+    .gwd-page-content * {
+      transform-style: preserve-3d;
     }
     .gwd-page-wrapper {
       background-color: rgb(255, 255, 255);
@@ -98,7 +101,7 @@
   <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
   <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
-  <script data-source="gwdimage_min.js" data-version="16" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="17" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
   <script data-source="gwdgesture_min.js" data-version="7" data-exports-type="gwd-gesture" src="gwdgesture_min.js"></script>
   <script data-source="gwdimageeffect_min.js" data-version="5" data-exports-type="gwd-image-effect" src="gwdimageeffect_min.js"></script>
   <script data-source="gwdwave_min.js" data-version="3" data-exports-type="gwd-wave" src="gwdwave_min.js"></script>
@@ -133,9 +136,11 @@
        */
       function handleWebComponentsReady(event) {
         document.body.style.opacity = "";
-        setTimeout(function() {
-          pageDeck.goToPage(pageDeck.getDefaultPage().id);
-        }, 0);
+        requestAnimationFrame(function() {
+          setTimeout(function() {
+            pageDeck.goToPage(pageDeck.getDefaultPage().id);
+          }, 1);
+        });
       }
 
       window.addEventListener('DOMContentLoaded',

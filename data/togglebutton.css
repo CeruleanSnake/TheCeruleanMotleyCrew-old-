@@ -1,8 +1,0 @@
-::root {
-    --twidth: 100%;
-}
-
-textarea[style*="twidth"] {
-    width: calc(var(--twidth) - 40px);
-    padding: 20px;
-}
