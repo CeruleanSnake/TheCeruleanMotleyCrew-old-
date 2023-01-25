@@ -70,22 +70,155 @@
 }
 
 .column {
-    flex: 60%;
+    flex: 55%;
     margin-top: -10;
     padding: 10px 20px;
     line-height: 14px;
 }
 
 .imgcolumn {
-    flex: 40%;
-    margin-right: 20px;
-    max-height: 175px;
+    flex: 45%;
+    margin-right: 15px;
 }
 
-.imgcolumn>img {
-    padding-top: 20px;
-    max-height: 450px;
+
+/* SLIDESHOW STYLE
+        ==========================================*/
+
+.slideshow-container {
+    padding-top: 10px;
+    position: relative;
 }
+
+.slidecaption {
+    margin-top: -3px;
+    padding: 7px 5px 5px 5px;
+    width: 175px;
+    margin-left: 18%;
+    font-size: 16px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    top: 430px;
+    padding: 3px 10px 0px 10px;
+    background-color: #f1f1f1;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    user-select: none;
+}
+
+.next {
+    right: -6px;
+}
+
+.prev {
+    left: 0px;
+}
+
+.cheverimg,
+.derrekimg,
+.jujujuimg,
+.diunnaimg,
+.govaniimg,
+.freyaimg,
+.hewatsuimg,
+.sharkimg,
+.edmondimg,
+.finscarimg,
+.spiderimg,
+.queenimg {
+    display: none
+}
+
+.slideshow-container .cheverslide .cheverimg img,
+.slideshow-container .cheverslide .slidecaption,
+.slideshow-container .cheverslide .next,
+.slideshow-container .cheverslide .prev {
+    border: 3px solid #005682;
+}
+
+.slideshow-container .derrekslide .derrekimg img,
+.slideshow-container .derrekslide .slidecaption,
+.slideshow-container .derrekslide .next,
+.slideshow-container .derrekslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .jujujuslide .jujujuimg img,
+.slideshow-container .jujujuslide .slidecaption,
+.slideshow-container .jujujuslide .next,
+.slideshow-container .jujujuslide .prev {
+    border: 3px solid #a1a100;
+}
+
+.slideshow-container .diunnaslide .diunnaimg img,
+.slideshow-container .diunnaslide .slidecaption,
+.slideshow-container .diunnaslide .next,
+.slideshow-container .diunnaslide .prev {
+    border: 3px solid #a15000;
+}
+
+.slideshow-container .govanislide .govaniimg img,
+.slideshow-container .govanislide .slidecaption,
+.slideshow-container .govanislide .next,
+.slideshow-container .govanislide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .freyaslide .freyaimg img,
+.slideshow-container .freyaslide .slidecaption,
+.slideshow-container .freyaslide .next,
+.slideshow-container .freyaslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .hewatsuslide .hewatsuimg img,
+.slideshow-container .hewatsuslide .slidecaption,
+.slideshow-container .hewatsuslide .next,
+.slideshow-container .hewatsuslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .sharkslide .sharkimg img,
+.slideshow-container .sharkslide .slidecaption,
+.slideshow-container .sharkslide .next,
+.slideshow-container .sharkslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .edmondslide .edmondimg img,
+.slideshow-container .edmondslide .slidecaption,
+.slideshow-container .edmondslide .next,
+.slideshow-container .edmondslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .finscarslide .finscarimg img,
+.slideshow-container .finscarslide .slidecaption,
+.slideshow-container .finscarslide .next,
+.slideshow-container .finscarslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .queenslide .queenimg img,
+.slideshow-container .queenslide .slidecaption,
+.slideshow-container .queenslide .next,
+.slideshow-container .queenslide .prev {
+    border: 3px solid #a10000;
+}
+
+.slideshow-container .spiderslide .spiderimg img,
+.slideshow-container .spiderslide .slidecaption,
+.slideshow-container .spiderslide .next,
+.slideshow-container .spiderslide .prev {
+    border: 3px solid #a10000;
+}
+
 
 /*MOBILE CSS*/
 /* =========================================== */
@@ -136,6 +269,7 @@ body {
     border: 2px solid #053852;
     color: #559ec2;
 }
+
 
 /*SITE ONLY*/
 /* =========================================== */
