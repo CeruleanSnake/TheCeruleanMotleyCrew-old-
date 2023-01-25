@@ -32,6 +32,9 @@
         </div>
     </header>
 
+    <script type="text/javascript" src="data/scripts/tabs.js">
+    </script>
+
     <div id="container">
 
         <div id="slide">
@@ -41,7 +44,7 @@
             </div>
 
             <div style="font-size: xx-small; text-align: center; color: #000;">
-                [If HTML5 does not play, open in Google Chrome or <a href="../HowToBrowserSettings.html"
+                [If HTML5 does not play, open in Google Chrome or <a href="HowToBrowserSettings.html"
                     target="_blank">check your browser settings.</a>]
             </div>
 
@@ -91,58 +94,71 @@
             </div>
 
             <div id="comments">
-                Comments are occasionally posted on pages in MSPFA by users. These are archived from the
-                original pages
-                as-is. Oldest comment first.
-                <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show Comments"
-                        onclick="this.value=this.value=='Show Comments'?'Hide Comments':'Show Comments';">
-                    <div class="spoiler">
-                        <div>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="img/pfp/soupsock.jpg">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=106419005063414992880">
-                                        soupsock</a>
-                                    <span class="commenttimestamp">
-                                        Feb 09 2022 20:44:36
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        every time i revisit this page i get so sad over how little traction this
-                                        series has! here’s hoping it blows up and gets the attention it deserves,
-                                        tbh.
-                                    </span>
-                                </td>
-                            </table>
-                            <br>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="img/pfp/CeruleanSnake.gif">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=101626213389903517817">
-                                        CeruleanSnake</a>
-                                    <span class="commenttimestamp">
-                                        Feb 11 2022 02:26:44
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        <a href="https://mspfa.com/user/?u=106419005063414992880">
-                                            <b>@soupsock</b></a>, Thanks!! I really hope so too!
-                                    </span>
-                                </td>
-                            </table>
-                        </div>
-                    </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'author')" id="defaultOpen">AUTHOR
+                        COMMENTARY</button>
+                    <button class="tablinks" onclick="opentab(event, 'user')">USER COMMENTS</button><br><br>
                 </div>
+
+                <div id="author" class="tabcontent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum massa non enim pulvinar
+                    tristique. Etiam eu posuere lacus. Vivamus cursus arcu id ex consectetur tristique. Suspendisse
+                    maximus felis et tortor condimentum venenatis. Etiam non est egestas, congue lacus eu, pharetra
+                    ligula. Pellentesque ullamcorper tempus fermentum. Integer eget lacus ac purus pellentesque
+                    tincidunt. Ut vel nisl non diam tincidunt feugiat sit amet a lacus. Nunc ac eros eget enim rutrum
+                    tincidunt sit amet et erat. Nunc id iaculis enim. Praesent suscipit nulla at enim convallis
+                    eleifend. Suspendisse lobortis varius magna et commodo.
+                </div>
+
+                <div id="user" class="tabcontent">
+                    Comments are occasionally posted on pages in MSPFA by users. These are archived from the
+                    original pages
+                    as-is. Oldest comment first.
+                    <br><br><br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="img/pfp/soupsock.jpg">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=106419005063414992880">
+                                soupsock</a>
+                            <span class="commenttimestamp">
+                                Feb 09 2022 20:44:36
+                            </span>
+                            <br>
+                            <span class="commenttxt">
+                                every time i revisit this page i get so sad over how little traction
+                                this
+                                series has! here’s hoping it blows up and gets the attention it
+                                deserves,
+                                tbh.
+                            </span>
+                        </td>
+                    </table>
+                    <br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="img/pfp/CeruleanSnake.gif">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=101626213389903517817">
+                                CeruleanSnake</a>
+                            <span class="commenttimestamp">
+                                Feb 11 2022 02:26:44
+                            </span>
+                            <br>
+                            <span class="commenttxt">
+                                <a href="https://mspfa.com/user/?u=106419005063414992880">
+                                    <b>@soupsock</b></a>, Thanks!! I really hope so too!
+                            </span>
+                        </td>
+                    </table>
+                </div>
+
             </div>
         </div>
 

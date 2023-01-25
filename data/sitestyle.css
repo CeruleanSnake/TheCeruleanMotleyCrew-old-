@@ -197,28 +197,28 @@ iframe {
     image-rendering: auto;
 }
 
+.rate {
+    image-rendering: auto;
+}
+
 .rate button.up,
 .rate input[type="button"].up {
     background-image: url("../img/grayupvote.png");
-    image-rendering: auto;
 }
 
 .rate button.down,
 .rate input[type="button"].down {
     background-image: url("../img/graydownvote.png");
-    image-rendering: auto;
 }
 
 .rate button.up.lit,
 .rate input[type="button"].up.lit {
     background-image: url("../img/upvote.png");
-    image-rendering: auto;
 }
 
 .rate button.down.lit,
 .rate input[type="button"].down.lit {
     background-image: url("../img/downvote.png");
-    image-rendering: auto;
 }
 
 .major {
@@ -251,7 +251,8 @@ iframe {
     background-position-x: 0px;
 }
 
-#flashytitle {
+#flashytitle,
+#flashytitlebottom {
     height: 68px;
     background-image: url("theme/default/header.png");
     background-repeat: no-repeat;
@@ -262,13 +263,6 @@ iframe {
 }
 
 #flashytitlebottom {
-    height: 68px;
-    background-image: url("theme/default/header.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-color: transparent;
-    padding-top: 10px;
-    margin-top: 10px;
     transform: scaleX(-1);
 }
 

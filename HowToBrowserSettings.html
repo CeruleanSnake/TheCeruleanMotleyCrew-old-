@@ -29,6 +29,10 @@
             </script>
         </div>
     </header>
+
+    <script type="text/javascript" src="data/scripts/tabs.js">
+    </script>
+
     <div id="container">
 
         <div id="slide">
@@ -50,65 +54,43 @@
                     </span>
                     ==========================<br><br>
                 </div>
-                <br>
                 My main tool when making my fancy animations is Google Web Designer. Due to security reasons, most
                 browsers don't like it when an HTML5 container begins auto playing.<br><br>
                 There is not much that can fix that other than doing a little tweaking in your browser setting. Just
                 follow these nifty instructions for the browser of your choice! (At least the ones I actually have
                 installed... message me if your browser isn't in this list and want it included.)
-                <br><br>
-                <div style="font-size: 20px">
-                    <br><br>==========================<br>
-                    <span style="color: #005682;">
-                        <img src="data/theme/default/logo_small.png">
-                        Google Chrome
-                        <img src="data/theme/default/logo_small.png">
-                        <br>
-                    </span>
-                    ==========================<br><br>
-                </div>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            If you look next to your web address, you'll see a padlock. Click on it and click on "Site
-                            Settings" (You can also click on the 3 dots in the corner and head to Settings > Privacy and
-                            Security > Site permissions and find your site.)<br><br>
-                            <a href="img/google1.png" target="_blank"><img src="img/google1.png"
-                                    style="max-width: 50%;"></a>
-                            <a href="img/google2.png" target="_blank"><img src="img/google2.png"
-                                    style="max-width: 30%;"></a><br><br>
-                            From there, Find Sound and click the drop down menu. Pick aloow then go back to your page
-                            and refresh!<br>
-                            <a href="img/google3.png" target="_blank"><img src="img/google3.png"
-                                    style="max-width: 70%;"></a>
+                <br><br><br>
 
-                        </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'chrome')" id="defaultOpen">GOOGLE CHROME</button>
+                    <button class="tablinks" onclick="opentab(event, 'firefox')">MOZILLA FIREFOX</button>
+                </div>
+
+                <div id="chrome" class="tabcontent">
+                    <div style="text-align: center;">
+                        If you look next to your web address, you'll see a padlock. Click on it and click on "Site
+                        Settings" (You can also click on the 3 dots in the corner and head to Settings > Privacy and
+                        Security > Site permissions and find your site.)<br><br>
+                        <a href="img/google1.png" target="_blank"><img src="img/google1.png"
+                                style="max-width: 50%;"></a>
+                        <a href="img/google2.png" target="_blank"><img src="img/google2.png"
+                                style="max-width: 30%;"></a><br><br>
+                        From there, Find Sound and click the drop down menu. Pick aloow then go back to your page
+                        and refresh!<br>
+                        <a href="img/google3.png" target="_blank"><img src="img/google3.png"
+                                style="max-width: 70%;"></a>
+
+
                     </div>
                 </div>
-                <br>
-                <div style="font-size: 20px">
-                    <br><br>==========================<br>
-                    <span style="color: #005682;">
-                        <img src="data/theme/default/logo_small.png">
-                        Mozilla Firefox
-                        <img src="data/theme/default/logo_small.png">
-                        <br>
-                    </span>
-                    ==========================<br><br>
-                </div>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show"
-                        onclick="this.value=this.value=='Show'?'Hide':'Show';">
-                    <div class="spoiler">
-                        <div style="text-align: center;">
-                            If you look next to your web address, you'll see a padlock. On the right of it will be
-                            another button, click on it and you will see some site permissions.<br>
-                            In the drop down menu for Autoplay, chose Allow Audio and Video and refresh you page!<br>
-                            <a href="img/firefox1.png" target="_blank"><img src="img/firefox1.png"
-                                    style="max-width: 50%;"></a>
-                        </div>
+
+                <div id="firefox" class="tabcontent">
+                    <div style="text-align: center;">
+                        If you look next to your web address, you'll see a padlock. On the right of it will be
+                        another button, click on it and you will see some site permissions.<br>
+                        In the drop down menu for Autoplay, chose Allow Audio and Video and refresh you page!<br>
+                        <a href="img/firefox1.png" target="_blank"><img src="img/firefox1.png"
+                                style="max-width: 50%;"></a>
                     </div>
                 </div>
                 <br>
@@ -117,6 +99,9 @@
                 All browsers are copyrighted by their respective companies ect ect.
             </div>
         </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
         <div id="flashytitlebottom"></div>
     </div>
 </body>

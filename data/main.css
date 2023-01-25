@@ -253,8 +253,8 @@ a:active {
 }
 
 #pageno {
-    margin: -23px auto 30 auto;
-    padding: 6 0 4 0;
+    margin: -20px auto 30 auto;
+    padding: 10 0 4 0;
     width: 666;
     height: 25px;
     font-weight: bold;
@@ -284,15 +284,20 @@ Comments Section*/
     font-family: "courier", "monospace";
 }
 
-#comments img {
+#user,
+#author {
+    overflow: auto;
+    background-color: #EEE;
+    padding: 20px;
+}
+
+#user img {
     max-width: 60px;
     padding-right: 10px;
 }
 
-#comments>.spoiler-border>.spoiler {
-    overflow: auto;
-    background-color: #EEE;
-    margin: 25 0 0 0px;
+#user table {
+    padding: 0 15 15 15px;
 }
 
 .username {
@@ -305,10 +310,6 @@ Comments Section*/
     font-size: 12px;
     font-family: courier;
     color: #8c8c8c;
-}
-
-table {
-    padding: 0 15 15 15px;
 }
 
 /* ==================================================== 
@@ -329,47 +330,17 @@ SPOILER button*/
     text-align: left;
 }
 
-.spoilerbutton[value="Show"]+.spoiler>div {
-    max-height: 0;
-}
-
-.spoilerbutton[value="Hide"]+.spoiler>div {
-    padding: 5px;
-    padding-top: 25px;
-}
-
-.spoilerbutton[value="Show Chat"]+.spoiler>div {
-    max-height: 0;
-}
-
-.spoilerbutton[value="Hide Chat"]+.spoiler>div {
-    padding: 5px;
-    padding-top: 25px;
-}
-
-.spoilerbutton[value="Show Log"]+.spoiler>div {
-    max-height: 0;
-}
-
-.spoilerbutton[value="Hide Log"]+.spoiler>div {
-    padding: 5px;
-    padding-top: 25px;
-}
-
+.spoilerbutton[value="Show"]+.spoiler>div,
+.spoilerbutton[value="Show Chat"]+.spoiler>div,
+.spoilerbutton[value="Show Log"]+.spoiler>div,
 .spoilerbutton[value="Show Journal"]+.spoiler>div {
     max-height: 0;
 }
 
+.spoilerbutton[value="Hide"]+.spoiler>div,
+.spoilerbutton[value="Hide Chat"]+.spoiler>div,
+.spoilerbutton[value="Hide Log"]+.spoiler>div,
 .spoilerbutton[value="Hide Journal"]+.spoiler>div {
-    padding: 5px;
-    padding-top: 25px;
-}
-
-.spoilerbutton[value="Show Comments"]+.spoiler>div {
-    max-height: 0;
-}
-
-.spoilerbutton[value="Hide Comments"]+.spoiler>div {
     padding: 5px;
     padding-top: 25px;
 }
@@ -396,15 +367,8 @@ SPOILER button*/
     font-weight: bold;
 }
 
-.tab button:hover {
-    background-color: #c4c4c4;
-}
-
-.tab button.active {
-    background-color: rgb(110, 110, 110);
-}
-
 .tabcontent {
     display: none;
     margin-top: 10px;
+    padding: 10px;
 }

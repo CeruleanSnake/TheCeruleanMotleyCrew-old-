@@ -6,7 +6,7 @@ document.head.appendChild(dSettingStyle);
 
 const updateStyle = () => {
   localStorage.setItem("isBackgroundAnimated", isBackgroundAnimated);
-  if(!isBackgroundAnimated) {
+  if (!isBackgroundAnimated) {
     dSettingStyle.textContent = `#overlay, #overlay * { animation: none !important; }`;
   } else {
     dSettingStyle.textContent = "";
@@ -35,7 +35,7 @@ dSettingBgAnimCheckbox.id = "settingBgAnim";
 dSettingBgAnimCheckbox.checked = isBackgroundAnimated;
 dSettingBgAnimCheckbox.addEventListener("input", () => {
   isBackgroundAnimated = dSettingBgAnimCheckbox.checked;
-  
+
   updateStyle();
 });
 
@@ -49,7 +49,7 @@ dSettingBgAnimWrapper.appendChild(dSettingBgAnimLabel);
 dSettingsWrapper.appendChild(dSettingBgAnimWrapper);
 
 const dFootBrs = dFoot.querySelectorAll("br");
-if(dFootBrs.length > 2) {
+if (dFootBrs.length > 2) {
   dFoot.insertBefore(dSettingsWrapper, dFootBrs[dFootBrs.length - 2]);
 } else {
   dFoot.appendChild(dSettingsWrapper);
