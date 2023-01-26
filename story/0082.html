@@ -27,9 +27,9 @@
             <script type="text/javascript" src="data/navbar.js" />
             </script>
         </div>
-    </header> 
+    </header>
 
-<script type="text/javascript" src="../data/scripts/tabs.js">
+    <script type="text/javascript" src="../data/scripts/tabs.js">
     </script>
 
     <div id="container">
@@ -66,60 +66,72 @@
             </div>
 
             <div id="comments">
-                Comments are occasionally posted on pages in MSPFA by users. These are archived from the
-                original pages
-                as-is. Oldest comment first.
-                <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show Comments"
-                        onclick="this.value=this.value=='Show Comments'?'Hide Comments':'Show Comments';">
-                    <div class="spoiler">
-                        <div>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/ohlookpuppies.png">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=114104588881614805224">
-                                        ohlookpuppies</a>
-                                    <span class="commenttimestamp">
-                                        Jan 30 2022 02:44:23
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        >Not for long, find him some medical supplies ASAP!
-                                    </span>
-                                </td>
-                            </table>
+                !!Warning, Author Commentary may contain spoilers!!<br><br>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'author')">AUTHOR COMMENTARY</button>
+                    <button class="tablinks" onclick="opentab(event, 'user')">USER COMMENTS</button><br><br>
+                </div>
+
+                <div id="author" class="tabcontent">
+                    Chever survived because the gun was garbage, also it fires lasers annd not actual bullets. Because
+                    light can refract off lenses, the lazer sort of exploded on Chever's glasses instead of their actual
+                    face. However, glass shards aren't exactly healthy for your face and the heat would have seared
+                    their
+                    eye anyway, so that explains the blood and all.<br><br>
+                    Ok I'm just shitting out of my ass here but hey, it's a decent explanation.<br><br>
+                    -TheCeruleanSnake
+                </div>
+
+                <div id="user" class="tabcontent">
+                    Comments are occasionally posted on pages in MSPFA by users. These are archived from the
+                    original pages
+                    as-is. Oldest comment first.
+                    <br><br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="../img/pfp/ohlookpuppies.png">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=114104588881614805224">
+                                ohlookpuppies</a>
+                            <span class="commenttimestamp">
+                                Jan 30 2022 02:44:23
+                            </span>
                             <br>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/gaysey.png">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=105268439005357945772">
-                                        gaysey</a>
-                                    <span class="commenttimestamp">
-                                        Jan 30 2022 15:54:25
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        YESSS EYEPATCH INCOMING
-                                    </span>
-                                </td>
-                            </table>
-                        </div>
-                    </div>
+                            <span class="commenttxt">
+                                >Not for long, find him some medical supplies ASAP!
+                            </span>
+                        </td>
+                    </table>
+                    <br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="../img/pfp/gaysey.png">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=105268439005357945772">
+                                gaysey</a>
+                            <span class="commenttimestamp">
+                                Jan 30 2022 15:54:25
+                            </span>
+                            <br>
+                            <span class="commenttxt">
+                                YESSS EYEPATCH INCOMING
+                            </span>
+                        </td>
+                    </table>
                 </div>
             </div>
+
         </div>
-        <div id="pageno">
-            Page: 82
-        </div>
+    </div>
+    <div id="pageno">
+        Page: 82
+    </div>
     </div>
 </body>
 

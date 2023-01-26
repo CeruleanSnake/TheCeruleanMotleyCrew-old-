@@ -22,15 +22,15 @@
         <script type="text/javascript" src="../data/scripts/parallaxbg.js" />
         </script>
     </div>
-     
+
     <header>
         <div id="nav">
             <script type="text/javascript" src="data/navbar.js" />
             </script>
         </div>
-    </header> 
+    </header>
 
-<script type="text/javascript" src="../data/scripts/tabs.js">
+    <script type="text/javascript" src="../data/scripts/tabs.js">
     </script>
 
     <div id="container">
@@ -63,39 +63,48 @@
                     Fri Dec 31 2021 18:57:13 GMT+1100
                 </div>
             </div>
-
             <div id="comments">
-                Comments are occasionally posted on pages in MSPFA by users. These are archived from the
-                original pages
-                as-is. Oldest comment first.
-                <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show Comments"
-                        onclick="this.value=this.value=='Show Comments'?'Hide Comments':'Show Comments';">
-                    <div class="spoiler">
-                        <div>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/octodeath.gif">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=113070571195208665454">
-                                        Octodeath</a>
-                                    <span class="commenttimestamp">
-                                        Jan 04 2022 03:51:05
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        :U<br>
-                                        <br>
-                                        the wall art tho - so good.
-                                    </span>
-                                </td>
-                            </table>
-                        </div>
-                    </div>
+                Warning, Author Commentary may contain spoilers!!<br><br>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'author')">AUTHOR COMMENTARY</button>
+                    <button class="tablinks" onclick="opentab(event, 'user')">USER COMMENTS</button><br><br>
+                </div>
+
+                <div id="author" class="tabcontent">
+                    This site theme was a pain in the ass. <br>I tried to initially code the meteorite to spin instead
+                    it
+                    would fly uncontrollably around the page, which was pretty fucking funny but not what I wanted. I
+                    eventually settled for a GIF instead.<br><br>
+                    Alternia in the background there actually used to be a beta drawing of M'yutuna, but it looked like
+                    a marble and felt a little out of place so early so I changed it.<br><br>
+                    -TheCeruleanSnake
+                </div>
+
+                <div id="user" class="tabcontent">
+                    Comments are occasionally posted on pages in MSPFA by users. These are archived from the
+                    original pages
+                    as-is. Oldest comment first.
+                    <br><br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="../img/pfp/octodeath.gif">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=113070571195208665454">
+                                Octodeath</a>
+                            <span class="commenttimestamp">
+                                Jan 04 2022 03:51:05
+                            </span>
+                            <br>
+                            <span class="commenttxt">
+                                :U<br>
+                                <br>
+                                the wall art tho - so good.
+                            </span>
+                        </td>
+                    </table>
                 </div>
             </div>
         </div>

@@ -27,9 +27,9 @@
             <script type="text/javascript" src="data/navbar.js" />
             </script>
         </div>
-    </header> 
+    </header>
 
-<script type="text/javascript" src="../data/scripts/tabs.js">
+    <script type="text/javascript" src="../data/scripts/tabs.js">
     </script>
 
     <div id="container">
@@ -64,84 +64,94 @@
                 <div id="timestamp">
                     Wed Mar 30 2022 18:03:28 GMT+1100
                 </div>
-            </div>
-            <div id="comments">
-                Comments are occasionally posted on pages in MSPFA by users. These are archived from the
-                original pages
-                as-is. Oldest comment first.
-                <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show Comments"
-                        onclick="this.value=this.value=='Show Comments'?'Hide Comments':'Show Comments';">
-                    <div class="spoiler">
-                        <div>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/bluefox.png">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=107523376789221983118">
-                                        Blue_Fox</a>
-                                    <span class="commenttimestamp">
-                                        Mar 31 2022 09:21:28
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        heck yeah! time to get called 'sweetie' by an old lady! or maybe get a homemade
-                                        meal!
-                                    </span>
-                                </td>
-                            </table>
-                            <br>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/blubangs.png">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=111364312037900324464">
-                                        BluBangs but built different</a>
-                                    <span class="commenttimestamp">
-                                        Mar 31 2022 23:37:08
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        <span style="font-size: xx-large; font-weight: bold;">GRANDMA KITTY?!</span>
-                                        STOP SOTP MY HEART CAN
-                                        ONLY TAKE SO MUCH ;w;<br>
-                                        also whats the css you use for the moving text?
-                                    </span>
-                                </td>
-                            </table>
-                            <br>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/CeruleanSnake.gif">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=101626213389903517817">
-                                        CeruleanSnake</a>
-                                    <span class="commenttimestamp">
-                                        Apr 01 2022 15:51:01
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        <b><a href="https://mspfa.com/user/?u=111364312037900324464">
-                                                @BluBangs but built different</a></b>, Lol she came to me after seeing a
-                                        picture of a cat with cataracts. Also how I
-                                        get the fun shaky text is with Seymours funky text effects <a
-                                            href="https://mspfa.com/?s=35015&p=1">here</a>
-                                    </span>
-                                </td>
-                            </table>
-                        </div>
+
+                <div id="comments">
+                    !!Warning, Author Commentary may contain spoilers!!<br><br>
+                    <div class="tab">
+                        <button class="tablinks" onclick="opentab(event, 'author')">AUTHOR COMMENTARY</button>
+                        <button class="tablinks" onclick="opentab(event, 'user')">USER COMMENTS</button>
+                        <br><br>
+                    </div>
+
+                    <div id="author" class="tabcontent">
+                        So, with the old lady, I came up with the design after googling pictures of cat with cataracts
+                        (looks so cool but those poor cats). I then combined that design with something like Yoda and
+                        came up with this I also have plans for her to be pretty kick ass.<br><br>
+                        -TheCeruleanSnake
+                    </div>
+
+                    <div id="user" class="tabcontent">
+                        Comments are occasionally posted on pages in MSPFA by users. These are archived from the
+                        original pages
+                        as-is. Oldest comment first.
+                        <br><br><br>
+                        <table>
+                            <td>
+                                <span class="commentimg">
+                                    <img src="../img/pfp/bluefox.png">
+                                </span>
+                            </td>
+                            <td>
+                                <a class="username" href="https://mspfa.com/user/?u=107523376789221983118">
+                                    Blue_Fox</a>
+                                <span class="commenttimestamp">
+                                    Mar 31 2022 09:21:28
+                                </span>
+                                <br>
+                                <span class="commenttxt">
+                                    heck yeah! time to get called 'sweetie' by an old lady! or maybe get a homemade
+                                    meal!
+                                </span>
+                            </td>
+                        </table>
+                        <br>
+                        <table>
+                            <td>
+                                <span class="commentimg">
+                                    <img src="../img/pfp/blubangs.png">
+                                </span>
+                            </td>
+                            <td>
+                                <a class="username" href="https://mspfa.com/user/?u=111364312037900324464">
+                                    BluBangs but built different</a>
+                                <span class="commenttimestamp">
+                                    Mar 31 2022 23:37:08
+                                </span>
+                                <br>
+                                <span class="commenttxt">
+                                    <span style="font-size: xx-large; font-weight: bold;">GRANDMA KITTY?!</span>
+                                    STOP SOTP MY HEART CAN
+                                    ONLY TAKE SO MUCH ;w;<br>
+                                    also whats the css you use for the moving text?
+                                </span>
+                            </td>
+                        </table>
+                        <br>
+                        <table>
+                            <td>
+                                <span class="commentimg">
+                                    <img src="../img/pfp/CeruleanSnake.gif">
+                                </span>
+                            </td>
+                            <td>
+                                <a class="username" href="https://mspfa.com/user/?u=101626213389903517817">
+                                    CeruleanSnake</a>
+                                <span class="commenttimestamp">
+                                    Apr 01 2022 15:51:01
+                                </span>
+                                <br>
+                                <span class="commenttxt">
+                                    <b><a href="https://mspfa.com/user/?u=111364312037900324464">
+                                            @BluBangs but built different</a></b>, Lol she came to me after seeing a
+                                    picture of a cat with cataracts. Also how I
+                                    get the fun shaky text is with Seymours funky text effects <a
+                                        href="https://mspfa.com/?s=35015&p=1">here</a>
+                                </span>
+                            </td>
+                        </table>
                     </div>
                 </div>
+
             </div>
         </div>
         <div id="pageno">

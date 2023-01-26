@@ -27,9 +27,9 @@
             <script type="text/javascript" src="data/navbar.js" />
             </script>
         </div>
-    </header> 
+    </header>
 
-<script type="text/javascript" src="../data/scripts/tabs.js">
+    <script type="text/javascript" src="../data/scripts/tabs.js">
     </script>
 
     <div id="container">
@@ -70,41 +70,48 @@
             </div>
 
             <div id="comments">
-                Comments are occasionally posted on pages in MSPFA by users. These are archived from the
-                original pages
-                as-is. Oldest comment first.
-                <br><br>
-                <div class="spoiler-border">
-                    <input class="spoilerbutton" type="button" value="Show Comments"
-                        onclick="this.value=this.value=='Show Comments'?'Hide Comments':'Show Comments';">
-                    <div class="spoiler">
-                        <div>
-                            <table>
-                                <td>
-                                    <span class="commentimg">
-                                        <img src="../img/pfp/mrvcr.png">
-                                    </span>
-                                </td>
-                                <td>
-                                    <a class="username" href="https://mspfa.com/user/?u=110588612587494628168">
-                                        Mr. VCR</a>
-                                    <span class="commenttimestamp">
-                                        Jan 22 2022 07:37:06
-                                    </span>
-                                    <br>
-                                    <span class="commenttxt">
-                                        Oogling is a fun running gag.
-                                    </span>
-                                </td>
-                            </table>
-                        </div>
-                    </div>
+                !!Warning, Author Commentary may contain spoilers!!<br><br>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'author')">AUTHOR COMMENTARY</button>
+                    <button class="tablinks" onclick="opentab(event, 'user')">USER COMMENTS</button><br><br>
+                </div>
+
+                <div id="author" class="tabcontent">
+                    Bet you were expecting a Homestuck Reference.<br><br>
+                    -TheCeruleanSnake
+                </div>
+
+                <div id="user" class="tabcontent">
+                    Comments are occasionally posted on pages in MSPFA by users. These are archived from the
+                    original pages
+                    as-is. Oldest comment first.
+                    <br><br>
+                    <table>
+                        <td>
+                            <span class="commentimg">
+                                <img src="../img/pfp/mrvcr.png">
+                            </span>
+                        </td>
+                        <td>
+                            <a class="username" href="https://mspfa.com/user/?u=110588612587494628168">
+                                Mr. VCR</a>
+                            <span class="commenttimestamp">
+                                Jan 22 2022 07:37:06
+                            </span>
+                            <br>
+                            <span class="commenttxt">
+                                Oogling is a fun running gag.
+                            </span>
+                        </td>
+                    </table>
                 </div>
             </div>
+
         </div>
-        <div id="pageno">
-            Page: 65
-        </div>
+    </div>
+    <div id="pageno">
+        Page: 65
+    </div>
     </div>
 </body>
 

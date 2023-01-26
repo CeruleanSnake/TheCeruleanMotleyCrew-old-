@@ -306,6 +306,22 @@ img.cellicon {
     -moz-image-rendering: auto;
 }
 
+
+/*Commentary*/
+/*=================================================*/
+#commentary-wrapper {
+    max-width: 650px;
+    box-sizing: border-box;
+    background-color: #EEE;
+    padding: 20px;
+    margin: 0 auto 10px auto;
+}
+
+#commentary-wrapper:empty {
+    display: none !important;
+}
+
+
 /*NAVIGATION*/
 /*=================================================*/
 nav>a,

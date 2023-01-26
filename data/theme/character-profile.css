@@ -24,14 +24,8 @@
 .tab button {
     background-color: #095a83;
     border: solid #05334a;
-    padding: 9px 8px 4px 8px;
-    transition: 0.2s;
     color: #6ebfe8;
-    font-size: 3ch;
-    font-weight: bold;
-    margin: 1px -3.5px 3px -3.5px;
-    text-shadow: 1px 1px #ae6b00;
-    font-family: 'homestuck';
+    text-shadow: 1px 1px #05334a;
 }
 
 .tab button:hover {
@@ -42,24 +36,13 @@
     background-color: rgb(255, 204, 0);
     color: #ae6b00;
     border: solid #ae6b00;
-    text-shadow: 1px 1px #05496c;
+    text-shadow: 1px 1px #6c4d05;
 }
 
 .tabcontent {
     border: 2px solid #3c6377;
-    animation: fadeEffect 0.5s;
-    margin-top: 10px;
 }
 
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 /* TAB COLUMN
         =============================================== */
