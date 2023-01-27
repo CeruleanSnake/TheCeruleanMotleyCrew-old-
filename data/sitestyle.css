@@ -315,6 +315,11 @@ img.cellicon {
     background-color: #EEE;
     padding: 20px;
     margin: 0 auto 10px auto;
+    image-rendering: auto;
+}
+
+#commentary-wrapper img {
+    max-width: 350px;
 }
 
 #commentary-wrapper:empty {

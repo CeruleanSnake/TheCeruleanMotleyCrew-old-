@@ -383,6 +383,10 @@ SPOILER button*/
     animation: fadeEffect 0.5s;
 }
 
+.tabcontent img {
+    max-width: 350px;
+}
+
 @keyframes fadeEffect {
     from {
         opacity: 0;
