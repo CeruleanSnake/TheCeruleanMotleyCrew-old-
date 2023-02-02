@@ -1,6 +1,267 @@
 /* THIS IS FOR ALL OFFLINE PAGES, NOT MSPFA */
 
-/*FONT IMPORT*/
+body {
+    font-family: "courier", "monospace";
+    font-size: 12px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+a:link {
+    color: #0080c2;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: #0080c2;
+}
+
+a:active {
+    color: red;
+}
+
+iframe {
+    border: none
+}
+
+#nav {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#main {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 5px 5px;
+}
+
+#container {
+    font-weight: bold;
+    font-size: 14px;
+    image-rendering: auto;
+}
+
+#slide {
+    width: 600px;
+    max-width: 940px;
+    margin: 20px auto 20px;
+    padding: 0 25px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+#command {
+    font-size: xx-large;
+    padding: 14px 0
+}
+
+#content img {
+    max-width: 940px;
+}
+
+#content canvas.major,
+#content iframe.major,
+#content img.major,
+#content object.major,
+#content ruffle-object.major,
+#content video.major {
+    margin: 0 -25px;
+    padding-bottom: 20px;
+}
+
+#foot {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    width: 650px;
+    margin-left: -25px;
+}
+
+#links {
+    margin-top: 31px;
+    margin-left: 25px;
+    font-weight: normal;
+    font-size: x-large;
+    text-align: left;
+}
+
+#gamelinks {
+    margin-left: 25px;
+    text-align: left;
+    font-size: smaller;
+}
+
+#timestamp {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    text-align: right;
+    font-size: 7px;
+    color: rgb(185, 185, 185);
+}
+
+#map>img {
+    image-rendering: optimizeQuality;
+    width: 165%;
+    padding-bottom: 20px;
+}
+
+#flashytitle,
+#flashytitlebottom {
+    height: 68px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#flashytitlebottom {
+    transform: scaleX(-1);
+}
+
+.heart {
+    padding: 0px 5px;
+    margin-left: 10px;
+    margin-bottom: -3px;
+}
+
+
+/* ==================================================== 
+Comments Section*/
+
+table {
+    text-align: left;
+    color: black;
+}
+
+#tab {
+    font-family: "courier", "monospace";
+    font-weight: bold;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+#tab button {
+    font-family: 'Homestuck';
+    float: middle;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 3ch;
+    margin: 1px -3.5px 3px -3.5px;
+    padding: 4px 8px 4px 8px;
+    transition: 0.2s;
+}
+
+#user,
+#author {
+    overflow: auto;
+    padding: 20px;
+}
+
+#author {
+    color: black;
+}
+
+#user {
+    font-family: "courier",
+        "monospace";
+}
+
+#user img {
+    max-width: 60px;
+    padding-right: 10px;
+}
+
+#user table {
+    padding: 0 15 15 15px;
+}
+
+#pageno {
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.commenttimestamp {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: courier;
+    color: #8c8c8c;
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px;
+    animation: fadeEffect 0.5s;
+}
+
+.tabcontent img {
+    max-width: 350px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ==================================================== 
+SPOILER button*/
+
+.spoilerbutton {
+    display: inline-block;
+}
+
+.spoiler {
+    overflow: auto;
+    background-color: #EEE;
+}
+
+.spoiler>div {
+    line-height: 18.9px;
+    text-align: left;
+}
+
+.spoilerbutton[value="Show"]+.spoiler>div,
+.spoilerbutton[value="Show Chat"]+.spoiler>div,
+.spoilerbutton[value="Show Log"]+.spoiler>div,
+.spoilerbutton[value="Show Journal"]+.spoiler>div {
+    display: none;
+}
+
+.spoilerbutton[value="Hide"]+.spoiler>div,
+.spoilerbutton[value="Hide Chat"]+.spoiler>div,
+.spoilerbutton[value="Hide Log"]+.spoiler>div,
+.spoilerbutton[value="Hide Journal"]+.spoiler>div {
+    margin: 12px;
+    padding: 3px;
+}
+
+.spoiler-border {
+    padding: 1px;
+    border: 1px dashed gray;
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+    align-content: center;
+}
+
+
+/* ============================================FONT IMPORT*/
 
 @font-face {
     font-family: 'Coder\'s Crux';
@@ -142,257 +403,4 @@
         url('font/courier-new/CourierNew.ttf') format('truetype'),
         url('font/courier-new/CourierNew.svg#CourierNewPSMT') format('svg');
     font-display: swap;
-}
-
-/* ==================================================== */
-
-body {
-    font-family: "Courier New", "Courier", "monospace";
-    font-size: 12px;
-    margin: 0px;
-    background-color: #064564;
-}
-
-a:link {
-    color: #0080c2;
-}
-
-a:visited {
-    color: purple;
-}
-
-a:hover {
-    color: #0080c2;
-}
-
-a:active {
-    color: red;
-}
-
-#nav {
-    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-#nav img {
-    margin-bottom: -2;
-    padding: 0 10;
-}
-
-#container {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-#slide {
-    width: 650;
-    margin: 20px auto 20px auto;
-    background-color: #eeeeee;
-    image-rendering: auto;
-}
-
-#slide>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#command {
-    text-align: center;
-    font-size: xx-large;
-    padding: 14px 0;
-}
-
-#content {
-    width: 600px;
-    margin: 0 25px;
-    padding-top: 25;
-    text-align: center;
-    margin-bottom: 14px;
-    font-family: 'Courier New', "Courier", "monospace";
-}
-
-#content>img {
-    margin-left: -27px;
-}
-
-#map>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    image-rendering: optimizeQuality;
-    width: 165%;
-}
-
-#foot {
-    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-}
-
-#timestamp {
-    margin: -20 10 10 25px;
-    text-align: right;
-    font-size: 6px;
-    color: rgb(185, 185, 185);
-}
-
-#nextpage {
-    margin: 40 25 12 25px;
-    font-weight: normal;
-    font-size: x-large;
-}
-
-#navigate {
-    font-family: inherit;
-    margin: 0 25 20 25px;
-    font-size: 10;
-    text-transform: uppercase;
-}
-
-#pageno {
-    margin: -20px auto 30 auto;
-    padding: 10 0 4 0;
-    width: 666;
-    height: 25px;
-    font-weight: bold;
-    font-size: 15;
-    text-align: center;
-}
-
-.heart {
-    background-position-x: 10px;
-}
-
-.iframe-container {
-    background: #eeeeee url("loading.gif") no-repeat 50% center !important;
-}
-
-/* ==================================================== 
-Comments Section*/
-
-#comments {
-    margin-bottom: -20px;
-    text-align: center;
-    font-weight: bold;
-    display: inline-block;
-    vertical-align: top;
-    width: 630;
-    padding: 10 10 0 0px;
-    font-family: "courier", "monospace";
-}
-
-#user,
-#author {
-    overflow: auto;
-    background-color: #EEE;
-    padding: 20px;
-}
-
-#author {
-    color: black;
-}
-
-#user img {
-    max-width: 60px;
-    padding-right: 10px;
-}
-
-#user table {
-    padding: 0 15 15 15px;
-}
-
-.username {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.commenttimestamp {
-    font-weight: normal;
-    font-size: 12px;
-    font-family: courier;
-    color: #8c8c8c;
-}
-
-/* ==================================================== 
-SPOILER button*/
-
-.spoilerbutton {
-    display: inline-block;
-    margin: -11px 0px;
-}
-
-.spoiler {
-    overflow: auto;
-    background-color: #EEE;
-}
-
-.spoiler>div {
-    line-height: 18.9px;
-    text-align: left;
-}
-
-.spoilerbutton[value="Show"]+.spoiler>div,
-.spoilerbutton[value="Show Chat"]+.spoiler>div,
-.spoilerbutton[value="Show Log"]+.spoiler>div,
-.spoilerbutton[value="Show Journal"]+.spoiler>div {
-    max-height: 0;
-}
-
-.spoilerbutton[value="Hide"]+.spoiler>div,
-.spoilerbutton[value="Hide Chat"]+.spoiler>div,
-.spoilerbutton[value="Hide Log"]+.spoiler>div,
-.spoilerbutton[value="Hide Journal"]+.spoiler>div {
-    padding: 5px;
-    padding-top: 25px;
-}
-
-.spoiler-border {
-    padding: 12px;
-    border: 1px dashed gray;
-    padding-left: 32.5px;
-    padding-right: 32.5px;
-    align-content: center;
-}
-
-/* TAB BUTTON STYLE
-        ==========================================*/
-
-.tab {
-    overflow: hidden;
-}
-
-.tab button {
-    font-family: 'Homestuck';
-    float: middle;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    font-size: 3ch;
-    margin: 1px -3.5px 3px -3.5px;
-    padding: 4px 8px 4px 8px;
-    transition: 0.2s;
-}
-
-.tabcontent {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    animation: fadeEffect 0.5s;
-}
-
-.tabcontent img {
-    max-width: 350px;
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }

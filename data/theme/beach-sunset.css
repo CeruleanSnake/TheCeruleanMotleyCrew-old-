@@ -18,31 +18,6 @@
     background: #160258;
 }
 
-/* TAB BUTTON STYLE
-        ==========================================*/
-
-.tab button {
-    background-color: #970000;
-    border: solid #710000;
-    color: #f90000;
-    text-shadow: 1px 1px #710000;
-}
-
-.tab button:hover {
-    background-color: #7a0000;
-}
-
-.tab button.active {
-    background-color: rgb(255, 204, 0);
-    color: #ae6b00;
-    border: solid #ae6b00;
-    text-shadow: 1px 1px #6c4d05;
-}
-
-.tabcontent {
-    border: 2px solid #710000;
-}
-
 
 /*MOBILE CSS*/
 /* =========================================== */
@@ -63,14 +38,17 @@ body {
     -moz-image-rendering: crisp-edges;
 }
 
-.heart {
-    background-image: url("default/logo_small.png") !important;
-    image-rendering: auto;
-    background-repeat: no-repeat;
+#main {
+    background-color: transparent
 }
 
 #slide {
     Border: 8px solid #a10000;
+    background-color: #eeeeee
+}
+
+#timestamp {
+    color: rgb(185, 185, 185);
 }
 
 #pageno {
@@ -78,32 +56,57 @@ body {
     background-color: #a10000;
 }
 
-#comments {
+#tab {
     background-color: #a10000;
-    Border: 8px solid #a10000;
     color: #ed6565;
+}
+
+#tab button {
+    background-color: #970000;
+    border: solid #710000;
+    color: #f90000;
+    text-shadow: 1px 1px #710000;
+}
+
+#tab button:hover {
+    background-color: #7a0000;
+}
+
+#tab button.active {
+    background-color: rgb(255, 204, 0);
+    color: #ae6b00;
+    border: solid #ae6b00;
+    text-shadow: 1px 1px #6c4d05;
+}
+
+#user,
+#author {
+    background-color: #EEE;
+}
+
+.heart {
+    background-image: url("default/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+.tabcontent {
+    border: 2px solid #710000;
+}
+
+.iframe-container {
+    background: #eeeeee url("../loading.gif") no-repeat 50% center !important;
 }
 
 /*SITE ONLY*/
 /* =========================================== */
 
-.um {
-    transform: translateX(-145px);
-    width: 650px;
-}
-
 .umcontainer {
     background-image: url("https://miro.gg/mspfafacereverse");
-    background-repeat: no-repeat;
-    background-position-x: 795px;
 }
 
 .mspfalogo {
     background-image: url("https://miro.gg/mspfaface") !important;
-    size: 70%;
-    border-right: 4px solid transparent;
-    background-color: transparent;
-    background-position-x: 0px;
 }
 
 #infobox>div.spoiler.open {

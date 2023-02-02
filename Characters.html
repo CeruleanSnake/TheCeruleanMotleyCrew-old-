@@ -1,687 +1,694 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=500, initial-scale=1">
+<meta name="description" content="A daring adventure of pirates, booze and a whole lotta booty!">
+<meta name="author" content="CeruleanSnake">
 
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <meta charset="utf-8" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-
     <title>
         The Cerulean Motley Crew
     </title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
     <link rel="stylesheet" href="data/main.css" />
     <link rel="stylesheet" href="data/theme/character-profile.css" />
 
-
-</head>
-
-<body>
-    <div id="flashytitle"></div>
-    <div id="overlay" data-amt="3">
+    <div id="overlay" data-amt="4">
         <script type="text/javascript" src="data/scripts/parallaxbg.js" />
         </script>
     </div>
-    <header>
-        <div id="nav">
-            <script type="text/javascript" src="data/scripts/navbar.js" />
-            </script>
-        </div>
-    </header>
 
     <script type="text/javascript" src="data/scripts/tabs.js">
     </script>
 
-    <div id="container">
-        <div id="slide" Style="width: 750px;">
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</head>
 
-            <div id="command" style="margin-bottom: -20px;">
-                <img src="data/theme/default/logo_small.png"> Characters <img src="data/theme/default/logo_small.png">
+<body>
+    <div id="main">
+        <header>
+            <div id="flashytitle"></div>
+
+            <div id="nav">
+                <script type="text/javascript" src="data/scripts/navbar.js" />
+                </script>
             </div>
+        </header>
 
-            <div id="content" Style="width: 700px;">
-                <div class="tab">
-                    <button class="tablinks" onclick="opentab(event, 'Chever')" id="defaultOpen">CHEVER</button>
-                    <button class="tablinks" onclick="opentab(event, 'Derrek')">DERREK</button>
-                    <button class="tablinks" onclick="opentab(event, 'Jujuju')">JUJUJU</button>
-                    <button class="tablinks" onclick="opentab(event, 'Diunna')">DIUNNA</button>
-                    <button class="tablinks" onclick="opentab(event, 'Govani')">GOVANI</button>
-                    <button class="tablinks" onclick="opentab(event, 'Freya')">FREYA</button>
-                    <button class="tablinks" onclick="opentab(event, 'Hewatsu')">HEWATSU</button>
-                    <button class="tablinks" onclick="opentab(event, 'Zyyrasan')">Z'YYRASAN</button><br>
-                    ==========================================================<br>
-                    ==========================================================<br>
-                    <button class="tablinks" onclick="opentab(event, 'Edmond')">DIRECTOR</button>
-                    <button class="tablinks" onclick="opentab(event, 'Finscar')">FINSCAR</button>
-                    <button class="tablinks" onclick="opentab(event, 'Queen')">QUEEN</button>
-                    <button class="tablinks" onclick="opentab(event, 'Spider')">SPIDER</button>
+        <div id="container">
+            <div id="slide" Style="width: 750px;">
+                <div id="command" style="margin-bottom: -20px;">
+                    <img src="data/theme/default/logo_small.png"> Characters <img
+                        src="data/theme/default/logo_small.png">
                 </div>
 
-                <div id="Chever" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Chever Stalii</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Cerulean Snake<br><br>
-                                <b>Age:</b> 19 Sweeps<br><br>
-                                <b>Gender:</b> [REDACTED]<br><br>
-                                <b>Height:</b> 4'8"/142cm<br><br>
-                                <b>Race:</b> Alternian<br><br>
-                                <b>Bloodcaste:</b> Cerulean<br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> Royal Alternian Navy Lieutenant (former), Head detention
-                                security officer (former),
-                                Pirate outlaw
-                                (current)<br><br>
-                                <b> Criminal Offenses:</b><br> Destruction of Empire property, Orchestrating prison
-                                riot, Releasing of prisoner,
-                                Security hijacking, Theft of classified documents, Treason, Piracy<br><br>
-                                <b> Distinguishing Features:</b><br>Hard of hearing, missing one eye, tattoo of snake on
-                                left arm<br><br>
-                                <b>Notes:</b><br> <br>
+                <div id="content">
+                    <div id="tab">
+                        <button class="tablinks" onclick="opentab(event, 'Chever')" id="defaultOpen">CHEVER</button>
+                        <button class="tablinks" onclick="opentab(event, 'Derrek')">DERREK</button>
+                        <button class="tablinks" onclick="opentab(event, 'Jujuju')">JUJUJU</button>
+                        <button class="tablinks" onclick="opentab(event, 'Diunna')">DIUNNA</button>
+                        <button class="tablinks" onclick="opentab(event, 'Govani')">GOVANI</button>
+                        <button class="tablinks" onclick="opentab(event, 'Freya')">FREYA</button>
+                        <button class="tablinks" onclick="opentab(event, 'Hewatsu')">HEWATSU</button>
+                        <button class="tablinks" onclick="opentab(event, 'Zyyrasan')">Z'YYRASAN</button><br>
+                        ==========================================================<br>
+                        ==========================================================<br>
+                        <button class="tablinks" onclick="opentab(event, 'Edmond')">DIRECTOR</button>
+                        <button class="tablinks" onclick="opentab(event, 'Finscar')">FINSCAR</button>
+                        <button class="tablinks" onclick="opentab(event, 'Queen')">QUEEN</button>
+                        <button class="tablinks" onclick="opentab(event, 'Spider')">SPIDER</button>
+                    </div>
+
+                    <div id="Chever" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Chever Stalii</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Cerulean Snake<br><br>
+                                    <b>Age:</b> 19 Sweeps<br><br>
+                                    <b>Gender:</b> [REDACTED]<br><br>
+                                    <b>Height:</b> 4'8"/142cm<br><br>
+                                    <b>Race:</b> Alternian<br><br>
+                                    <b>Bloodcaste:</b> Cerulean<br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> Royal Alternian Navy Lieutenant (former), Head detention
+                                    security officer (former),
+                                    Pirate outlaw
+                                    (current)<br><br>
+                                    <b> Criminal Offenses:</b><br> Destruction of Empire property, Orchestrating prison
+                                    riot, Releasing of prisoner,
+                                    Security hijacking, Theft of classified documents, Treason, Piracy<br><br>
+                                    <b> Distinguishing Features:</b><br>Hard of hearing, missing one eye, tattoo of
+                                    snake on
+                                    left arm<br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="cheverslide">
-                                    <div class="cheverimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="cheverslide">
+                                        <div class="cheverimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="cheverimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="cheverimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="cheverimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="cheverimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 0)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 0)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 0)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 0)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Derrek" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Derrek Xarres</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Red Fox<br><br>
-                                <b>Age:</b> 14 sweeps???<br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 5'4"/162cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Derrek" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Derrek Xarres</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Red Fox<br><br>
+                                    <b>Age:</b> 14 sweeps???<br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 5'4"/162cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="derrekslide">
-                                    <div class="derrekimg">
-                                        <img src="img/art/derrekoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="derrekslide">
+                                        <div class="derrekimg">
+                                            <img src="img/art/derrekoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="derrekimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="derrekimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="derrekimg">
-                                        <img src="img/art/govanioutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="derrekimg">
+                                            <img src="img/art/govanioutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <a class="prev" onclick="plusSlides(-1, 1)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 1)">==>
-                                    </a>
+                                        <a class="prev" onclick="plusSlides(-1, 1)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 1)">==>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Jujuju" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Jujuju Nunapu</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Flintlock (former), Hydra (current) <br><br>
-                                <b>Age:</b> 12 Sweeps<br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 5'0"/152cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Jujuju" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Jujuju Nunapu</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Flintlock (former), Hydra (current) <br><br>
+                                    <b>Age:</b> 12 Sweeps<br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 5'0"/152cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="jujujuslide">
-                                    <div class="jujujuimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="jujujuslide">
+                                        <div class="jujujuimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="jujujuimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="jujujuimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="jujujuimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="jujujuimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 2)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 2)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 2)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 2)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Diunna" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Diunna Tyroon</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Rat<br><br>
-                                <b>Age:</b> 16 Sweeps<br><br>
-                                <b>Gender:</b> 6'3"/190cm <br><br>
-                                <b>Height:</b> <br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Diunna" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Diunna Tyroon</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Rat<br><br>
+                                    <b>Age:</b> 16 Sweeps<br><br>
+                                    <b>Gender:</b> 6'3"/190cm <br><br>
+                                    <b>Height:</b> <br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="diunnaslide">
-                                    <div class="diunnaimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="diunnaslide">
+                                        <div class="diunnaimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="diunnaimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="diunnaimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="diunnaimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="diunnaimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 3)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 3)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 3)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 3)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Govani" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Govani Gocchi</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Dragon<br><br>
-                                <b>Age:</b> 17 Sweeps<br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b>6'2"/187cm <br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Govani" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Govani Gocchi</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Dragon<br><br>
+                                    <b>Age:</b> 17 Sweeps<br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b>6'2"/187cm <br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="govanislide">
-                                    <div class="govaniimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="govanislide">
+                                        <div class="govaniimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="govaniimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="govaniimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="govaniimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="govaniimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 4)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 4)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 4)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 4)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Freya" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Freya Flincendos Fuego Frascua</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Phoenix<br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 4'0"/121cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Freya" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Freya Flincendos Fuego Frascua</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Phoenix<br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 4'0"/121cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="freyaslide">
-                                    <div class="freyaimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="freyaslide">
+                                        <div class="freyaimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="freyaimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="freyaimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="freyaimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="freyaimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 5)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 5)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 5)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 5)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Hewatsu" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Hewatsu Nekoya</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Jungle Tiger<br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 6'0"/182cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Hewatsu" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Hewatsu Nekoya</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Jungle Tiger<br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 6'0"/182cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="hewatsuslide">
-                                    <div class="hewatsuimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="hewatsuslide">
+                                        <div class="hewatsuimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="hewatsuimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="hewatsuimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="hewatsuimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="hewatsuimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 6)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 6)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 6)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 6)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Zyyrasan" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Z-yyrasan Yuv-ka'Nuyuek</h2>
-                            <div style="text-align: left;">
-                                <b>Alternian name:</b> Still Waters of the Lagoon<br><br>
-                                <b>Allias:</b> Shark<br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 5'6"/167cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Zyyrasan" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Z-yyrasan Yuv-ka'Nuyuek</h2>
+                                <div style="text-align: left;">
+                                    <b>Alternian name:</b> Still Waters of the Lagoon<br><br>
+                                    <b>Allias:</b> Shark<br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 5'6"/167cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="sharkslide">
-                                    <div class="sharkimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="sharkslide">
+                                        <div class="sharkimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="sharkimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="sharkimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="sharkimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="sharkimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 7)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 7)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 7)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 7)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!--====================================-->
+                    <!--====================================-->
 
-                <div id="Edmond" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Edmond Trieux</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> The Director <br><br>
-                                <b>Age:</b> ???<br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 5'11"/180cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Edmond" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Edmond Trieux</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> The Director <br><br>
+                                    <b>Age:</b> ???<br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 5'11"/180cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="edmondslide">
-                                    <div class="edmondimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="edmondslide">
+                                        <div class="edmondimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="edmondimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="edmondimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="edmondimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="edmondimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 8)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 8)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 8)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 8)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Finscar" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Viktor Shwesh</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Captain Finscar <br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> 5'11"/180cm<br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Finscar" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Viktor Shwesh</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Captain Finscar <br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> 5'11"/180cm<br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="finscarslide">
-                                    <div class="finscarimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="finscarslide">
+                                        <div class="finscarimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="finscarimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="finscarimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="finscarimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="finscarimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 9)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 9)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 9)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 9)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Queen" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Lillou Aquouo</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> The Queen <br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> <br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Queen" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Lillou Aquouo</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> The Queen <br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> <br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="queenslide">
-                                    <div class="queenimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="queenslide">
+                                        <div class="queenimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="queenimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="queenimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="queenimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="queenimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 10)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 10)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 10)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 10)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Spider" class="tabcontent">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Uvuera Vraske</h2>
-                            <div style="text-align: left;">
-                                <b>Allias:</b> Spider Eyes <br><br>
-                                <b>Age:</b> <br><br>
-                                <b>Gender:</b> <br><br>
-                                <b>Height:</b> <br><br>
-                                <b>Race:</b> <br><br>
-                                <b>Bloodcaste:</b> <br><br>
-                                <b>Symbol:</b> <br><br>
-                                <b>Occupation:</b> <br><br>
-                                <b> Criminal Offenses:</b><br> <br><br>
-                                <b> Distinguishing Features:</b><br> <br><br>
-                                <b>Notes:</b><br> <br>
+                    <div id="Spider" class="tabcontent">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Uvuera Vraske</h2>
+                                <div style="text-align: left;">
+                                    <b>Allias:</b> Spider Eyes <br><br>
+                                    <b>Age:</b> <br><br>
+                                    <b>Gender:</b> <br><br>
+                                    <b>Height:</b> <br><br>
+                                    <b>Race:</b> <br><br>
+                                    <b>Bloodcaste:</b> <br><br>
+                                    <b>Symbol:</b> <br><br>
+                                    <b>Occupation:</b> <br><br>
+                                    <b> Criminal Offenses:</b><br> <br><br>
+                                    <b> Distinguishing Features:</b><br> <br><br>
+                                    <b>Notes:</b><br> <br>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgcolumn">
-                            <div class="slideshow-container">
-                                <div class="spiderslide">
-                                    <div class="spiderimg">
-                                        <img src="img/art/snakeoutfit.png" style="width:100%"><br>
-                                        <div class="slidecaption">
-                                            Concept
+                            <div class="imgcolumn">
+                                <div class="slideshow-container">
+                                    <div class="spiderslide">
+                                        <div class="spiderimg">
+                                            <img src="img/art/snakeoutfit.png" style="width:100%"><br>
+                                            <div class="slidecaption">
+                                                Concept
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="spiderimg">
-                                        <img src="img/art/snakeoutfit2.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            Concept 2
+                                        <div class="spiderimg">
+                                            <img src="img/art/snakeoutfit2.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                Concept 2
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="spiderimg">
-                                        <img src="img/art/jujujuoutfit.png" style="width:100%">
-                                        <div class="slidecaption">
-                                            More pictures style test
+                                        <div class="spiderimg">
+                                            <img src="img/art/jujujuoutfit.png" style="width:100%">
+                                            <div class="slidecaption">
+                                                More pictures style test
+                                            </div>
                                         </div>
+                                        <a class="prev" onclick="plusSlides(-1, 11)">
+                                            <==</a> <a class="next" onclick="plusSlides(1, 11)">==>
+                                        </a>
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 11)">
-                                        <==</a> <a class="next" onclick="plusSlides(1, 11)">==>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br><br>
                 </div>
             </div>
         </div>
-    </div>
 
+        <footer>
+            <div id="flashytitlebottom"></div>
+        </footer>
+    </div>
     <script type="text/javascript" src="data/scripts/slideshow.js">
     </script>
     <script>
         document.getElementById("defaultOpen").click();
     </script>
-
-    <div id="flashytitlebottom"></div>
-    </div>
 </body>
 
 </html>

@@ -1,109 +1,122 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=500, initial-scale=1">
+<meta name="description" content="A daring adventure of pirates, booze and a whole lotta booty!">
+<meta name="author" content="CeruleanSnake">
 
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <meta charset="utf-8" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-
     <title>
         The Cerulean Motley Crew
     </title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
     <link rel="stylesheet" href="data/main.css" />
     <link rel="stylesheet" href="data/theme/default.css" />
-</head>
 
-<body>
-    <div id="flashytitle"></div>
-    <div id="overlay" data-amt="3">
+    <div id="overlay" data-amt="4">
         <script type="text/javascript" src="data/scripts/parallaxbg.js" />
         </script>
     </div>
-    <header>
-        <div id="nav">
-            <script type="text/javascript" src="data/scripts/navbar.js" />
-            </script>
-        </div>
-    </header>
 
     <script type="text/javascript" src="data/scripts/tabs.js">
     </script>
 
-    <div id="container">
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</head>
 
-        <div id="slide">
+<body>
+    <div id="main">
+        <header>
+            <div id="flashytitle"></div>
 
-            <div id="command">
-                How To Browser Settings
+            <div id="nav">
+                <script type="text/javascript" src="data/scripts/navbar.js" />
+                </script>
             </div>
+        </header>
 
-            <div id="content" style="image-rendering: auto;">
-                <img src="img/emotes/0167.png" title="Brain powers... Activate!"
-                    style="max-width: 30%; margin: -25 0 25 0;">
-                <div style="font-size: 20px">
-                    <br>==========================<br>
-                    <span style="color: #005682;">
-                        <img src="data/theme/default/logo_small.png">
-                        BROWSER SETTINGS AND INTERACTIVE CONTENT
-                        <img src="data/theme/default/logo_small.png">
-                        <br>
-                    </span>
-                    ==========================<br><br>
-                </div>
-                My main tool when making my fancy animations is Google Web Designer. Due to security reasons, most
-                browsers don't like it when an HTML5 container begins auto playing.<br><br>
-                There is not much that can fix that other than doing a little tweaking in your browser setting. Just
-                follow these nifty instructions for the browser of your choice! (At least the ones I actually have
-                installed... message me if your browser isn't in this list and want it included.)
-                <br><br><br>
-
-                <div class="tab">
-                    <button class="tablinks" onclick="opentab(event, 'chrome')" id="defaultOpen">GOOGLE CHROME</button>
-                    <button class="tablinks" onclick="opentab(event, 'firefox')">MOZILLA FIREFOX</button>
+        <div id="container">
+            <div id="slide">
+                <div id="command">
+                    How To Browser Settings
                 </div>
 
-                <div id="chrome" class="tabcontent">
-                    <div style="text-align: center;">
-                        If you look next to your web address, you'll see a padlock. Click on it and click on "Site
-                        Settings" (You can also click on the 3 dots in the corner and head to Settings > Privacy and
-                        Security > Site permissions and find your site.)<br><br>
-                        <a href="img/google1.png" target="_blank"><img src="img/google1.png"
-                                style="max-width: 50%;"></a>
-                        <a href="img/google2.png" target="_blank"><img src="img/google2.png"
-                                style="max-width: 30%;"></a><br><br>
-                        From there, Find Sound and click the drop down menu. Pick aloow then go back to your page
-                        and refresh!<br>
-                        <a href="img/google3.png" target="_blank"><img src="img/google3.png"
-                                style="max-width: 70%;"></a>
-
-
+                <div id="content">
+                    <img src="img/emotes/0167.png" title="Brain powers... Activate!"
+                        style="max-width: 30%; margin: -25 0 25 0;">
+                    <div style="font-size: 20px">
+                        <br>==========================<br>
+                        <span style="color: #005682;">
+                            <img src="data/theme/default/logo_small.png">
+                            BROWSER SETTINGS AND INTERACTIVE CONTENT
+                            <img src="data/theme/default/logo_small.png">
+                            <br>
+                        </span>
+                        ==========================<br><br>
                     </div>
+                    My main tool when making my fancy animations is Google Web Designer. Due to security reasons, most
+                    browsers don't like it when an HTML5 container begins auto playing.<br><br>
+                    There is not much that can fix that other than doing a little tweaking in your browser setting. Just
+                    follow these nifty instructions for the browser of your choice! (At least the ones I actually have
+                    installed... message me if your browser isn't in this list and want it included.)
+                    <br><br><br>
+
+                    <div id="tab" style="background-color: transparent;">
+                        <button class="tablinks" onclick="opentab(event, 'chrome')" id="defaultOpen">GOOGLE
+                            CHROME</button>
+                        <button class="tablinks" onclick="opentab(event, 'firefox')">MOZILLA FIREFOX</button>
+                    </div>
+
+                    <div id="chrome" class="tabcontent">
+                        <div style="text-align: center;">
+                            If you look next to your web address, you'll see a padlock. Click on it and click on "Site
+                            Settings" (You can also click on the 3 dots in the corner and head to Settings > Privacy and
+                            Security > Site permissions and find your site.)<br><br>
+                            <a href="img/extra/google1.png" target="_blank"><img src="img/extra/google1.png"
+                                    style="max-width: 50%;"></a>
+                            <a href="img/extra/google2.png" target="_blank"><img src="img/extra/google2.png"
+                                    style="max-width: 30%;"></a><br><br>
+                            From there, Find Sound and click the drop down menu. Pick aloow then go back to your page
+                            and refresh!<br>
+                            <a href="img/extra/google3.png" target="_blank"><img src="img/extra/google3.png"
+                                    style="max-width: 70%;"></a>
+
+
+                        </div>
+                    </div>
+
+                    <div id="firefox" class="tabcontent">
+                        <div style="text-align: center;">
+                            If you look next to your web address, you'll see a padlock. On the right of it will be
+                            another button, click on it and you will see some site permissions.<br>
+                            In the drop down menu for Autoplay, chose Allow Audio and Video and refresh you page!<br>
+                            <a href="img/extra/firefox1.png" target="_blank"><img src="img/extra/firefox1.png"
+                                    style="max-width: 50%;"></a>
+                        </div>
+                    </div>
+                    <br>
+                    More browsers to be added soon...
+                    <br><br><br>
                 </div>
 
-                <div id="firefox" class="tabcontent">
-                    <div style="text-align: center;">
-                        If you look next to your web address, you'll see a padlock. On the right of it will be
-                        another button, click on it and you will see some site permissions.<br>
-                        In the drop down menu for Autoplay, chose Allow Audio and Video and refresh you page!<br>
-                        <a href="img/firefox1.png" target="_blank"><img src="img/firefox1.png"
-                                style="max-width: 50%;"></a>
-                    </div>
+                <div id="foot">
+                    All browsers are copyrighted by their respective companies ect ect.
+                    <br><br>
                 </div>
-                <br>
-                More browsers to be added soon...
-                <br><br><br>
-                All browsers are copyrighted by their respective companies ect ect.
             </div>
         </div>
-        <script>
-            document.getElementById("defaultOpen").click();
-        </script>
-        <div id="flashytitlebottom"></div>
+
+        <footer>
+            <div id="flashytitlebottom"></div>
+        </footer>
     </div>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>

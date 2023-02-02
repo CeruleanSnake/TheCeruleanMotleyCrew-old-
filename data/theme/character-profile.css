@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ffffff;
+    background: rgb(255, 181, 233);
     border-radius: 1ex;
     -webkit-border-radius: 1ex;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
@@ -18,34 +18,81 @@
     background: #035c88;
 }
 
-/* TAB BUTTON STYLE
-        ==========================================*/
 
-.tab button {
+/*MOBILE CSS*/
+/* =========================================== */
+body {
+    background-image:
+        url("default/water.png"),
+        url("default/front-cloud.png"),
+        url("default/back-cloud.png"),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 0, 112, 0.95) 25%, rgb(0, 146, 231) 80%),
+        url("default/background.bmp");
+    background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
+    background-position: bottom, center, center, top, top;
+    background-attachment: fixed;
+    background-color: #064564;
+    color: #000000;
+    background-size: 80vh, 80vh, 80vh, cover, 20vh;
+    image-rendering: pixelated;
+    -moz-image-rendering: crisp-edges;
+}
+
+#main {
+    background-color: transparent
+}
+
+#slide {
+    Border: 8px solid #064564;
+    background-color: #eeeeee
+}
+
+#timestamp {
+    color: rgb(185, 185, 185);
+}
+
+#pageno {
+    color: #fff;
+    background-color: #064564;
+}
+
+#tab button {
     background-color: #095a83;
     border: solid #05334a;
     color: #6ebfe8;
     text-shadow: 1px 1px #05334a;
 }
 
-.tab button:hover {
+#tab button:hover {
     background-color: #053852;
 }
 
-.tab button.active {
+#tab button.active {
     background-color: rgb(255, 204, 0);
     color: #ae6b00;
     border: solid #ae6b00;
     text-shadow: 1px 1px #6c4d05;
 }
 
+#user,
+#author {
+    background-color: #EEE;
+}
+
+.heart {
+    background-image: url("default/logo_small.png") !important;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
 .tabcontent {
     border: 2px solid #3c6377;
 }
 
+.iframe-container {
+    background: #eeeeee url("../loading.gif") no-repeat 50% center !important;
+}
 
-/* TAB COLUMN
-        =============================================== */
 .row {
     display: flex;
     font-family: "courier",
@@ -65,6 +112,36 @@
 }
 
 
+
+/*SITE ONLY*/
+/* =========================================== */
+
+.umcontainer {
+    background-image: url("https://miro.gg/mspfafacereverse");
+}
+
+.mspfalogo {
+    background-image: url("https://miro.gg/mspfaface") !important;
+}
+
+#infobox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
+#commentbox>div.spoiler.open {
+    Border: 4px solid #064564;
+}
+
+#commentary-wrapper {
+    Border: 8px solid #064564;
+}
+
+#flashytitle,
+#flashytitlebottom {
+    background-image: url("default/header.png");
+}
+
+
 /* SLIDESHOW STYLE
         ==========================================*/
 
@@ -74,10 +151,9 @@
 }
 
 .slidecaption {
-    margin-top: -3px;
     padding: 7px 5px 5px 5px;
-    width: 175px;
-    margin-left: 18%;
+    width: 186px;
+    margin-left: 53px;
     font-size: 16px;
 }
 
@@ -86,7 +162,7 @@
     cursor: pointer;
     position: absolute;
     bottom: 0px;
-    top: 430px;
+    top: 456px;
     padding: 3px 10px 0px 10px;
     background-color: #f1f1f1;
     color: black;
@@ -202,86 +278,15 @@
     border: 3px solid #a10000;
 }
 
-
-/*MOBILE CSS*/
-/* =========================================== */
-body {
-    background-image:
-        url("default/sky_cloud.png"),
-        url("default/front_cloud.png"),
-        url("default/bg_cloud.png"),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
-        url("default/background.bmp");
-    background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, repeat;
-    background-position: center, bottom, bottom, top, top;
-    background-attachment: scroll;
-    background-color: #064564;
-    background-size: 80vh, 80vh, 80vh, cover, 20vh;
-    image-rendering: pixelated;
-    -moz-image-rendering: crisp-edges;
-    scrollbar-color: #053852 #064564;
-}
-
-.heart {
-    background-image: url("default/logo_small.png") !important;
-    image-rendering: auto;
-    background-repeat: no-repeat;
-}
-
-#slide {
-    Border: 8px solid #064564;
-}
-
-#pageno {
-    color: #fff;
-    background-color: #064564;
-}
-
-
-/*SITE ONLY*/
-/* =========================================== */
-
-#flashytitle {
-    height: 68px;
-    max-width: 100%;
-    background-image: url("default/header.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-color: transparent;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-#flashytitlebottom {
-    height: 68px;
-    max-width: 100%;
-    background-image: url("default/header.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-color: transparent;
-    padding-top: 10px;
-    margin-top: 10px;
-    transform: scaleX(-1);
-}
-
 /*PC CSS*/
 /* =========================================== */
 @media screen and (min-width: 1200px) {
     body {
         background-image:
-            linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(7, 15, 107, 0.95) 25%, rgba(22, 119, 156, 1) 80%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 0, 112, 0.95) 25%, rgb(0, 146, 231) 80%),
             url("default/background.gif");
         background-repeat: no-repeat, repeat;
         background-size: cover, 20vh;
-        background-attachment: fixed;
-    }
-
-    #flashytitle {
-        background-size: auto;
-    }
-
-    #flashytitlebottom {
-        background-size: auto;
     }
 
     /* PARALLAX BACKGROUND */
@@ -297,45 +302,116 @@ body {
     }
 
     #overlay {
-        background-image: url("default/sky_cloud.png");
-        animation: 180s skycloud-move linear infinite reverse;
-        z-index: -2;
+        background-image: url("default/island.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 50vh;
+        background-position-x: 70vw;
+        background-position-y: 65vh;
+        z-index: -1;
+    }
+
+    .overlay-3 {
+        background-image: url("default/back-cloud.png");
+        animation: 180s backcloud-move linear infinite;
         background-position: center left;
         background-repeat: repeat-x;
         background-size: 80vh;
     }
 
-    .overlay-1 {
-        background-image: url("default/bg_cloud.png");
-        animation: 50s bgcloud-move linear infinite;
-        background-position: bottom left;
+    .overlay-4 {
+        background-image: url("default/front-cloud.png");
+        animation: 50s frontcloud-move linear infinite reverse;
+        background-position: center left;
+        background-position-y: 20vh;
         background-repeat: repeat-x;
         background-size: 80vh;
+    }
+
+    .overlay-1 {
+        background-image: url("default/ship.png");
+        animation: 35s ship-move linear infinite;
+        background-repeat: no-repeat;
+        background-size: 20vh;
+        background-position-x: 110vw;
+        background-position-y: 62vh;
     }
 
     .overlay-2 {
-        background-image: url("default/front_cloud.png");
-        animation: 20s frontcloud-move linear infinite;
+        background-image: url("default/water.png");
+        animation: 60s water-move linear infinite;
         background-position: bottom left;
         background-repeat: repeat-x;
         background-size: 80vh;
+
     }
 
-    @keyframes skycloud-move {
+    @keyframes water-move {
+        to {
+            background-position: 80vh bottom;
+        }
+    }
+
+    @keyframes backcloud-move {
         to {
             background-position: 80vh center;
         }
     }
 
-    @keyframes bgcloud-move {
+    @keyframes frontcloud-move {
         to {
-            background-position: 80vh bottom;
+            background-position: 80vh center;
+            background-position-y: 20vh;
         }
     }
 
-    @keyframes frontcloud-move {
+    @keyframes ship-move {
         to {
-            background-position: 80vh bottom;
+            background-position-x: -60vh;
+        }
+
+        0% {
+            top: 1vh;
+        }
+
+        10% {
+            top: 0vh;
+        }
+
+        20% {
+            top: 1vh;
+        }
+
+        30% {
+            top: 0vh;
+        }
+
+        40% {
+            top: 1vh;
+        }
+
+        50% {
+            top: 0vh;
+        }
+
+        60% {
+            top: 1vh;
+        }
+
+        70% {
+            top: 0vh;
+        }
+
+        80% {
+            top: 1vh;
+        }
+
+        90% {
+            top: 0vh;
+        }
+
+        100% {
+            top: 1vh;
         }
     }
 }

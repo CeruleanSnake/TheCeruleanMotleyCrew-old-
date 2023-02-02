@@ -1,148 +1,5 @@
 /* THIS IS FOR MSPFA, NOT OFFLINE PAGES */
 
-/*FONT IMPORT*/
-
-@font-face {
-    font-family: 'Coder\'s Crux';
-    src: url('font/coders-crux/Coders-Crux.eot');
-    src: local('Coder\'s Crux Regular'), local('Coder\'s-Crux'),
-        url('font/coders-crux/Coders-Crux.eot?#iefix') format('embedded-opentype'),
-        url('font/coders-crux/Coders-Crux.woff2') format('woff2'),
-        url('font/coders-crux/Coders-Crux.woff') format('woff'),
-        url('font/coders-crux/Coders-Crux.ttf') format('truetype'),
-        url('font/coders-crux/Coders-Crux.svg#Coder\'s-Crux') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fipps';
-    src: url('font/fipps/Fipps-Regular.eot');
-    src: local('Fipps Regular'), local('Fipps-Regular'),
-        url('font/fipps/Fipps-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/fipps/Fipps-Regular.woff2') format('woff2'),
-        url('font/fipps/Fipps-Regular.woff') format('woff'),
-        url('font/fipps/Fipps-Regular.ttf') format('truetype'),
-        url('font/fipps/Fipps-Regular.svg#Fipps-Regular') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gothic Pixel';
-    src: url('font/gothic-pixel/Gothic-Pixel.eot');
-    src: local('Gothic Pixel Regular'), local('Gothic-Pixel'),
-        url('font/gothic-pixel/Gothic-Pixel.eot?#iefix') format('embedded-opentype'),
-        url('font/gothic-pixel/Gothic-Pixel.woff2') format('woff2'),
-        url('font/gothic-pixel/Gothic-Pixel.woff') format('woff'),
-        url('font/gothic-pixel/Gothic-Pixel.ttf') format('truetype'),
-        url('font/gothic-pixel/Gothic-Pixel.svg#Gothic-Pixel') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Retrogression';
-    src: url('font/retrogression/Retrogression-Regular.eot');
-    src: local('Retrogression Regular'), local('Retrogression-Regular'),
-        url('font/retrogression/Retrogression-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/retrogression/Retrogression-Regular.woff2') format('woff2'),
-        url('font/retrogression/Retrogression-Regular.woff') format('woff'),
-        url('font/retrogression/Retrogression-Regular.ttf') format('truetype'),
-        url('font/retrogression/Retrogression-Regular.svg#Retrogression-Regular') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Hiveswap Alternian';
-    src: url('font/hiveswap-alternian/HiveswapAlternian-Regular.eot');
-    src: local('Hiveswap Alternian Regular'), local('HiveswapAlternian-Regular'),
-        url('font/hiveswap-alternian/HiveswapAlternian-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/hiveswap-alternian/HiveswapAlternian-Regular.woff2') format('woff2'),
-        url('font/hiveswap-alternian/HiveswapAlternian-Regular.woff') format('woff'),
-        url('font/hiveswap-alternian/HiveswapAlternian-Regular.ttf') format('truetype'),
-        url('font/hiveswap-alternian/HiveswapAlternian-Regular.svg#HiveswapAlternian-Regular') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Homestuck';
-    src: url('font/homestuck/Homestuck-Regular.eot');
-    src: local('Homestuck Regular'), local('Homestuck-Regular'),
-        url('font/homestuck/Homestuck-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/homestuck/Homestuck-Regular.woff2') format('woff2'),
-        url('font/homestuck/Homestuck-Regular.woff') format('woff'),
-        url('font/homestuck/Homestuck-Regular.ttf') format('truetype'),
-        url('font/homestuck/Homestuck-Regular.svg#Homestuck-Regular') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Victorian Parlor';
-    src: url('font/victorian-parlor-vintage/VictorianParlorVintage.eot');
-    src: local('Victorian Parlor Vintage'), local('VictorianParlorVintage'),
-        url('font/victorian-parlor-vintage/VictorianParlorVintage.eot?#iefix') format('embedded-opentype'),
-        url('font/victorian-parlor-vintage/VictorianParlorVintage.woff2') format('woff2'),
-        url('font/victorian-parlor-vintage/VictorianParlorVintage.woff') format('woff'),
-        url('font/victorian-parlor-vintage/VictorianParlorVintage.ttf') format('truetype'),
-        url('font/victorian-parlor-vintage/VictorianParlorVintage.svg#VictorianParlorVintage') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Victorian Parlor Alternate';
-    src: url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.eot');
-    src: local('Victorian Parlor Vintage Alternate'), local('VictorianParlorVintageAlternate'),
-        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.eot?#iefix') format('embedded-opentype'),
-        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.woff2') format('woff2'),
-        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.woff') format('woff'),
-        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.ttf') format('truetype'),
-        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.svg#VictorianParlorVintageAlternate') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Apple Chancery';
-    src: url('font/apple-chancery/Apple-Chancery.eot');
-    src: local('Apple Chancery Italic'), local('Apple-Chancery'),
-        url('font/apple-chancery/Apple-Chancery.eot?#iefix') format('embedded-opentype'),
-        url('font/apple-chancery/Apple-Chancery.woff2') format('woff2'),
-        url('font/apple-chancery/Apple-Chancery.woff') format('woff'),
-        url('font/apple-chancery/Apple-Chancery.ttf') format('truetype'),
-        url('font/apple-chancery/Apple-Chancery.svg#Apple-Chancery') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Blood Script';
-    src: url('font/blood-script/BloodScriptItalicPersonalUs-N.eot');
-    src: local('Blood Script Italic Personal Us'), local('BloodScriptItalicPersonalUs-N'),
-        url('font/blood-script/BloodScriptItalicPersonalUs-N.eot?#iefix') format('embedded-opentype'),
-        url('font/blood-script/BloodScriptItalicPersonalUs-N.woff2') format('woff2'),
-        url('font/blood-script/BloodScriptItalicPersonalUs-N.woff') format('woff'),
-        url('font/blood-script/BloodScriptItalicPersonalUs-N.ttf') format('truetype'),
-        url('font/blood-script/BloodScriptItalicPersonalUs-N.svg#BloodScriptItalicPersonalUs-N') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url('font/pressStart2P/PressStart2P-Regular.eot');
-    src: url('font/pressStart2P/PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/pressStart2P/PressStart2P-Regular.woff2') format('woff2'),
-        url('font/pressStart2P/PressStart2P-Regular.woff') format('woff'),
-        url('font/pressStart2P/PressStart2P-Regular.ttf') format('truetype'),
-        url('font/pressStart2P/PressStart2P-Regular.svg#PressStart2P-Regular') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Courier New';
-    src: url('font/courier-new/CourierNew.eot');
-    src: url('font/courier-new/CourierNew.eot?#iefix') format('embedded-opentype'),
-        url('font/courier-new/CourierNew.woff2') format('woff2'),
-        url('font/courier-new/CourierNew.woff') format('woff'),
-        url('font/courier-new/CourierNew.ttf') format('truetype'),
-        url('font/courier-new/CourierNew.svg#CourierNewPSMT') format('svg');
-    font-display: swap;
-}
 
 /*SCROLL BAR*/
 /* =========================================== */
@@ -288,14 +145,6 @@ iframe {
     text-align: center;
 }
 
-#infobox>div.spoiler.open {
-    Border: 4px solid #064564;
-}
-
-#commentbox>div.spoiler.open {
-    Border: 4px solid #064564;
-}
-
 img#storyicon {
     image-rendering: auto;
     -moz-image-rendering: auto;
@@ -436,4 +285,149 @@ nav a[href="/more/"]::after {
 #deletegame::after {
     content: "DISCARD TREASURE";
     color: #af00af;
+}
+
+
+/*FONT IMPORT*/
+
+@font-face {
+    font-family: 'Coder\'s Crux';
+    src: url('font/coders-crux/Coders-Crux.eot');
+    src: local('Coder\'s Crux Regular'), local('Coder\'s-Crux'),
+        url('font/coders-crux/Coders-Crux.eot?#iefix') format('embedded-opentype'),
+        url('font/coders-crux/Coders-Crux.woff2') format('woff2'),
+        url('font/coders-crux/Coders-Crux.woff') format('woff'),
+        url('font/coders-crux/Coders-Crux.ttf') format('truetype'),
+        url('font/coders-crux/Coders-Crux.svg#Coder\'s-Crux') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fipps';
+    src: url('font/fipps/Fipps-Regular.eot');
+    src: local('Fipps Regular'), local('Fipps-Regular'),
+        url('font/fipps/Fipps-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/fipps/Fipps-Regular.woff2') format('woff2'),
+        url('font/fipps/Fipps-Regular.woff') format('woff'),
+        url('font/fipps/Fipps-Regular.ttf') format('truetype'),
+        url('font/fipps/Fipps-Regular.svg#Fipps-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gothic Pixel';
+    src: url('font/gothic-pixel/Gothic-Pixel.eot');
+    src: local('Gothic Pixel Regular'), local('Gothic-Pixel'),
+        url('font/gothic-pixel/Gothic-Pixel.eot?#iefix') format('embedded-opentype'),
+        url('font/gothic-pixel/Gothic-Pixel.woff2') format('woff2'),
+        url('font/gothic-pixel/Gothic-Pixel.woff') format('woff'),
+        url('font/gothic-pixel/Gothic-Pixel.ttf') format('truetype'),
+        url('font/gothic-pixel/Gothic-Pixel.svg#Gothic-Pixel') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Retrogression';
+    src: url('font/retrogression/Retrogression-Regular.eot');
+    src: local('Retrogression Regular'), local('Retrogression-Regular'),
+        url('font/retrogression/Retrogression-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/retrogression/Retrogression-Regular.woff2') format('woff2'),
+        url('font/retrogression/Retrogression-Regular.woff') format('woff'),
+        url('font/retrogression/Retrogression-Regular.ttf') format('truetype'),
+        url('font/retrogression/Retrogression-Regular.svg#Retrogression-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hiveswap Alternian';
+    src: url('font/hiveswap-alternian/HiveswapAlternian-Regular.eot');
+    src: local('Hiveswap Alternian Regular'), local('HiveswapAlternian-Regular'),
+        url('font/hiveswap-alternian/HiveswapAlternian-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/hiveswap-alternian/HiveswapAlternian-Regular.woff2') format('woff2'),
+        url('font/hiveswap-alternian/HiveswapAlternian-Regular.woff') format('woff'),
+        url('font/hiveswap-alternian/HiveswapAlternian-Regular.ttf') format('truetype'),
+        url('font/hiveswap-alternian/HiveswapAlternian-Regular.svg#HiveswapAlternian-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Homestuck';
+    src: url('font/homestuck/Homestuck-Regular.eot');
+    src: local('Homestuck Regular'), local('Homestuck-Regular'),
+        url('font/homestuck/Homestuck-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/homestuck/Homestuck-Regular.woff2') format('woff2'),
+        url('font/homestuck/Homestuck-Regular.woff') format('woff'),
+        url('font/homestuck/Homestuck-Regular.ttf') format('truetype'),
+        url('font/homestuck/Homestuck-Regular.svg#Homestuck-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Victorian Parlor';
+    src: url('font/victorian-parlor-vintage/VictorianParlorVintage.eot');
+    src: local('Victorian Parlor Vintage'), local('VictorianParlorVintage'),
+        url('font/victorian-parlor-vintage/VictorianParlorVintage.eot?#iefix') format('embedded-opentype'),
+        url('font/victorian-parlor-vintage/VictorianParlorVintage.woff2') format('woff2'),
+        url('font/victorian-parlor-vintage/VictorianParlorVintage.woff') format('woff'),
+        url('font/victorian-parlor-vintage/VictorianParlorVintage.ttf') format('truetype'),
+        url('font/victorian-parlor-vintage/VictorianParlorVintage.svg#VictorianParlorVintage') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Victorian Parlor Alternate';
+    src: url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.eot');
+    src: local('Victorian Parlor Vintage Alternate'), local('VictorianParlorVintageAlternate'),
+        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.eot?#iefix') format('embedded-opentype'),
+        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.woff2') format('woff2'),
+        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.woff') format('woff'),
+        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.ttf') format('truetype'),
+        url('font/victorian-parlor-vintage-alternate/VictorianParlorVintageAlternate.svg#VictorianParlorVintageAlternate') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apple Chancery';
+    src: url('font/apple-chancery/Apple-Chancery.eot');
+    src: local('Apple Chancery Italic'), local('Apple-Chancery'),
+        url('font/apple-chancery/Apple-Chancery.eot?#iefix') format('embedded-opentype'),
+        url('font/apple-chancery/Apple-Chancery.woff2') format('woff2'),
+        url('font/apple-chancery/Apple-Chancery.woff') format('woff'),
+        url('font/apple-chancery/Apple-Chancery.ttf') format('truetype'),
+        url('font/apple-chancery/Apple-Chancery.svg#Apple-Chancery') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blood Script';
+    src: url('font/blood-script/BloodScriptItalicPersonalUs-N.eot');
+    src: local('Blood Script Italic Personal Us'), local('BloodScriptItalicPersonalUs-N'),
+        url('font/blood-script/BloodScriptItalicPersonalUs-N.eot?#iefix') format('embedded-opentype'),
+        url('font/blood-script/BloodScriptItalicPersonalUs-N.woff2') format('woff2'),
+        url('font/blood-script/BloodScriptItalicPersonalUs-N.woff') format('woff'),
+        url('font/blood-script/BloodScriptItalicPersonalUs-N.ttf') format('truetype'),
+        url('font/blood-script/BloodScriptItalicPersonalUs-N.svg#BloodScriptItalicPersonalUs-N') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('font/pressStart2P/PressStart2P-Regular.eot');
+    src: url('font/pressStart2P/PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/pressStart2P/PressStart2P-Regular.woff2') format('woff2'),
+        url('font/pressStart2P/PressStart2P-Regular.woff') format('woff'),
+        url('font/pressStart2P/PressStart2P-Regular.ttf') format('truetype'),
+        url('font/pressStart2P/PressStart2P-Regular.svg#PressStart2P-Regular') format('svg');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('font/courier-new/CourierNew.eot');
+    src: url('font/courier-new/CourierNew.eot?#iefix') format('embedded-opentype'),
+        url('font/courier-new/CourierNew.woff2') format('woff2'),
+        url('font/courier-new/CourierNew.woff') format('woff'),
+        url('font/courier-new/CourierNew.ttf') format('truetype'),
+        url('font/courier-new/CourierNew.svg#CourierNewPSMT') format('svg');
+    font-display: swap;
 }

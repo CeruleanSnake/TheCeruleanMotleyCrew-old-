@@ -83,13 +83,34 @@ nav {
 }
 
 
-div#main {
+#main {
     background-color: transparent;
+}
+
+#userstories .cellicon {
+    width: 150px;
+    height: 150px;
+}
+
+#usericon,
+#userstories,
+.heart {
+    image-rendering: auto;
+}
+
+#flashytitle {
+    background-color: transparent;
+    background-image: url("theme/default/header.png");
+    margin-top: 10px;
+}
+
+#details {
+    font-weight: bold;
+    text-align: center;
 }
 
 .heart {
     background-image: url("theme/default/logo_small.png") !important;
-    image-rendering: auto;
 }
 
 .um {
@@ -109,17 +130,6 @@ div#main {
     border-right: 4px solid transparent;
     background-color: transparent;
     background-position-x: 0px;
-}
-
-#flashytitle {
-    background-color: transparent;
-    background-image: url("theme/default/header.png");
-    margin-top: 10px;
-}
-
-#details {
-    font-weight: bold;
-    text-align: center;
 }
 
 /*PC CSS*/

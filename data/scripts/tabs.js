@@ -13,4 +13,6 @@ function opentab(evt, spoilertab) {
 
     document.getElementById(spoilertab).style.display = "block";
     evt.currentTarget.className += " active";
+
+    document.getElementsByTagName('button')[0].addEventListener('click', e => e.preventDefault());
 }
