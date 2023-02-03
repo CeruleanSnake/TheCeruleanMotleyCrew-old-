@@ -7,7 +7,7 @@
 
 :root {
     --events: 2;
-    --event-height: calc(40px + (24px * var(--events)));
+    --event-height: calc(80px + (24px * var(--events)));
 }
 
 #events {
