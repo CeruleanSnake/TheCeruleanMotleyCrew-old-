@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=500, initial-scale=1">
-<meta name="description" content="A daring adventure of pirates, booze and a whole lotta booty!">
-<meta name="author" content="CeruleanSnake">
 
 <head>
     <title>
         The Cerulean Motley Crew
     </title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CeruleanSnake">
+    <meta name="theme-color" content="#005682">
 
-    <link rel="stylesheet" href="data/main.css" />
-    <link rel="stylesheet" href="data/theme/default.css" />
+    <meta property="og:site_name" content="File Garden">
+    <meta property="og:title" content="The Cerulean Motley Crew">
+    <meta property="og:description" content="A daring adventure of pirates, booze and a whole lotta booty!">
+    <meta property="og:image" content="https://file.garden/X65Xhea95myVymaS/TCMC/img/logo.gif">
+    <meta property="og:image:type" content="image/gif">
+
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="data/manifest.webmanifest">
+
+    <link rel="stylesheet" href="data/main.css">
+    <link rel="stylesheet" href="data/theme/default.css">
 
     <div id="overlay" data-amt="4">
-        <script type="text/javascript" src="data/scripts/parallaxbg.js" />
+        <script type="text/javascript" src="data/scripts/parallaxbg.js">
         </script>
     </div>
 
     <script type="text/javascript" src="data/scripts/tabs.js">
     </script>
 
-    <script type="text/javascript">
-        var random_images_array = ['0084.png', '0048.png', '0015.png'];
-
-        function getRandomImage(imgAr, path) {
-            path = path || 'img/emotes/';
-            var num = Math.floor(Math.random() * imgAr.length);
-            var img = imgAr[num];
-            var imgStr = '<img src="' + path + img +
-                '" style="max-width: 30%; margin: -25 0 25 0;" title="The Cerulean Motley Crew">';
-            document.write(imgStr);
-            document.close();
-        }
+    <script type="text/javascript" src="data/scripts/randomimg.js">
     </script>
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
@@ -48,7 +45,7 @@
             <div id="flashytitle"></div>
 
             <div id="nav">
-                <script type="text/javascript" src="data/scripts/navbar.js" />
+                <script type="text/javascript" src="data/scripts/navbar.js">
                 </script>
             </div>
         </header>
@@ -85,8 +82,8 @@
                     =========================
                     <div style="font-size: 20px">
                         <br>
-                        <a href="Characters.html">CHARACTERS</a>
-                        <br><br>
+                        <!-- <a href="Characters.html">CHARACTERS</a>
+                        <br><br> -->
                         <a href="Offline.html">OFFLINE ARCHIVE</a> | <a href="Art.html">ART</a> | <a
                             href="Music.html">MUSIC</a> |
                         <a href="../Archive/OriginalTCMC/The-Cerulean-Motley-Crew.html" target="_blank">ORIGINAL
