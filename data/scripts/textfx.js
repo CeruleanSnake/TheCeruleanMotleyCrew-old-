@@ -26,16 +26,8 @@ setInterval(() => {
     });
 }, 35);
 
-if (MSPFA.story.i !== 35015) {
+window.onload = function () {
     shakeText('shake');
     shakeText('wave');
     shakeText('textfx');
-} else {
-    MSPFA.import("/js/?s=44554");
 }
-
-MSPFA.slide.push(p => {
-    shakeText('shake');
-    shakeText('wave');
-    shakeText('textfx');
-});
