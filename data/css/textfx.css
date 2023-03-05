@@ -1,6 +1,6 @@
 /* =============================================Text Effects */
 
-/*Shake, Wave, textfx*/
+/* ========================== Shake, Wave, textfx*/
 .shake,
 .wave,
 .textfx {
@@ -51,7 +51,7 @@ shake.wave {
     }
 }
 
-/*Squash*/
+/* =================================== Squash*/
 .squash {
     --amt: 1;
 }
@@ -103,7 +103,7 @@ shake.wave {
     }
 }
 
-/*Vwave*/
+/* ============================= Vwave*/
 .vwave {
     --amt: 1;
 }
@@ -158,7 +158,7 @@ shake.wave {
     }
 }
 
-/*Rainbow*/
+/* =============================== Rainbow*/
 .rainbow {
     --amt: 4;
 }

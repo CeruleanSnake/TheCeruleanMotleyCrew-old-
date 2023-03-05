@@ -23,13 +23,16 @@
 
     <link rel="stylesheet" href="data/css/main.css">
     <link rel="stylesheet" href="data/css/playlist.css">
+    <link rel="stylesheet" href="data/css/textfx.css">
     <link rel="stylesheet" href="data/theme/default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script type="text/javascript" src="data/js/textfx.js">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <div id="overlay" data-amt="4">
-        <script type="text/javascript" src="data/scripts/parallaxbg.js">
+        <script type="text/javascript" src="data/js/parallaxbg.js">
         </script>
     </div>
 
@@ -42,49 +45,42 @@
             <div id="flashytitle"></div>
 
             <div id="nav">
-                <script type="text/javascript" src="data/scripts/navbar.js">
+                <script type="text/javascript" src="data/js/navbar.js">
                 </script>
             </div>
         </header>
 
         <div id="container">
             <div id="slide">
-                <div id="command">
-                    Music
+                <div id="pagetitle">
+                    MUSIC
                 </div>
 
                 <div id="content">
-                    <img src="img/sound/music/albumcover.png" style="max-width: 50%; margin: -25 0 25 0;">
-                    <br><br>
-                    <span style="color: #005682; font-size: 20px">
-                        Music from the comic all in one easy location!<br>To download, simply right click and hit "save
-                        as"
-                        and save wherever you want.<br><br>
-                    </span>
-                    This page will be updated as the comic goes along.
-                    <br><br>
-
-                    <div class="AudioPlayerLayout">
-                        <div class="AudioPlayerBoard">
-                            <p>The Cerulean Motley Crew</p>
-                            <div class="arrow">
-                                <i class="fa fa-long-arrow-left"></i>
-
-                                <i class="fa fa-long-arrow-right"></i>
-                            </div>
+                    <div class="playlistbox">
+                        <div class="artcard">
+                            <albumart>
+                                <img style="max-width: 70%;" src="img/sound/music/The Cerulean Motley Crew.png">
+                            </albumart>
+                            <p><br></p>
                         </div>
 
-                        <div class="AudioPlayer">
-                            <audio id='AudioDiv' controls controlsList='download'>
+                        <div class="musicplayer">
+                            <audio id='audiocontainer' controls>
                                 <source src='' type='audio/mpeg'>Your browser does not support HTML5 Audio.</audio>
                         </div>
 
-                        <div class="AudioList">
+                        <div class="playlist">
                             <ul>
                             </ul>
                         </div>
 
                         <br><br>
+                        <span style="color: #005682; font-size: 20px">
+                            Music from the comic all in one easy location! To download, simply click the download
+                            button. <br><br>
+                        </span>
+                        This page will be updated as the comic goes along.
                     </div>
 
                     <div id="foot">
@@ -110,7 +106,7 @@
             </footer>
         </div>
 
-        <script type="text/javascript" src="data/scripts/playlist.js">
+        <script type="text/javascript" src="data/js/playlist.js">
         </script>
 </body>
 
