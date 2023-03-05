@@ -1,0 +1,39 @@
+/* ==================================================== 
+SPOILER button*/
+
+.spoilerbutton {
+    display: inline-block;
+}
+
+.spoiler {
+    overflow: auto;
+    background-color: #EEE;
+}
+
+.spoiler>div {
+    line-height: 18.9px;
+    text-align: left;
+}
+
+.spoilerbutton[value="Show"]+.spoiler>div,
+.spoilerbutton[value="Show Chat"]+.spoiler>div,
+.spoilerbutton[value="Show Log"]+.spoiler>div,
+.spoilerbutton[value="Show Journal"]+.spoiler>div {
+    display: none;
+}
+
+.spoilerbutton[value="Hide"]+.spoiler>div,
+.spoilerbutton[value="Hide Chat"]+.spoiler>div,
+.spoilerbutton[value="Hide Log"]+.spoiler>div,
+.spoilerbutton[value="Hide Journal"]+.spoiler>div {
+    margin: 12px;
+    padding: 3px;
+}
+
+.spoiler-border {
+    padding: 1px;
+    border: 1px dashed gray;
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+    align-content: center;
+}

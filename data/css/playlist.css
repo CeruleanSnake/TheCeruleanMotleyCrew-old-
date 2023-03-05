@@ -1,0 +1,83 @@
+.AudioPlayerLayout {
+    background-color: #fff;
+    width: 90%;
+    margin: 50px 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #ccc;
+}
+
+.AudioPlayer audio {
+    width: 100%;
+}
+
+.AudioList ul {
+    text-align: left;
+    list-style: none;
+    display: block;
+    padding: 0px 10px;
+    direction: rtl;
+}
+
+.AudioList ul li {
+    background: #f2f2f2a6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+a.ListItemDl {
+    float: right;
+    color: cadetblue;
+}
+
+a.ListItemDl :hover {
+    cursor: pointer;
+    color: #000;
+    transition-duration: 0.5s;
+}
+
+span.ListPage {
+    float: right;
+    margin-left: 20px;
+}
+
+span.ListPage:empty {
+    display: none !important;
+}
+
+.AudioPlayerBoard p {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px;
+}
+
+.arrow {
+    text-align: center;
+    color: #999;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.arrow i {
+    background: #f7f7f77d;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.arrow i:hover {
+    background: #ccc;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.AudioList ul :hover {
+    background: #dbf9ee;
+}

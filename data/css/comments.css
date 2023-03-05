@@ -1,0 +1,87 @@
+/* ==================================================== 
+Comments Section*/
+
+table {
+    text-align: left;
+    color: black;
+}
+
+#tab {
+    font-family: "courier", "monospace";
+    font-weight: bold;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+#tab button {
+    font-family: 'Homestuck';
+    float: middle;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 3ch;
+    margin: 1px -3.5px 3px -3.5px;
+    padding: 4px 8px 4px 8px;
+    transition: 0.2s;
+}
+
+#user,
+#author {
+    overflow: auto;
+    padding: 20px;
+}
+
+#author {
+    color: black;
+}
+
+#user {
+    font-family: "courier",
+        "monospace";
+}
+
+#user img {
+    max-width: 60px;
+    padding-right: 10px;
+}
+
+#user table {
+    padding: 0 15 15 15px;
+}
+
+#pageno {
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.commenttimestamp {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: courier;
+    color: #8c8c8c;
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px;
+    animation: fadeEffect 0.5s;
+}
+
+.tabcontent img {
+    max-width: 350px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
