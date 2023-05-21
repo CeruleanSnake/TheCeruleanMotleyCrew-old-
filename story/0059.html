@@ -35,6 +35,8 @@
     </script>
     <script type="text/javascript" src="../data/js/arrownav.js">
     </script>
+    <script type="text/javascript" src="../data/js/randompfp.js">
+    </script>
 
     <div id="overlay" data-amt="4">
         <script type="text/javascript" src="../data/js/parallaxbg.js">
@@ -153,7 +155,9 @@
                             <table>
                                 <td>
                                     <span class="commentimg">
-                                        <img src="../img/pfp/atkingalternate.png">
+                                        <script type="text/javascript">
+                                            getRandomImage(random_images_array, '../img/pfp/')
+                                        </script>
                                     </span>
                                 </td>
                                 <td>
