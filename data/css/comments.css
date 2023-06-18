@@ -17,9 +17,8 @@ table {
     font-family: 'Homestuck';
     float: middle;
     cursor: pointer;
-    font-size: 20px;
+    font-size: x-large;
     font-weight: bold;
-    font-size: 3ch;
     margin: 1px -3.5px 3px -3.5px;
     padding: 4px 8px 4px 8px;
     transition: 0.2s;
