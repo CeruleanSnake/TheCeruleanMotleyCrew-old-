@@ -27,7 +27,7 @@ body {
         url("soul-memory/wave-back.png"),
         url("soul-memory/sky-cloud-2.png"),
         url("soul-memory/sky_cloud.png"),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(23, 4, 59) 30%, rgb(124, 9, 111) 60%, rgb(202, 139, 2) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.779) 0%, rgb(48, 48, 48) 100%),
         url("default/background.bmp");
     background-position-x: 0, 0, 0, 0, 0, 1vw;
     background-position-y: bottom, bottom, center, center;
@@ -113,15 +113,15 @@ body {
 }
 
 #infobox>div.spoiler.open {
-    Border: 4px solid #6A006A;
+    Border: 4px solid #000000;
 }
 
 #commentbox>div.spoiler.open {
-    Border: 4px solid #6A006A;
+    Border: 4px solid #000000;
 }
 
 #commentary-wrapper {
-    Border: 8px solid #064564;
+    Border: 8px solid #000000;
 }
 
 
