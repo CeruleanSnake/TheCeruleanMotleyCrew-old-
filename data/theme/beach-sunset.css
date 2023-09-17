@@ -101,14 +101,6 @@ body {
 /*SITE ONLY*/
 /* =========================================== */
 
-.umcontainer {
-    background-image: url("https://miro.gg/mspfafacereverse");
-}
-
-.mspfalogo {
-    background-image: url("https://miro.gg/mspfaface") !important;
-}
-
 #infobox>div.spoiler.open {
     Border: 4px solid #a10000;
 }
@@ -119,6 +111,51 @@ body {
 
 #commentary-wrapper {
     Border: 8px solid #a10000;
+}
+
+a {
+    color: #c90000 !important;
+}
+
+nav {
+    color: #f4ab24;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
+/* MSPFA HOME */
+nav a[href="/"]::after {
+    color: #f4ab24;
+}
+
+/* MSPA */
+nav a[href="http://www.mspaintadventures.com/"]::after {
+    color: #f4ab24;
+}
+
+/* DONATE */
+nav a[href="/donate/"]::after {
+    color: #5d00cf;
+}
+
+/* MORE */
+nav a[href="/more/"]::after {
+    color: #5d00cf;
+}
+
+#startover::after {
+    color: #bb8013;
+}
+
+#goback::after {
+    color: #bb8013;
+}
+
+#deletegame::after {
+    color: #5d00cf;
 }
 
 /*PC CSS*/

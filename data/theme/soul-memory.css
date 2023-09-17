@@ -124,6 +124,19 @@ body {
     Border: 8px solid #000000;
 }
 
+a {
+    color: #000000 !important;
+}
+
+nav,
+nav a {
+    color: #ffffff !important;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
 
 /*PC CSS*/
 /* =========================================== */

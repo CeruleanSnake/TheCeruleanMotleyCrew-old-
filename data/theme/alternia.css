@@ -121,6 +121,20 @@ body {
     Border: 8px solid #6A006A;
 }
 
+a {
+    color: #b10053 !important;
+}
+
+nav {
+    color: #890089 !important;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
+
 /*PC CSS*/
 /* =========================================== */
 @media screen and (min-width: 1200px) {

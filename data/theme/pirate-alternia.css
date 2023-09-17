@@ -115,15 +115,60 @@ body {
 }
 
 #infobox>div.spoiler.open {
-    Border: 4px solid #6A006A;
+    Border: 4px solid #064564;
 }
 
 #commentbox>div.spoiler.open {
-    Border: 4px solid #6A006A;
+    Border: 4px solid #064564;
 }
 
 #commentary-wrapper {
     Border: 8px solid #064564;
+}
+
+a {
+    color: #0080c2;
+}
+
+nav {
+    color: #f4ab24;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
+/* MSPFA HOME */
+nav a[href="/"]::after {
+    color: #f4ab24;
+}
+
+/* MSPA */
+nav a[href="http://www.mspaintadventures.com/"]::after {
+    color: #f4ab24;
+}
+
+/* DONATE */
+nav a[href="/donate/"]::after {
+    color: #af00af;
+}
+
+/* MORE */
+nav a[href="/more/"]::after {
+    color: #af00af;
+}
+
+#startover::after {
+    color: #bb8013;
+}
+
+#goback::after {
+    color: #bb8013;
+}
+
+#deletegame::after {
+    color: #af00af;
 }
 
 

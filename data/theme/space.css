@@ -121,6 +121,19 @@ body {
     Border: 8px solid #a10000;
 }
 
+a {
+    color: #d70000 !important;
+}
+
+nav {
+    color: #a10000 !important;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
 
 /*PC CSS*/
 /* =========================================== */

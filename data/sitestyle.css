@@ -50,6 +50,14 @@ nav {
     margin-bottom: 10px;
 }
 
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
+nav .dropdown-content>a {
+    color: white !important;
+}
+
 iframe {
     image-rendering: auto;
 }
@@ -127,10 +135,12 @@ iframe {
     background-image: url("../img/siteload.gif");
 }
 
+/*
 #bbtoolbar input {
     background-image: url("../img/bbicons.png");
     image-rendering: auto;
 }
+*/
 
 #main {
     background-color: transparent;
@@ -182,28 +192,24 @@ img.cellicon {
 /*=================================================*/
 nav>a,
 nav>div>a:first-child {
-    visibility: hidden;
-    word-spacing: -999px;
-    letter-spacing: -999px;
+    font-size: 0;
+    pointer-events: none;
 }
 
 nav>a::after,
 nav>div>a:first-child::after {
-    visibility: visible;
-    word-spacing: normal;
-    letter-spacing: normal;
+    font-size: x-small;
+    pointer-events: auto;
 }
 
 /* MSPFA HOME */
 nav a[href="/"]::after {
     content: "PORT";
-    color: #f4ab24
 }
 
 /* MSPA */
 nav a[href="http://www.mspaintadventures.com/"]::after {
     content: "LAND YONDER";
-    color: #f4ab24
 }
 
 /* EXPLORE */
@@ -231,49 +237,48 @@ nav a[href^="/search/"]::after {
     content: "SCRY";
 }
 
+/* BOOKMARKS */
+nav a[href^="javascript:void(0)"]::after {
+    content: "WAYPOINTS";
+}
+
 /* MY MSPFA */
 nav a[href="/my/"]::after {
     content: "CAPTAIN'S QUARTERS";
 }
 
 /* DISCORD */
-nav a[href="https://discord.gg/EC5acgG"]::after {
+nav a[href="/discord"]::after {
     content: "TAVERN";
 }
 
 /* DONATE */
 nav a[href="/donate/"]::after {
     content: "YAAARR";
-    color: #af00af
 }
 
 /* MORE */
 nav a[href="/more/"]::after {
     content: "CARRIER PIGEON";
-    color: #af00af
 }
 
 
 #foot span a {
-    visibility: hidden;
-    word-spacing: -999px;
-    letter-spacing: -999px;
+    font-size: 0;
+    pointer-events: none;
 }
 
 #foot span a::after {
-    visibility: visible;
-    word-spacing: normal;
-    letter-spacing: normal;
+    font-size: x-small;
+    pointer-events: auto;
 }
 
 #startover::after {
     content: "ABANDON SHIP";
-    color: #bb8013
 }
 
 #goback::after {
     content: "SAIL BACK";
-    color: #bb8013
 }
 
 #savegame::after {
@@ -286,7 +291,6 @@ nav a[href="/more/"]::after {
 
 #deletegame::after {
     content: "DISCARD TREASURE";
-    color: #af00af;
 }
 
 

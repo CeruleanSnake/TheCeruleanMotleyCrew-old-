@@ -98,17 +98,14 @@ body {
     background: #eeeeee url("../loading.gif") no-repeat 50% center !important;
 }
 
+#flashytitle,
+#flashytitlebottom {
+    background-image: url("default/header.png");
+}
+
 
 /*SITE ONLY*/
 /* =========================================== */
-
-.umcontainer {
-    background-image: url("https://miro.gg/mspfafacereverse");
-}
-
-.mspfalogo {
-    background-image: url("https://miro.gg/mspfaface") !important;
-}
 
 #infobox>div.spoiler.open {
     Border: 4px solid #064564;
@@ -122,10 +119,51 @@ body {
     Border: 8px solid #064564;
 }
 
-#flashytitle,
-#flashytitlebottom {
-    background-image: url("default/header.png");
+a {
+    color: #0080c2;
 }
+
+nav {
+    color: #f4ab24;
+    background-color: transparent;
+}
+
+nav .dropdown-content {
+    background-color: #0000008f;
+}
+
+/* MSPFA HOME */
+nav a[href="/"]::after {
+    color: #f4ab24;
+}
+
+/* MSPA */
+nav a[href="http://www.mspaintadventures.com/"]::after {
+    color: #f4ab24;
+}
+
+/* DONATE */
+nav a[href="/donate/"]::after {
+    color: #af00af;
+}
+
+/* MORE */
+nav a[href="/more/"]::after {
+    color: #af00af;
+}
+
+#startover::after {
+    color: #bb8013;
+}
+
+#goback::after {
+    color: #bb8013;
+}
+
+#deletegame::after {
+    color: #af00af;
+}
+
 
 
 /*PC CSS*/
