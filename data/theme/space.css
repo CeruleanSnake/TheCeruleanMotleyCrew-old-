@@ -36,6 +36,18 @@ body {
     -moz-image-rendering: crisp-edges;
 }
 
+a {
+    color: #d70000 !important;
+}
+
+#nav a:hover {
+    color: #f4ab24 !important;
+}
+
+#nav {
+    color: #a10000;
+}
+
 #main {
     background-color: transparent
 }

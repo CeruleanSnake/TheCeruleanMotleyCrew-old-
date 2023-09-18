@@ -37,6 +37,18 @@ body {
     -moz-image-rendering: crisp-edges;
 }
 
+a {
+    color: #b10053 !important;
+}
+
+#nav a:hover {
+    color: #f4ab24 !important;
+}
+
+#nav {
+    color: #890089;
+}
+
 #main {
     background-color: transparent
 }
@@ -119,10 +131,6 @@ body {
 
 #commentary-wrapper {
     Border: 8px solid #6A006A;
-}
-
-a {
-    color: #b10053 !important;
 }
 
 nav {

@@ -7,22 +7,6 @@ body {
     text-align: center;
 }
 
-a:link {
-    color: #0080c2;
-}
-
-a:visited {
-    color: purple;
-}
-
-a:hover {
-    color: #0080c2;
-}
-
-a:active {
-    color: red;
-}
-
 iframe {
     border: none
 }

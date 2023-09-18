@@ -38,6 +38,18 @@ body {
     -moz-image-rendering: crisp-edges;
 }
 
+a {
+    color: #0080c2;
+}
+
+#nav a:hover {
+    color: #f4ab24;
+}
+
+#nav {
+    color: #f4ab24;
+}
+
 #main {
     background-color: transparent
 }
@@ -117,10 +129,6 @@ body {
 
 #commentary-wrapper {
     Border: 8px solid #064564;
-}
-
-a {
-    color: #0080c2;
 }
 
 nav {
@@ -218,7 +226,7 @@ nav a[href="/more/"]::after {
 
     .overlay-1 {
         background-image: url("default/ship.png");
-        animation: 35s ship-move linear infinite;
+        animation: 75s ship-move linear infinite;
         background-repeat: no-repeat;
         background-size: 20vh;
         background-position-x: 110vw;
